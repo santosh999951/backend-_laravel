@@ -1,0 +1,225 @@
+{
+    "namespace": "App\\Http\\Response\\v1_7\\Models\\Partial",
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse",
+        "App\\Http\\Response\\v1_7\\Models\\Partial\\WalletResponse"
+    ],
+    "class": {
+        "name": "UserProfileResponse",
+        "definition": "UserProfileResponse",
+        "description": "UserProfileResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "first_name",
+            "type": "string",
+            "default": "",
+            "description": "Property First Name"
+        },
+        {
+            "name": "last_name",
+            "type": "string",
+            "default": "",
+            "description": "Property Last Name"
+        },
+        {
+            "name": "member_since",
+            "type": "string",
+            "default": "",
+            "description": "Property Member Since"
+        },
+        {
+            "name": "dob",
+            "type": "string",
+            "default": "",
+            "description": "Property Dob"
+        },
+        {
+            "name": "marital_status",
+            "type": "string",
+            "default": "",
+            "description": "Property Marital Status"
+        },
+        {
+            "name": "gender",
+            "type": "string",
+            "default": "",
+            "description": "Property Gender"
+        },
+        {
+            "name": "profession",
+            "type": "string",
+            "default": "",
+            "description": "Property Profession"
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "default": "",
+            "description": "Property Email"
+        },
+        {
+            "name": "is_email_verified",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Is Email Verified"
+        },
+        {
+            "name": "dial_code",
+            "type": "string",
+            "default": "",
+            "description": "Property Dial Code"
+        },
+        {
+            "name": "mobile",
+            "type": "string",
+            "default": "",
+            "description": "Property Mobile"
+        },
+        {
+            "name": "is_mobile_verified",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Is Mobile Verified"
+        },
+        {
+            "name": "is_user_referred",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Is User Referred"
+        },
+        {
+            "name": "profile_image",
+            "type": "string",
+            "default": "",
+            "description": "Property Profile Image"
+        },
+        {
+            "name": "is_avatar_image",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Is Avatar Image"
+        },
+        {
+            "name": "spoken_languages",
+            "type": "string",
+            "default": "",
+            "description": "Property Spoken Languages"
+        },
+        {
+            "name": "travelled_places",
+            "type": "string",
+            "default": "",
+            "description": "Property Travelled Places"
+        },
+        {
+            "name": "description",
+            "type": "string",
+            "default": "",
+            "description": "Property Description"
+        },
+        {
+            "name": "guests_served_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Guests Served Count"
+        },
+        {
+            "name": "trips_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Trips Count"
+        },
+        {
+            "name": "active_request_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Active Request Count"
+        },
+        {
+            "name": "user_currency",
+            "type": "string",
+            "default": "",
+            "description": "Property User Currency"
+        },
+        {
+            "name": "is_host",
+            "type": "boolean",
+            "default": "false",
+            "description": "Property Is Host"
+        },
+        {
+            "name": "user_id",
+            "type": "integer",
+            "default": "0",
+            "description": "Property User Id"
+        },
+        {
+            "name": "user_hash_id",
+            "type": "string",
+            "default": "",
+            "description": "Property User Hash Id"
+        },
+        {
+            "name": "fb_id",
+            "type": "string",
+            "default": "",
+            "description": "Property Fb Id"
+        },
+        {
+            "name": "google_id",
+            "type": "string",
+            "default": "",
+            "description": "Property Google Id"
+        },
+        {
+            "name": "apple_id",
+            "type": "null",
+            "description": "Property Apple Id",
+            "default": ""
+        },
+        {
+            "name": "wallet",
+            "type": "object",
+            "default": "{}",
+            "description": "Property Wallet"
+        },
+        {
+            "name": "add_listing",
+            "type": "string",
+            "default": "",
+            "description": "Property Add Listing"
+        },
+        {
+            "name": "event",
+            "type": "string",
+            "default": "",
+            "description": "Property Event"
+        },
+        {
+            "name": "is_rm",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Is Rm"
+        },
+        {
+            "name": "add_email",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Add Email"
+        },
+        {
+            "name": "auth_key",
+            "type": "string",
+            "default": "",
+            "description": "Property Auth Key"
+        },
+        {
+            "name": "is_prive_manager",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Is Prive Manager"
+        }
+    ]
+}

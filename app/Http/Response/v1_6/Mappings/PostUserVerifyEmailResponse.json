@@ -1,0 +1,20 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PostUserVerifyEmailResponse",
+    "definition": "PostUserVerifyEmailResponse",
+    "description": "Response model for sending verification email to user",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Response Message"
+    }
+  ]
+}

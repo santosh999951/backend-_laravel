@@ -1,0 +1,20 @@
+{
+    "namespace": "App\\Http\\Response\\v1_7\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostDeviceResponse",
+        "definition": "PostDeviceResponse",
+        "description": "PostDeviceResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetPropertyReviewsResponse",
+    "definition": "GetPropertyReviewsResponse",
+    "description": "Response Model for Property Reviews List Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "reviews",
+      "type": "array",
+      "default": "[]",
+      "description": "Reviews Section",
+      "children": [
+        {
+          "name": "guests",
+          "type": "integer",
+          "description": "Property Guests",
+          "default": "0"
+        },
+        {
+          "name": "property_rating",
+          "type": "integer",
+          "description": "Property Rating",
+          "default": "0"
+        },
+        {
+          "name": "traveller_id",
+          "type": "string",
+          "description": "Traveller Id",
+          "default": ""
+        },
+        {
+          "name": "traveller_name",
+          "type": "string",
+          "description": "Traveller Name",
+          "default": ""
+        },
+        {
+          "name": "review_date",
+          "type": "string",
+          "description": "Review Date",
+          "default": ""
+        },
+        {
+          "name": "comment",
+          "type": "string",
+          "description": "Property Comment given in review",
+          "default": ""
+        },
+        {
+          "name": "nights",
+          "type": "integer",
+          "description": "Property Nights Stay",
+          "default": "0"
+        },
+        {
+          "name": "review_images",
+          "type": "array",
+          "description": "Review Images",
+          "default": "[]",
+          "children": [
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Image Url Array of string",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "traveller_image",
+          "type": "string",
+          "description": "Traveller Image Url",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "updated_offset",
+      "type": "integer",
+      "default": "0",
+      "description": "Updated Offset for pagination"
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "default": "0",
+      "description": "Total number of data required in each iteration"
+    }
+  ]
+}

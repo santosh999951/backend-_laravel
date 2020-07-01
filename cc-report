@@ -1,0 +1,556 @@
+
+
+Code Coverage Report:          
+  2019-10-30 04:52:30          
+                               
+ Summary:                      
+  Classes: 46.27% (186/402)    
+  Methods: 52.97% (1258/2375)  
+  Lines:   50.70% (11735/23144)
+
+\App\Events::App\Events\CancelBookingRequest
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% ( 12/ 12)
+\App\Events::App\Events\ContactUs
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  3/  3)
+\App\Events::App\Events\CreateBooking
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  8/  8)
+\App\Events::App\Events\StatusChangedBookingRequest
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  7/  7)
+\App\Events::App\Events\UserRegistered
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  4/  4)
+\App\Events::App\Events\UserResetPassword
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  7/  7)
+\App\Events::App\Events\WalletUpdation
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  6/  6)
+\App\Exceptions::App\Exceptions\Handler
+  Methods:  50.00% ( 1/ 2)   Lines:  90.91% ( 10/ 11)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\BookingController
+  Methods:   5.26% ( 1/19)   Lines:  55.01% (818/1487)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\Controller
+  Methods:  57.14% ( 4/ 7)   Lines:  11.36% (  5/ 44)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\DeviceController
+  Methods:  50.00% ( 1/ 2)   Lines:  98.80% ( 82/ 83)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\HomeController
+  Methods:  75.00% ( 3/ 4)   Lines:  92.53% (161/174)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\HostController
+  Methods:  17.86% ( 5/28)   Lines:  71.61% (676/944)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\PrepaymentController
+  Methods:   0.00% ( 0/ 2)   Lines:  85.22% (415/487)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\PriveController
+  Methods:  13.79% ( 4/29)   Lines:  31.89% (324/1016)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\PropertyController
+  Methods:  37.50% ( 6/16)   Lines:  86.77% (597/688)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\SearchController
+  Methods:  30.77% ( 4/13)   Lines:  65.24% (428/656)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\StaticController
+  Methods:  22.22% ( 2/ 9)   Lines:  16.99% ( 26/153)
+\App\Http\Controllers\v1_6::App\Http\Controllers\v1_6\UserController
+  Methods:  24.24% ( 8/33)   Lines:  80.39% (816/1015)
+\App\Http\Middleware::App\Http\Middleware\AfterMiddleware
+  Methods:  50.00% ( 1/ 2)   Lines:  58.33% (  7/ 12)
+\App\Http\Middleware::App\Http\Middleware\Authenticate
+  Methods:  50.00% ( 1/ 2)   Lines:  88.89% (  8/  9)
+\App\Http\Middleware::App\Http\Middleware\BeforeMiddleware
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  2/  2)
+\App\Http\Middleware::App\Http\Middleware\DeviceMiddleware
+  Methods:   0.00% ( 0/ 1)   Lines:  83.33% (  5/  6)
+\App\Http\Middleware::App\Http\Middleware\HostMiddleware
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  3/  3)
+\App\Http\Middleware::App\Http\Middleware\PriveMiddleware
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  4/  4)
+\App\Http\Requests::App\Http\Requests\BaseFormRequest
+  Methods:  52.63% (10/19)   Lines:  63.64% ( 84/132)
+\App\Http\Requests::App\Http\Requests\DeleteUserWishlistRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\FormRequest
+  Methods:  75.00% ( 6/ 8)   Lines:  84.21% ( 16/ 19)
+\App\Http\Requests::App\Http\Requests\GetBookingRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetBookingRequestDetailsRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetBookingShareRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\GetCollectionDetailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\GetCollectionRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  4/  4)
+\App\Http\Requests::App\Http\Requests\GetCommonDataRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetHomeRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  5/  5)
+\App\Http\Requests::App\Http\Requests\GetHostBookingListRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetHostHomeRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetHostPayoutHistoryRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetHostPropertiesRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetHostPropertyPriceCalenderRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\GetHostPropertyRequest
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+\App\Http\Requests::App\Http\Requests\GetHostPropertyReviewsRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  5/  5)
+\App\Http\Requests::App\Http\Requests\GetHostRequestDetailRequest
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+\App\Http\Requests::App\Http\Requests\GetPaymentPreferencesRequest
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+\App\Http\Requests::App\Http\Requests\GetPriveBookingsRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 16/ 16)
+\App\Http\Requests::App\Http\Requests\GetPrivePropertyRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetProperlyExpenseIndexRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  4/  4)
+\App\Http\Requests::App\Http\Requests\GetProperlyExpenseRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  8/  8)
+\App\Http\Requests::App\Http\Requests\GetPropertyDetailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetPropertyPrepaymentDetailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  8/  8)
+\App\Http\Requests::App\Http\Requests\GetPropertyPriceCalenderRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  5/  5)
+\App\Http\Requests::App\Http\Requests\GetPropertyReviewRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetReferDetailsRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\GetRequestPrepaymentDetailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  4/  4)
+\App\Http\Requests::App\Http\Requests\GetRmAsHostLoginRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetRmHostRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetSearchRecentRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetSimilarPropertyListingRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  7/  7)
+\App\Http\Requests::App\Http\Requests\GetTravellerPrivePropertiesRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetTripDetailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetTripRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\GetTripReviewRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  5/  5)
+\App\Http\Requests::App\Http\Requests\GetUserProfileRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\GetUserPropertiesRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  7/  7)
+\App\Http\Requests::App\Http\Requests\GetUserWishlistRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostAddWishlistRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostBookingRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 11/ 11)
+\App\Http\Requests::App\Http\Requests\PostBookingRequestCancelRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  5/  5)
+\App\Http\Requests::App\Http\Requests\PostBookingRequestEmailinvoiceRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\PostBookingRequestResendRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostDeviceRegisterRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostLeadRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostLogoutRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostMobileLoginRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostPaymentPreferencesRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostPriveLoginRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostPriveRegisterRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% ( 12/ 12)
+\App\Http\Requests::App\Http\Requests\PostPriveResetPasswordRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostPriveSupportEmailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostProperlyExpenseRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  7/  7)
+\App\Http\Requests::App\Http\Requests\PostPropertyRatingRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostPropertyReviewImageRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostPropertyReviewRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostRegisterRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% ( 24/ 24)
+\App\Http\Requests::App\Http\Requests\PostTrafficSourceRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostUserAppfeedbackRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostUserLoginoldappuserRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostUserPasswordResetRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\PostUserPictureRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostVerificationEmailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PostVerifiyMobileRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  6/  6)
+\App\Http\Requests::App\Http\Requests\PutBookingRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  5/  5)
+\App\Http\Requests::App\Http\Requests\PutDeleteUserRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutHostPropertyPriceCalenderRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutHostPropertyStatusRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutHostRequestStatusRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutHostReviewReplyRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutMobileLoginRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutPaymentPreferencesRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutProperlyExpenseRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutUpdateUserRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutUserCurrencyRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutUserLastactiveUpdateRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutUserPasswordRequest
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  3/  3)
+\App\Http\Requests::App\Http\Requests\PutUserPasswordResetRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutUserPasswordUpdateRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutVerificationEmailRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Requests::App\Http\Requests\PutVerifyMobileRequest
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\ApiResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 11/ 11)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\DeleteProperlyExpenseResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\DeleteUserWishlistResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetCommonDataResponse
+  Methods:  95.00% (19/20)   Lines:  93.33% ( 28/ 30)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetCountrycodesResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetDialcodesResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHomeCollectionsDetailResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHomeCollectionsResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHomeResponse
+  Methods:  97.22% (35/36)   Lines:  96.30% ( 52/ 54)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostBookingRequestDetailResponse
+  Methods: 100.00% (12/12)   Lines: 100.00% ( 18/ 18)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostBookingResponse
+  Methods:  75.00% ( 6/ 8)   Lines:  66.67% (  8/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostBookingTripDetailResponse
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 12/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostHomeResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostPaymentPreferencesResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostPayoutsResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostPropertiesCalendarResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostPropertiesDetailResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostPropertiesResponse
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 12/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetHostPropertiesReviewResponse
+  Methods:  66.67% ( 4/ 6)   Lines:  55.56% (  5/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPrepaymentResponse
+  Methods: 100.00% (18/18)   Lines: 100.00% ( 27/ 27)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPriveBookingsResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPrivePropertyResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetProperlyExpenseIndexResponse
+  Methods: 100.00% (14/14)   Lines: 100.00% ( 21/ 21)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetProperlyExpenseResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPropertyPriceCalendarResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPropertyResponse
+  Methods: 100.00% (94/94)   Lines: 100.00% (141/141)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPropertyReviewsResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetPropertySimilarResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetRequestDetailResponse
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 12/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetRequestResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetRmAsHostLoginResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetRmHostListingResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetSearchPopularResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetSearchRecentResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetSearchResponse
+  Methods: 100.00% (16/16)   Lines: 100.00% ( 24/ 24)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetTravellerPrivePropertiesResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetTripDetailResponse
+  Methods: 100.00% (14/14)   Lines: 100.00% ( 21/ 21)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetTripReviewResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetTripsResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetUserGetrefererdetailsResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetUserPasswordResetCheckResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetUserPropertiesResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetUserRefertoearnResponse
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 12/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetUserResponse
+  Methods: 100.00% (70/70)   Lines: 100.00% (105/105)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\GetUserWishlistResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostBookingRequestCancelResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostBookingRequestEmailinvoiceResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostBookingRequestResendResponse
+  Methods: 100.00% (16/16)   Lines: 100.00% ( 24/ 24)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostBookingRequestResponse
+  Methods: 100.00% (20/20)   Lines: 100.00% ( 30/ 30)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostDeviceResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostDeviceTrafficsourceResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostHostLeadResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostHostPaymentPreferencesResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostMobileLoginResponse
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 12/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPriveLoginResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPriveRegisterResponse
+  Methods: 100.00% (12/12)   Lines: 100.00% ( 18/ 18)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPriveResetPasswordResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPriveSupportEmailResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostProperlyExpenseResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPropertyRatingResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPropertyReviewImageResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostPropertyReviewResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserAppfeedbackResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserLoginoldappuserResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserLogoutResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserPasswordResetResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserPictureResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserResponse
+  Methods: 100.00% (12/12)   Lines: 100.00% ( 18/ 18)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserVerifyMobileResponse
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 12/ 12)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PostUserWishlistResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutHostBookingStatusResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutHostPaymentPreferencesResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutHostPropertiesCalendarResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutHostPropertiesReviewResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutHostPropertiesStatusResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutMobileLoginResponse
+  Methods: 100.00% (10/10)   Lines: 100.00% ( 15/ 15)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutProperlyExpenseResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserCurrencyResponse
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  6/  6)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserDeleteResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserLastactiveUpdateResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserPasswordResetResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserPasswordResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserPasswordUpdateResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserResponse
+  Methods: 100.00% (66/66)   Lines: 100.00% ( 99/ 99)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserVerifyEmailResponse
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  3/  3)
+\App\Http\Response\v1_6\Models::App\Http\Response\v1_6\Models\PutUserVerifyMobileResponse
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% (  9/  9)
+\App\Jobs::App\Jobs\SendEmail
+  Methods:  33.33% ( 1/ 3)   Lines:  10.00% (  2/ 20)
+\App\Jobs::App\Jobs\SendSms
+  Methods:  33.33% ( 1/ 3)   Lines:  27.78% (  5/ 18)
+\App\Libraries::App\Libraries\ApiResponse
+  Methods:  64.29% ( 9/14)   Lines:  67.24% ( 39/ 58)
+\App\Libraries::App\Libraries\Email
+  Methods:  50.00% ( 1/ 2)   Lines:  57.89% ( 11/ 19)
+\App\Libraries::App\Libraries\Helper
+  Methods:  28.40% (23/81)   Lines:  38.41% (411/1070)
+\App\Libraries\v1_6::App\Libraries\v1_6\AwsService
+  Methods:  10.00% ( 1/10)   Lines:  16.44% ( 12/ 73)
+\App\Libraries\v1_6::App\Libraries\v1_6\BookingRequestService
+  Methods:  32.73% (18/55)   Lines:  57.36% (495/863)
+\App\Libraries\v1_6::App\Libraries\v1_6\CollectionService
+  Methods:   0.00% ( 0/ 1)   Lines:  99.39% (164/165)
+\App\Libraries\v1_6::App\Libraries\v1_6\CouponService
+  Methods:   0.00% ( 0/ 4)   Lines:  18.00% ( 27/150)
+\App\Libraries\v1_6::App\Libraries\v1_6\EmailService
+  Methods:   3.57% ( 1/28)   Lines:  77.50% (372/480)
+\App\Libraries\v1_6::App\Libraries\v1_6\FbShare
+  Methods:   0.00% ( 0/ 1)   Lines:  75.00% (  3/  4)
+\App\Libraries\v1_6::App\Libraries\v1_6\FilterService
+  Methods:   0.00% ( 0/ 1)   Lines:  43.64% ( 24/ 55)
+\App\Libraries\v1_6::App\Libraries\v1_6\HomeService
+  Methods:  25.00% ( 1/ 4)   Lines:  86.67% (104/120)
+\App\Libraries\v1_6::App\Libraries\v1_6\InvoiceService
+  Methods:  50.00% ( 3/ 6)   Lines:  79.51% (194/244)
+\App\Libraries\v1_6::App\Libraries\v1_6\OfferService
+  Methods:   4.35% ( 1/23)   Lines:   4.35% (  2/ 46)
+\App\Libraries\v1_6::App\Libraries\v1_6\PaymentMethodService
+  Methods:  72.73% ( 8/11)   Lines:  82.18% ( 83/101)
+\App\Libraries\v1_6::App\Libraries\v1_6\ProperlyService
+  Methods:  50.00% ( 7/14)   Lines:  56.20% ( 77/137)
+\App\Libraries\v1_6::App\Libraries\v1_6\PropertyPricingService
+  Methods:  14.29% ( 1/ 7)   Lines:  67.83% (409/603)
+\App\Libraries\v1_6::App\Libraries\v1_6\PropertyService
+  Methods:   8.82% ( 3/34)   Lines:  23.49% (171/728)
+\App\Libraries\v1_6::App\Libraries\v1_6\PropertyTileService
+  Methods:  55.56% ( 5/ 9)   Lines:  61.09% (157/257)
+\App\Libraries\v1_6::App\Libraries\v1_6\PushNotificationService
+  Methods:   0.00% ( 0/13)   Lines:  45.65% ( 84/184)
+\App\Libraries\v1_6::App\Libraries\v1_6\RecentlyViewedService
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (123/123)
+\App\Libraries\v1_6::App\Libraries\v1_6\SearchService
+  Methods:   0.00% ( 0/16)   Lines:  41.01% (251/612)
+\App\Libraries\v1_6::App\Libraries\v1_6\SimilarListingService
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% ( 47/ 47)
+\App\Libraries\v1_6::App\Libraries\v1_6\SmsService
+  Methods:   4.35% ( 1/23)   Lines:  76.57% (134/175)
+\App\Libraries\v1_6::App\Libraries\v1_6\UserService
+  Methods:  67.86% (19/28)   Lines:  78.29% (137/175)
+\App\Models::App\Models\Amenity
+  Methods:  33.33% ( 2/ 6)   Lines:  58.14% ( 25/ 43)
+\App\Models::App\Models\Booking
+  Methods:  15.00% ( 3/20)   Lines:   7.64% ( 42/550)
+\App\Models::App\Models\BookingCancellationReason
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  7/  7)
+\App\Models::App\Models\BookingRequest
+  Methods:  44.44% (20/45)   Lines:  51.77% (468/904)
+\App\Models::App\Models\BookingReview
+  Methods:   0.00% ( 0/ 2)   Lines:  71.43% ( 10/ 14)
+\App\Models::App\Models\CancellationPolicy
+  Methods:  50.00% ( 1/ 2)   Lines:  20.00% (  2/ 10)
+\App\Models::App\Models\CancellationReasonDetails
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  2/  2)
+\App\Models::App\Models\ChannelManagerProperties
+  Methods:   0.00% ( 0/ 3)   Lines:  40.00% (  4/ 10)
+\App\Models::App\Models\Collection
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 51/ 51)
+\App\Models::App\Models\CountryCodeMapping
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 15/ 15)
+\App\Models::App\Models\CurrencyConversion
+  Methods:  50.00% ( 1/ 2)   Lines:  90.00% (  9/ 10)
+\App\Models::App\Models\HomeBanner
+  Methods:  28.57% ( 2/ 7)   Lines:  10.00% (  2/ 20)
+\App\Models::App\Models\HomeWidget
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
+\App\Models::App\Models\HostConversionLead
+  Methods:  33.33% ( 1/ 3)   Lines:  52.63% ( 10/ 19)
+\App\Models::App\Models\InventoryPricing
+  Methods:  20.00% ( 1/ 5)   Lines:  57.30% ( 51/ 89)
+\App\Models::App\Models\MobileAppDevice
+  Methods:  50.00% ( 3/ 6)   Lines:  66.67% ( 12/ 18)
+\App\Models::App\Models\MyFavourite
+  Methods:  50.00% ( 3/ 6)   Lines:  94.55% ( 52/ 55)
+\App\Models::App\Models\NeighbourhoodAttractions
+  Methods:   0.00% ( 0/ 1)   Lines:  90.91% ( 10/ 11)
+\App\Models::App\Models\OfferBanner
+  Methods:   0.00% ( 0/ 8)   Lines:  13.95% (  6/ 43)
+\App\Models::App\Models\OtpContact
+  Methods:  16.67% ( 1/ 6)   Lines:  84.62% ( 33/ 39)
+\App\Models::App\Models\PasswordReminder
+  Methods:  60.00% ( 3/ 5)   Lines:  88.89% ( 24/ 27)
+\App\Models::App\Models\PaymentGateway
+  Methods:  25.00% ( 2/ 8)   Lines:   2.08% (  2/ 96)
+\App\Models::App\Models\PaymentTracking
+  Methods:   0.00% ( 0/ 4)   Lines:  29.17% (  7/ 24)
+\App\Models::App\Models\PayoutTransactions
+  Methods:  25.00% ( 1/ 4)   Lines:  78.85% ( 41/ 52)
+\App\Models::App\Models\PopularSearch
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+\App\Models::App\Models\PriveManagerTagging
+  Methods:   0.00% ( 0/ 1)   Lines:  75.00% (  3/  4)
+\App\Models::App\Models\ProperlyExpense
+  Methods:  50.00% ( 3/ 6)   Lines:  94.29% ( 66/ 70)
+\App\Models::App\Models\ProperlyExpenseType
+  Methods:   0.00% ( 0/ 2)   Lines:  81.82% (  9/ 11)
+\App\Models::App\Models\Property
+  Methods:  38.10% (16/42)   Lines:  58.40% (431/738)
+\App\Models::App\Models\PropertyDetail
+  Methods:   0.00% ( 0/ 4)   Lines:  48.21% ( 27/ 56)
+\App\Models::App\Models\PropertyImage
+  Methods:  66.67% ( 4/ 6)   Lines:  48.94% ( 23/ 47)
+\App\Models::App\Models\PropertyReview
+  Methods:  62.50% ( 5/ 8)   Lines:  93.55% ( 87/ 93)
+\App\Models::App\Models\PropertyTagMapping
+  Methods:  16.67% ( 1/ 6)   Lines:  46.15% ( 18/ 39)
+\App\Models::App\Models\PropertyTileStat
+  Methods:   0.00% ( 0/ 1)   Lines:  80.00% (  4/  5)
+\App\Models::App\Models\PropertyType
+  Methods:  66.67% ( 4/ 6)   Lines:  63.79% ( 37/ 58)
+\App\Models::App\Models\PropertyVideo
+  Methods:  20.00% ( 1/ 5)   Lines:  34.38% ( 11/ 32)
+\App\Models::App\Models\PropertyView
+  Methods:   0.00% ( 0/ 2)   Lines:  43.08% ( 28/ 65)
+\App\Models::App\Models\RatingParams
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+\App\Models::App\Models\RefundRequest
+  Methods:  33.33% ( 1/ 3)   Lines:  43.75% ( 21/ 48)
+\App\Models::App\Models\RelationshipManager
+  Methods:  66.67% ( 2/ 3)   Lines:  61.54% (  8/ 13)
+\App\Models::App\Models\RequestRejections
+  Methods:  50.00% ( 1/ 2)   Lines:  87.50% (  7/  8)
+\App\Models::App\Models\SmartDiscount
+  Methods:   0.00% ( 0/ 4)   Lines:   9.09% (  6/ 66)
+\App\Models::App\Models\TrafficData
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% ( 11/ 11)
+\App\Models::App\Models\TrafficSource
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  7/  7)
+\App\Models::App\Models\TravellerRating
+  Methods:  66.67% ( 2/ 3)   Lines:  81.25% ( 13/ 16)
+\App\Models::App\Models\UpdateEmail
+  Methods:  66.67% ( 2/ 3)   Lines:  11.11% (  2/ 18)
+\App\Models::App\Models\User
+  Methods:  31.91% (15/47)   Lines:  58.47% (207/354)
+\App\Models::App\Models\UserBillingInfo
+  Methods:  33.33% ( 1/ 3)   Lines:  85.71% ( 60/ 70)
+\App\Models::App\Models\WalletTransaction
+  Methods:   0.00% ( 0/ 7)   Lines:  35.71% ( 65/182)
+\App\Providers::App\Providers\AppServiceProvider
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  9/  9)
+\App\Providers::App\Providers\FormRequestServiceProvider
+  Methods: 100.00% ( 3/ 3)   Lines: 100.00% ( 21/ 21)
+\App\Traits::FactoryHelper
+  Methods:  87.88% (29/33)   Lines:  96.62% (143/148)
+\App\Traits::PassportToken
+  Methods:  80.00% ( 4/ 5)   Lines:  88.57% ( 31/ 35)

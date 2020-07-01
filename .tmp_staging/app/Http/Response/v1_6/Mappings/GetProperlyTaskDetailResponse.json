@@ -1,0 +1,170 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetProperlyTaskDetailResponse",
+        "definition": "GetProperlyTaskDetailResponse",
+        "description": "GetProperlyTaskDetailResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "task_section",
+            "type": "object",
+            "description": "Property Task Section",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "task_hash_id",
+                    "type": "string",
+                    "description": "Property Task Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "entity_hash_id",
+                    "type": "string",
+                    "description": "Property Entity Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "task_status",
+                    "type": "object",
+                    "description": "Property Task Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Property Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "color_code",
+                            "type": "string",
+                            "description": "Property Color Code",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "task_type",
+                    "type": "string",
+                    "description": "Property Task Type",
+                    "default": ""
+                },
+                {
+                    "name": "task_date",
+                    "type": "string",
+                    "description": "Property Task Date",
+                    "default": ""
+                },
+                {
+                    "name": "task_time",
+                    "type": "string",
+                    "description": "Property Task Time",
+                    "default": ""
+                },
+                {
+                    "name": "task_date_time_formatted",
+                    "type": "string",
+                    "description": "Property Task Date Time Formatted",
+                    "default": ""
+                },
+                {
+                    "name": "traveller_name",
+                    "type": "string",
+                    "description": "Property Traveller Name",
+                    "default": ""
+                },
+                {
+                    "name": "assigned_to",
+                    "type": "string",
+                    "description": "Property Assigned To",
+                    "default": ""
+                },
+                {
+                    "name": "guests",
+                    "type": "integer",
+                    "description": "Property Guests",
+                    "default": "0"
+                },
+                {
+                    "name": "reccuring_type",
+                    "type": "string",
+                    "description": "Property Reccuring Type",
+                    "default": ""
+                },
+                {
+                    "name": "can_update",
+                    "type": "integer",
+                    "description": "Property Can Update",
+                    "default": "0"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "description": "Property Description",
+                    "default": ""
+                },
+                {
+                    "name": "can_status_edit",
+                    "type": "integer",
+                    "description": "Property Can Status Edit",
+                    "default": "0"
+                },
+                {
+                    "name": "can_desc_edit",
+                    "type": "integer",
+                    "description": "Property Can Desc Edit",
+                    "default": "0"
+                },
+                {
+                    "name": "can_allocate",
+                    "type": "integer",
+                    "description": "Property Can Allocate",
+                    "default": "0"
+                },
+                {
+                    "name": "can_time_edit",
+                    "type": "integer",
+                    "description": "Property Can Time Edit",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "assigned_to",
+            "type": "array",
+            "description": "Property Assigned To",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "Property Id",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Property Name",
+                    "default": ""
+                },
+                {
+                    "name": "role",
+                    "type": "string",
+                    "description": "Property Role",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

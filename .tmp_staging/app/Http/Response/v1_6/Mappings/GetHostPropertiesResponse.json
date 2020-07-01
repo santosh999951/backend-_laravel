@@ -1,0 +1,284 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetHostPropertiesResponse",
+        "definition": "GetHostPropertiesResponse",
+        "description": "Properties list of host response",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "properties",
+            "type": "array",
+            "description": "Properties",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "property_id",
+                    "type": "integer",
+                    "description": "Property Property Id",
+                    "default": "0"
+                },
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "property_type",
+                    "type": "string",
+                    "description": "Property Property Type",
+                    "default": ""
+                },
+                {
+                    "name": "room_type",
+                    "type": "string",
+                    "description": "Property Room Type",
+                    "default": ""
+                },
+                {
+                    "name": "property_score",
+                    "type": "integer",
+                    "description": "Property Score",
+                    "default": "0"
+                },
+                {
+                    "name": "host_name",
+                    "type": "string",
+                    "description": "Property Host Name",
+                    "default": ""
+                },
+                {
+                    "name": "host_image",
+                    "type": "string",
+                    "description": "Property Host Image",
+                    "default": ""
+                },
+                {
+                    "name": "location",
+                    "type": "object",
+                    "description": "Location",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "area",
+                            "type": "string",
+                            "description": "Location Area",
+                            "default": ""
+                        },
+                        {
+                            "name": "city",
+                            "type": "string",
+                            "description": "Location City",
+                            "default": ""
+                        },
+                        {
+                            "name": "state",
+                            "type": "string",
+                            "description": "Location State",
+                            "default": ""
+                        },
+                        {
+                            "name": "country",
+                            "type": "object",
+                            "description": "Location Country",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "name",
+                                    "type": "string",
+                                    "description": "Country Name",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "ccode",
+                                    "type": "string",
+                                    "description": "Country Ccode",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "location_name",
+                            "type": "string",
+                            "description": "Location Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "latitude",
+                            "type": "string",
+                            "description": "Latitude",
+                            "default": ""
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "string",
+                            "description": "Longitude",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Property modified Title",
+                    "default": ""
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Original Title",
+                    "default": ""
+                },
+                {
+                    "name": "property_images",
+                    "type": "array",
+                    "description": "Property Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image url",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Images Caption",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Property Url",
+                    "default": ""
+                },
+                {
+                    "name": "last_updated",
+                    "type": "string",
+                    "description": "Last Updated",
+                    "default": ""
+                },
+                {
+                    "name": "show_manage_calender",
+                    "type": "integer",
+                    "description": "Show Manage Calender Button Status",
+                    "default": "0"
+                },
+                {
+                    "name": "property_status",
+                    "type": "string",
+                    "description": "Property Status Text",
+                    "default": ""
+                },
+                {
+                    "name": "property_enable",
+                    "type": "integer",
+                    "description": "Property Enable Status Eg. 0 for Offline, 1 for Online",
+                    "default": "0"
+                },
+                {
+                    "name": "prices",
+                    "type": "object",
+                    "description": "Property Prices",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "currency",
+                            "type": "object",
+                            "description": "Currency",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "webicon",
+                                    "type": "string",
+                                    "description": "Webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "non-webicon",
+                                    "type": "string",
+                                    "description": "Non-webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "iso_code",
+                                    "type": "string",
+                                    "description": "Iso Code",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "per_night_price",
+                            "type": "integer",
+                            "description": "Per Night Price",
+                            "default": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cities",
+            "type": "array",
+            "default": "[]",
+            "description": "Cities",
+            "children": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "City",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "status_list",
+            "type": "array",
+            "default": "[]",
+            "description": "Status List",
+            "children": [
+                {
+                    "name": "status",
+                    "type": "integer",
+                    "description": "Status",
+                    "default": "0"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "Text",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "property_types",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Types",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

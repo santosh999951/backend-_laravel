@@ -1,0 +1,60 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveHomeGraphResponse",
+        "definition": "GetPriveHomeGraphResponse",
+        "description": "GetPriveHomeGraphResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "graph_data",
+            "type": "array",
+            "description": "Graph Data",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "month",
+                    "type": "string",
+                    "description": "Month",
+                    "default": ""
+                },
+                {
+                    "name": "total_income",
+                    "type": "string",
+                    "description": "Total Income",
+                    "default": ""
+                },
+                {
+                    "name": "total_nights_booked",
+                    "type": "string",
+                    "description": "Total Nights Booked",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "filter",
+            "type": "object",
+            "default": "{}",
+            "description": "Filter",
+            "children": [
+                {
+                    "name": "month_year_from",
+                    "type": "string",
+                    "description": "Month Year From",
+                    "default": ""
+                },
+                {
+                    "name": "month_year_to",
+                    "type": "string",
+                    "description": "Month Year To",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,557 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetHostPropertyListingDetailResponse",
+        "definition": "GetHostPropertyListingDetailResponse",
+        "description": "Get Host Property Listing Details Dats",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "property_details",
+            "type": "object",
+            "default": "{}",
+            "description": "Property Details",
+            "children": [
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "string",
+                    "description": "Units",
+                    "default": ""
+                },
+                {
+                    "name": "accomodation",
+                    "type": "string",
+                    "description": "Accomodation",
+                    "default": ""
+                },
+                {
+                    "name": "additional_guest_count",
+                    "type": "integer",
+                    "description": "Additional Guest Count",
+                    "default": "0"
+                },
+                {
+                    "name": "bedrooms",
+                    "type": "string",
+                    "description": "Bedrooms",
+                    "default": ""
+                },
+                {
+                    "name": "beds",
+                    "type": "string",
+                    "description": "Beds",
+                    "default": ""
+                },
+                {
+                    "name": "bathrooms",
+                    "type": "string",
+                    "description": "Bathrooms",
+                    "default": ""
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "noc_status",
+                    "type": "integer",
+                    "description": "Noc Status",
+                    "default": "0"
+                },
+                {
+                    "name": "min_nights",
+                    "type": "integer",
+                    "description": "Min Nights",
+                    "default": "0"
+                },
+                {
+                    "name": "max_nights",
+                    "type": "integer",
+                    "description": "Max Nights",
+                    "default": "0"
+                },
+                {
+                    "name": "check_in",
+                    "type": "string",
+                    "description": "Check In",
+                    "default": ""
+                },
+                {
+                    "name": "check_out",
+                    "type": "string",
+                    "description": "Check Out",
+                    "default": ""
+                },
+                {
+                    "name": "cleaning_mode",
+                    "type": "integer",
+                    "description": "Cleaning Mode",
+                    "default": "0"
+                },
+                {
+                    "name": "location",
+                    "type": "object",
+                    "description": "Property Location",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "address",
+                            "type": "string",
+                            "description": "Address",
+                            "default": ""
+                        },
+                        {
+                            "name": "area",
+                            "type": "string",
+                            "description": "Area",
+                            "default": ""
+                        },
+                        {
+                            "name": "city",
+                            "type": "string",
+                            "description": "City",
+                            "default": ""
+                        },
+                        {
+                            "name": "state",
+                            "type": "string",
+                            "description": "State",
+                            "default": ""
+                        },
+                        {
+                            "name": "country",
+                            "type": "object",
+                            "description": "Country",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "name",
+                                    "type": "string",
+                                    "description": "Country Name",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "ccode",
+                                    "type": "string",
+                                    "description": "Country Ccode",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "zipcode",
+                            "type": "string",
+                            "description": "Property Zipcode",
+                            "default": ""
+                        },
+                        {
+                            "name": "latitude",
+                            "type": "string",
+                            "description": "Property Latitude",
+                            "default": ""
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "string",
+                            "description": "Property Longitude",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "prices",
+                    "type": "object",
+                    "description": "Property Prices",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "currency",
+                            "type": "object",
+                            "description": "Pricing Currency",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "webicon",
+                                    "type": "string",
+                                    "description": "Currency Webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "non-webicon",
+                                    "type": "string",
+                                    "description": "Currency Non-webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "iso_code",
+                                    "type": "string",
+                                    "description": "Currency Iso Code",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "per_night_price",
+                            "type": "integer",
+                            "description": "Property Per Night Price",
+                            "default": "0"
+                        },
+                        {
+                            "name": "per_week_price",
+                            "type": "integer",
+                            "description": "Property Per Week Price",
+                            "default": "0"
+                        },
+                        {
+                            "name": "per_month_price",
+                            "type": "integer",
+                            "description": "Property Per Month Price",
+                            "default": "0"
+                        },
+                        {
+                            "name": "additional_guest_fee",
+                            "type": "integer",
+                            "description": "Property Additional Guest Fee",
+                            "default": "0"
+                        },
+                        {
+                            "name": "gh_commission",
+                            "type": "string",
+                            "description": "Property Gh Commission",
+                            "default": ""
+                        },
+                        {
+                            "name": "markup_service_fee",
+                            "type": "integer",
+                            "description": "Property Markup Service Fee",
+                            "default": "0"
+                        },
+                        {
+                            "name": "cleaning_fee",
+                            "type": "integer",
+                            "description": "Property Cleaning Fee",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "last_update",
+                    "type": "string",
+                    "description": "Property Last Updated Time",
+                    "default": ""
+                },
+                {
+                    "name": "enabled",
+                    "type": "integer",
+                    "description": "Property Enabled status",
+                    "default": "0"
+                },
+                {
+                    "name": "status",
+                    "type": "integer",
+                    "description": "Property Listing Status",
+                    "default": "0"
+                },
+                {
+                    "name": "gstin",
+                    "type": "string",
+                    "description": "GST Number",
+                    "default": ""
+                },
+                {
+                    "name": "video_link",
+                    "type": "string",
+                    "description": "Property Video Link",
+                    "default": ""
+                },
+                {
+                    "name": "property_images",
+                    "type": "array",
+                    "description": "Property Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image url",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Image Caption",
+                            "default": ""
+                        },
+                        {
+                            "name": "is_hide",
+                            "type": "integer",
+                            "description": "Image Is Hide Status",
+                            "default": "0"
+                        },
+                        {
+                            "name": "unlink",
+                            "type": "integer",
+                            "description": "Image Unlink status",
+                            "default": "0"
+                        },
+                        {
+                            "name": "order",
+                            "type": "integer",
+                            "description": "Image Order",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "properties_videos",
+                    "type": "array",
+                    "description": "Properties Videos",
+                    "default": "[]",
+                    "children": []
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Property Url",
+                    "default": ""
+                },
+                {
+                    "name": "details",
+                    "type": "object",
+                    "description": "Property Details",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "policy_services",
+                            "type": "string",
+                            "description": "Policy Services",
+                            "default": ""
+                        },
+                        {
+                            "name": "your_space",
+                            "type": "string",
+                            "description": "Your Space",
+                            "default": ""
+                        },
+                        {
+                            "name": "house_rule",
+                            "type": "string",
+                            "description": "House Rule",
+                            "default": ""
+                        },
+                        {
+                            "name": "guest_brief",
+                            "type": "string",
+                            "description": "Guest Brief",
+                            "default": ""
+                        },
+                        {
+                            "name": "interaction_with_guest",
+                            "type": "string",
+                            "description": "Interaction With Guest",
+                            "default": ""
+                        },
+                        {
+                            "name": "local_experience",
+                            "type": "string",
+                            "description": "Local Experience",
+                            "default": ""
+                        },
+                        {
+                            "name": "from_airport",
+                            "type": "string",
+                            "description": "From Airport",
+                            "default": ""
+                        },
+                        {
+                            "name": "train_station",
+                            "type": "string",
+                            "description": "Train Station",
+                            "default": ""
+                        },
+                        {
+                            "name": "bus_station",
+                            "type": "string",
+                            "description": "Bus Station",
+                            "default": ""
+                        },
+                        {
+                            "name": "extra_detail",
+                            "type": "string",
+                            "description": "Extra Detail",
+                            "default": ""
+                        },
+                        {
+                            "name": "usp",
+                            "type": "string",
+                            "description": "Usp",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "property_types",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Types",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Selected",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "room_types",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Room Types",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Selected",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "tags",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Tags",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Selected",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "amenities",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Amenities",
+            "children": [
+                {
+                    "name": "cat_id",
+                    "type": "integer",
+                    "description": "Property Cat Id",
+                    "default": "0"
+                },
+                {
+                    "name": "category_name",
+                    "type": "string",
+                    "description": "Property Category Name",
+                    "default": ""
+                },
+                {
+                    "name": "amenities",
+                    "type": "array",
+                    "description": "Property Amenities",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "id",
+                            "type": "integer",
+                            "description": "Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Selected",
+                            "default": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cancelation_policy",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Cancelation Policy",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Id",
+                    "default": "0"
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Title",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Selected",
+                    "default": "0"
+                }
+            ]
+        }
+    ]
+}

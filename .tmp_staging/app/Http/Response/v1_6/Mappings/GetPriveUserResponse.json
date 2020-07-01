@@ -1,0 +1,80 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveUserResponse",
+        "definition": "GetPriveUserResponse",
+        "description": "GetPriveUserResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "first_name",
+            "type": "string",
+            "description": "First Name",
+            "default": ""
+        },
+        {
+            "name": "last_name",
+            "type": "string",
+            "description": "Last Name",
+            "default": ""
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "description": "Email",
+            "default": ""
+        },
+        {
+            "name": "dial_code",
+            "type": "string",
+            "description": "Dial Code",
+            "default": ""
+        },
+        {
+            "name": "contact",
+            "type": "string",
+            "description": "Contact",
+            "default": ""
+        },
+        {
+            "name": "profile_image",
+            "type": "string",
+            "description": "Profile Image",
+            "default": ""
+        },
+        {
+            "name": "property_count",
+            "type": "integer",
+            "description": "Property Count",
+            "default": "0"
+        },
+        {
+            "name": "aadhar_card_no",
+            "type": "string",
+            "description": "Aadhar Card No",
+            "default": ""
+        },
+        {
+            "name": "pan_card_no",
+            "type": "string",
+            "description": "Pan Card No",
+            "default": ""
+        },
+        {
+            "name": "account_no",
+            "type": "string",
+            "description": "Account No",
+            "default": ""
+        },
+        {
+            "name": "ifsc_code",
+            "type": "string",
+            "description": "Ifsc Code",
+            "default": ""
+        }
+    ]
+}

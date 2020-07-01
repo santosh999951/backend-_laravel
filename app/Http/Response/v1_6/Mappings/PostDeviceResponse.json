@@ -1,0 +1,40 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PostDeviceResponse",
+    "definition": "PostDeviceResponse",
+    "description": "PostDeviceResponse",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "basic_info",
+      "type": "object",
+      "default": "{}",
+      "description": "Guesthouser Basic Info",
+      "children": [
+        {
+          "name": "properties_count",
+          "type": "string",
+          "description": "Properties Count",
+          "default": ""
+        },
+        {
+          "name": "cities_count",
+          "type": "string",
+          "description": "Property Cities Count",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Message Eg. Device successfully registered., Device successfully updated"
+    }
+  ]
+}

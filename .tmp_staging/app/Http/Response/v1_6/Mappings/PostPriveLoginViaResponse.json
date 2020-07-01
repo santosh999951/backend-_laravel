@@ -1,0 +1,32 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostPriveLoginViaResponse",
+        "definition": "PostPriveLoginViaResponse",
+        "description": "PostPriveLoginViaResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "type",
+            "type": "string",
+            "default": "",
+            "description": "Type"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        },
+        {
+            "name": "sms_sender_ids",
+            "type": "string",
+            "default": "",
+            "description": "Sms Sender Ids"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetProperlyExpenseAccordanceResponse",
+        "definition": "GetProperlyExpenseAccordanceResponse",
+        "description": "GetProperlyExpenseAccordanceResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "accordance",
+            "type": "array",
+            "description": "Accordance",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "month",
+                    "type": "string",
+                    "description": "Month",
+                    "default": ""
+                },
+                {
+                    "name": "formatted_month",
+                    "type": "string",
+                    "description": "Formatted Month",
+                    "default": ""
+                },
+                {
+                    "name": "pl",
+                    "type": "integer",
+                    "description": "Pl",
+                    "default": "0"
+                },
+                {
+                    "name": "pl_formatted",
+                    "type": "string",
+                    "description": "Pl Formatted",
+                    "default": ""
+                },
+                {
+                    "name": "percentage",
+                    "type": "string",
+                    "description": "Percentage",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "Type",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "accordance_month",
+            "type": "string",
+            "description": "Accordance Month",
+            "default": ""
+        },
+        {
+            "name": "property_title",
+            "type": "string",
+            "default": "",
+            "description": "Property Title"
+        }
+    ]
+}

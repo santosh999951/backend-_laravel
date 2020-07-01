@@ -1,0 +1,20 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutUserDeleteResponse",
+    "definition": "PutUserDeleteResponse",
+    "description": "Response Model for User Delete Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Response Message"
+    }
+  ]
+}

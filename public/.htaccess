@@ -1,0 +1,37 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    # ----------------------------------------------------------------------
+    # Allow loading of external fonts
+    # ----------------------------------------------------------------------
+    <FilesMatch "\.*">
+        <IfModule mod_headers.c>
+            SetEnvIf Origin "http(s)?://(www\.)?(guesthouser.com|msite.guesthouser.com|localhost:3006|localhost:8000|m.guesthouser.local|192.168.4.29:3006|192.168.10.25:3006|services.guesthouser.local)$" AccessControlAllowOrigin=$0
+            Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+            Header add Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+        </IfModule>
+    </FilesMatch>
+
+    Header add Access-Control-Allow-Headers "device_unique_id, Authorization"
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle Device Unique id Header
+    RewriteCond %{HTTP:device_unique_id} .
+    RewriteRule .* - [E=HTTP_DEVICE_UNIQUE_ID:%{HTTP:device-unique-id}]
+</IfModule>

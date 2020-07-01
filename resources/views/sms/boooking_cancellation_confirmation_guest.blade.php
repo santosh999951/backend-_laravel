@@ -1,0 +1,1 @@
+Hi, your cancellation request {{ $view_data['request_hash_id'] }} for the property {{ $view_data['property_title'] }} has been approved. Refund will be processed as per our cancellation policy.

@@ -1,0 +1,110 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPropertyPriceCalendarResponse",
+        "definition": "GetPropertyPriceCalendarResponse",
+        "description": "Response Model For Property Price Calendar Api",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "default",
+            "type": "object",
+            "description": "Default Property Inventory",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "currency",
+                    "type": "string",
+                    "description": "Property Currency",
+                    "default": ""
+                },
+                {
+                    "name": "price",
+                    "type": "string",
+                    "description": "Property Price",
+                    "default": ""
+                },
+                {
+                    "name": "is_available",
+                    "type": "integer",
+                    "description": "Property Is Available Status in 0,1",
+                    "default": "0"
+                },
+                {
+                    "name": "available_units",
+                    "type": "string",
+                    "description": "Number of Available Units",
+                    "default": ""
+                },
+                {
+                    "name": "min_nights",
+                    "type": "integer",
+                    "description": "Property Min Nights stay",
+                    "default": "0"
+                },
+                {
+                    "name": "max_nights",
+                    "type": "integer",
+                    "description": "Property Max Night stay",
+                    "default": "0"
+                },
+                {
+                    "name": "guests_per_unit",
+                    "type": "integer",
+                    "description": "Property Guests Per Unit",
+                    "default": "0"
+                },
+                {
+                    "name": "currency_plus_symbol",
+                    "type": "string",
+                    "description": "Currency Plus Symbol",
+                    "default": ""
+                },
+                {
+                    "name": "extra_guest_count",
+                    "type": "integer",
+                    "description": "Extra Guest Count",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "exception",
+            "type": "object",
+            "description": "Exceptional Data of Inventory where Price and Availability not same as default",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "2019-05-28",
+                    "type": "object",
+                    "description": "Property 2019-05-28",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "price",
+                            "type": "string",
+                            "description": "Property Price",
+                            "default": ""
+                        },
+                        {
+                            "name": "is_available",
+                            "type": "integer",
+                            "description": "Property Is Available",
+                            "default": "0"
+                        },
+                        {
+                            "name": "available_units",
+                            "type": "integer",
+                            "description": "Property Available Units",
+                            "default": "0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

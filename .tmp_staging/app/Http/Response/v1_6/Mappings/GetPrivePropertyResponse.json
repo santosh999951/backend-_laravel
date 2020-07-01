@@ -1,0 +1,90 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPrivePropertyResponse",
+        "definition": "GetPrivePropertyResponse",
+        "description": "GetPrivePropertyResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "properties",
+            "type": "array",
+            "description": "Properties",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "properties_images",
+                    "type": "array",
+                    "description": "Properties Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Caption",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Url",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "string",
+                    "description": "Units",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "City",
+                    "default": ""
+                },
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "State",
+                    "default": ""
+                },
+                {
+                    "name": "per_night_price",
+                    "type": "string",
+                    "description": "Per Night Price",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "total_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Total Count"
+        }
+    ]
+}

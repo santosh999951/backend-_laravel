@@ -1,0 +1,1 @@
+Hi, we are sorry to inform you that the booking request ({{ $view_data['request_hash_id'] }}) for property {{ $view_data['property_title'] }} has been cancelled by the guest.

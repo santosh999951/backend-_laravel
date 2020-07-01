@@ -1,0 +1,1 @@
+Yay! GuestHouser has added {{$view_data['amount_currency']}} {{$view_data['amount_added']}} to your wallet. Your current balance is {{$view_data['wallet_currency']}} {{$view_data['wallet_balance']}} and will expire on {{$view_data['expire_on']}}. Keep referring! 

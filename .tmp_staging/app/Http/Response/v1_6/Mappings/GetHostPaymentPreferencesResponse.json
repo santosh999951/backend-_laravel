@@ -1,0 +1,52 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetHostPaymentPreferencesResponse",
+    "definition": "GetHostPaymentPreferencesResponse",
+    "description": "GetHostPaymentPreferencesResponse",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "bank_details",
+      "type": "object",
+      "default": "{}",
+      "description": "Bank Details",
+      "children": [
+        {
+          "name": "payee_name",
+          "type": "string",
+          "description": "Payee Name",
+          "default": ""
+        },
+        {
+          "name": "bank_name",
+          "type": "string",
+          "description": "Bank Name",
+          "default": ""
+        },
+        {
+          "name": "branch_name",
+          "type": "string",
+          "description": "Branch Name",
+          "default": ""
+        },
+        {
+          "name": "account_number",
+          "type": "string",
+          "description": "Account Number",
+          "default": ""
+        },
+        {
+          "name": "ifsc_code",
+          "type": "string",
+          "description": "IFSC Code",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

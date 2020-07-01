@@ -1,0 +1,180 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetHostHomeResponse",
+        "definition": "GetHostHomeResponse",
+        "description": "Host Home Page Response",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "notification",
+            "type": "array",
+            "description": "Host Home page Notification for Bookings and Review by traveller",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "type",
+                    "type": "integer",
+                    "description": "Type of notification Eg. new_request, checkin_today, new_guest_review",
+                    "default": "0"
+                },
+                {
+                    "name": "count",
+                    "type": "integer",
+                    "description": "Count of notification",
+                    "default": "0"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "Text to show Eg. Requests awaiting your approval",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "upcoming_checkin",
+            "type": "object",
+            "description": "Upcoming Checkins of traveller",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "type",
+                    "type": "integer",
+                    "description": "Property Type",
+                    "default": "0"
+                },
+                {
+                    "name": "list",
+                    "type": "array",
+                    "description": "Property List",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "request_hash_id",
+                            "type": "string",
+                            "description": "Property Request Hash Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "property_hash_id",
+                            "type": "string",
+                            "description": "Property Property Hash Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "guest",
+                            "type": "integer",
+                            "description": "Property Guest",
+                            "default": "0"
+                        },
+                        {
+                            "name": "units_consumed",
+                            "type": "integer",
+                            "description": "Property Units Consumed",
+                            "default": "0"
+                        },
+                        {
+                            "name": "traveller_name",
+                            "type": "string",
+                            "description": "Property Traveller Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkin",
+                            "type": "string",
+                            "description": "Property Checkin",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkout",
+                            "type": "string",
+                            "description": "Property Checkout",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkin_formatted",
+                            "type": "string",
+                            "description": "Property Checkin Formatted",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkout_formatted",
+                            "type": "string",
+                            "description": "Property Checkout Formatted",
+                            "default": ""
+                        },
+                        {
+                            "name": "booking_status",
+                            "type": "object",
+                            "description": "Property Booking Status",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "text",
+                                    "type": "string",
+                                    "description": "Property Text",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "class",
+                                    "type": "string",
+                                    "description": "Property Class",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "color_code",
+                                    "type": "string",
+                                    "description": "Property Color Code",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "status",
+                                    "type": "integer",
+                                    "description": "Property Status",
+                                    "default": "0"
+                                },
+                                {
+                                    "name": "header_text",
+                                    "type": "string",
+                                    "description": "Property Header Text",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Property Text",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "booking_stats",
+            "type": "object",
+            "description": "Booking Stats",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "status",
+                    "type": "string",
+                    "description": "Booking stats Status Eg. up (when booking increased in current week), down (When booking decrease in current week)",
+                    "default": ""
+                },
+                {
+                    "name": "value",
+                    "type": "string",
+                    "description": "Booking stats Value Eg. 70%",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

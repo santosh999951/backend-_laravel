@@ -1,0 +1,38 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostMobileLoginResponse",
+        "definition": "PostMobileLoginResponse",
+        "description": "PostMobileLoginResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "dial_code",
+            "type": "integer",
+            "default": "0",
+            "description": "Dial Code"
+        },
+        {
+            "name": "contact",
+            "type": "integer",
+            "default": "0",
+            "description": "Contact"
+        },
+        {
+            "name": "sms_sender_ids",
+            "type": "string",
+            "default": "",
+            "description": "Sms Sender Ids"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "description": "Message",
+            "default": ""
+        }
+    ]
+}

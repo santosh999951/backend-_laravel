@@ -1,0 +1,46 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetRmHostListingResponse",
+        "definition": "GetRmHostListingResponse",
+        "description": "GetRmHostListingResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "host_list",
+            "type": "array",
+            "default": "[]",
+            "description": "Host List",
+            "children": [
+                {
+                    "name": "host_id",
+                    "type": "string",
+                    "description": "Host Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Host Name",
+                    "default": ""
+                },
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "Host Email",
+                    "default": ""
+                },
+                {
+                    "name": "property_count",
+                    "type": "integer",
+                    "description": "Host Property Count",
+                    "default": "0"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse",
+        "App\\Http\\Response\\v1_7\\Models\\Partial\\UserProfileResponse"
+    ],
+    "namespace": "App\\Http\\Response\\v1_7\\Models",
+    "class": {
+        "name": "PostLoginResponse",
+        "definition": "PostLoginResponse",
+        "description": "PostLoginResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "user_profile",
+            "type": "object",
+            "default": "{}",
+            "description": "Property User Profile"
+        },
+        {
+            "name": "token_type",
+            "type": "string",
+            "default": "",
+            "description": "Property Token Type"
+        },
+        {
+            "name": "expires_in",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Expires In"
+        },
+        {
+            "name": "access_token",
+            "type": "string",
+            "default": "",
+            "description": "Property Access Token"
+        },
+        {
+            "name": "refresh_token",
+            "type": "string",
+            "default": "",
+            "description": "Property Refresh Token"
+        }
+    ]
+}

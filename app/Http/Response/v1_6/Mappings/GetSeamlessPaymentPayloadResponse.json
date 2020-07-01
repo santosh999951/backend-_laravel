@@ -1,0 +1,145 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetSeamlessPaymentPayloadResponse",
+        "definition": "GetSeamlessPaymentPayloadResponse",
+        "description": "GetSeamlessPaymentPayloadResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "payload",
+            "type": "object",
+            "default": "{}",
+            "description": "Payment Payload",
+            "children": [
+                {
+                    "name": "action",
+                    "type": "string",
+                    "description": "Payment Action",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "Payload Key",
+                    "default": ""
+                },
+                {
+                    "name": "hash",
+                    "type": "string",
+                    "description": "Hash",
+                    "default": ""
+                },
+                {
+                    "name": "txnid",
+                    "type": "string",
+                    "description": "Txnid of payment",
+                    "default": ""
+                },
+                {
+                    "name": "amount",
+                    "type": "float",
+                    "description": "Payment Amount",
+                    "default": "0.0"
+                },
+                {
+                    "name": "firstname",
+                    "type": "string",
+                    "description": "Firstname",
+                    "default": ""
+                },
+                {
+                    "name": "lastname",
+                    "type": "string",
+                    "description": "Lastname",
+                    "default": ""
+                },
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "Email",
+                    "default": ""
+                },
+                {
+                    "name": "phone",
+                    "type": "string",
+                    "description": "Phone",
+                    "default": ""
+                },
+                {
+                    "name": "productinfo",
+                    "type": "integer",
+                    "description": "Productinfo",
+                    "default": "0"
+                },
+                {
+                    "name": "surl",
+                    "type": "string",
+                    "description": "Surl",
+                    "default": ""
+                },
+                {
+                    "name": "furl",
+                    "type": "string",
+                    "description": "Furl",
+                    "default": ""
+                },
+                {
+                    "name": "drop_category",
+                    "type": "string",
+                    "description": "Drop Category",
+                    "default": ""
+                },
+                {
+                    "name": "bankcode",
+                    "type": "string",
+                    "description": "Bankcode",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "extra_payload",
+            "type": "array",
+            "default": "[]",
+            "description": "Extra Payload",
+            "children": []
+        },
+        {
+            "name": "booking_info",
+            "type": "object",
+            "default": "{}",
+            "description": "Property Booking Info",
+            "children": [
+                {
+                    "name": "booking_status",
+                    "type": "integer",
+                    "description": "Property Booking Status",
+                    "default": "0"
+                },
+                {
+                    "name": "amount",
+                    "type": "float",
+                    "description": "Property Amount",
+                    "default": "0.0"
+                },
+                {
+                    "name": "currency",
+                    "type": "string",
+                    "description": "Property Currency",
+                    "default": ""
+                },
+                {
+                    "name": "gateway",
+                    "type": "string",
+                    "description": "Property Gateway",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

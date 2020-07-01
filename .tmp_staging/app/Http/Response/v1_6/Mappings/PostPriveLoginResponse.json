@@ -1,0 +1,132 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostPriveLoginResponse",
+        "definition": "PostPriveLoginResponse",
+        "description": "Response Model for Prive Owner Login",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "user_profile",
+            "type": "object",
+            "description": "User Profile Data",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Property Name",
+                    "default": ""
+                },
+                {
+                    "name": "profile_image",
+                    "type": "string",
+                    "description": "User Profile Image Url",
+                    "default": ""
+                },
+                {
+                    "name": "user_hash_id",
+                    "type": "string",
+                    "description": "User Hash Id",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "token_type",
+            "type": "string",
+            "description": "Token Type Eg. Bearer",
+            "default": ""
+        },
+        {
+            "name": "expires_in",
+            "type": "integer",
+            "description": "Token Expire Time",
+            "default": "0"
+        },
+        {
+            "name": "access_token",
+            "type": "string",
+            "description": "Access Token",
+            "default": ""
+        },
+        {
+            "name": "refresh_token",
+            "type": "string",
+            "description": "Refresh Token",
+            "default": ""
+        },
+        {
+            "name": "permissions",
+            "type": "object",
+            "default": "{}",
+            "description": "Permissions",
+            "children": [
+                {
+                    "name": "product",
+                    "type": "array",
+                    "description": "Product",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "id",
+                            "type": "integer",
+                            "description": "Permisssion Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Permisssion Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "permisssion_via",
+                            "type": "string",
+                            "description": "Permisssion Via",
+                            "default": ""
+                        },
+                        {
+                            "name": "role_id",
+                            "type": "integer",
+                            "description": "Role Id",
+                            "default": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "roles",
+            "type": "object",
+            "default": "{}",
+            "description": "User Roles",
+            "children": [
+                {
+                    "name": "product",
+                    "type": "array",
+                    "description": "Role product",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "id",
+                            "type": "integer",
+                            "description": "Role Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Role Name",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

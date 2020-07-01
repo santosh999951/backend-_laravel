@@ -1,0 +1,244 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetProperlyExpenseIndexResponse",
+        "definition": "GetProperlyExpenseIndexResponse",
+        "description": "GetProperlyExpenseIndexResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "expense",
+            "type": "array",
+            "default": "[]",
+            "description": "Expense",
+            "children": [
+                {
+                    "name": "expense_hash_id",
+                    "type": "string",
+                    "description": "Expense Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "expense_name",
+                    "type": "string",
+                    "description": "Expense Name",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "Type",
+                    "default": ""
+                },
+                {
+                    "name": "added_on",
+                    "type": "string",
+                    "description": "Added On",
+                    "default": ""
+                },
+                {
+                    "name": "basic_amount",
+                    "type": "string",
+                    "description": "Basic Amount",
+                    "default": ""
+                },
+                {
+                    "name": "nights_booked",
+                    "type": "string",
+                    "description": "Nights Booked",
+                    "default": ""
+                },
+                {
+                    "name": "total_amount",
+                    "type": "string",
+                    "description": "Total Amount",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "expense_distrubution",
+            "type": "object",
+            "default": "{}",
+            "description": "Expense Distribution",
+            "children": [
+                {
+                    "name": "distribution",
+                    "type": "array",
+                    "description": "Distribution",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "percentage",
+                            "type": "string",
+                            "description": "Percentage",
+                            "default": ""
+                        },
+                        {
+                            "name": "expense_name",
+                            "type": "string",
+                            "description": "Expense Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "unformatted_amount",
+                            "type": "string",
+                            "description": "Unformatted Amount",
+                            "default": ""
+                        },
+                        {
+                            "name": "amount",
+                            "type": "string",
+                            "description": "Amount",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "pl",
+                    "type": "object",
+                    "description": "Pl",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "payable_amount",
+                            "type": "string",
+                            "description": "Payable Amount",
+                            "default": ""
+                        },
+                        {
+                            "name": "ota_fees",
+                            "type": "string",
+                            "description": "Ota Fees",
+                            "default": ""
+                        },
+                        {
+                            "name": "host_fee",
+                            "type": "string",
+                            "description": "Host Fee",
+                            "default": ""
+                        },
+                        {
+                            "name": "expenses",
+                            "type": "string",
+                            "description": "Expenses",
+                            "default": ""
+                        },
+                        {
+                            "name": "pl_formatted",
+                            "type": "string",
+                            "description": "Pl Formatted",
+                            "default": ""
+                        },
+                        {
+                            "name": "accordance_to_last_pl",
+                            "type": "object",
+                            "description": "Accordance To Last Pl",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "percentage",
+                                    "type": "float",
+                                    "description": "Percentage",
+                                    "default": "0.0"
+                                },
+                                {
+                                    "name": "type",
+                                    "type": "string",
+                                    "description": "Type",
+                                    "default": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "expense_type",
+            "type": "array",
+            "default": "[]",
+            "description": "Expense Type",
+            "children": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "Type",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "suggestions",
+            "type": "array",
+            "default": "[]",
+            "description": "Suggestions",
+            "children": [
+                {
+                    "name": "expense_name",
+                    "type": "string",
+                    "description": "Expense Name",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "Type",
+                    "default": ""
+                },
+                {
+                    "name": "added_on",
+                    "type": "string",
+                    "description": "Added On",
+                    "default": ""
+                },
+                {
+                    "name": "basic_amount",
+                    "type": "string",
+                    "description": "Basic Amount",
+                    "default": ""
+                },
+                {
+                    "name": "nights_booked",
+                    "type": "integer",
+                    "description": "Nights Booked",
+                    "default": "0"
+                },
+                {
+                    "name": "total_amount",
+                    "type": "integer",
+                    "description": "Total Amount",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "property_title",
+            "type": "string",
+            "default": "",
+            "description": "Property Title"
+        },
+        {
+            "name": "property_live_date",
+            "type": "string",
+            "default": "",
+            "description": "Property Live Date"
+        },
+        {
+            "name": "total",
+            "type": "integer",
+            "default": "0",
+            "description": "Total"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetCountrycodesResponse",
+    "definition": "GetCountrycodesResponse",
+    "description": "Response Model for Country codes List Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "country_codes",
+      "type": "array",
+      "default": "[]",
+      "description": "Country Codes Data",
+      "children": [
+        {
+          "name": "country_code",
+          "type": "string",
+          "description": "Country Code",
+          "default": ""
+        },
+        {
+          "name": "country_name",
+          "type": "string",
+          "description": "Country Name",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

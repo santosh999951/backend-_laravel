@@ -1,0 +1,32 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetProperlyResendLoginAccessResponse",
+        "definition": "GetProperlyResendLoginAccessResponse",
+        "description": "GetProperlyResendLoginAccessResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "sms_sent",
+            "type": "integer",
+            "default": "0",
+            "description": "Sms Sent"
+        },
+        {
+            "name": "contact",
+            "type": "string",
+            "default": "",
+            "description": "User Contact"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        }
+    ]
+}

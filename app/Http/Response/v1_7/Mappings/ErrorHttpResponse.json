@@ -1,0 +1,53 @@
+{
+  "namespace": "App\\Http\\Response\\v1_7\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "ErrorHttpResponse",
+    "definition": "ErrorHttpResponse",
+    "description": "ErrorHttpResponse",
+    "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "status",
+      "type": "boolean",
+      "default": "false",
+      "description": "Error Status"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "default": "{}",
+      "description": "Error Data",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "array",
+      "default": "[]",
+      "description": "Error",
+      "children": [
+        {
+          "name": "code",
+          "type": "string",
+          "description": "Error Code",
+          "default": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "description": "Error Key",
+          "default": ""
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Error Message",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

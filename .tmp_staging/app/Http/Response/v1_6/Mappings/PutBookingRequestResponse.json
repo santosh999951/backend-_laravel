@@ -1,0 +1,50 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutBookingRequestResponse",
+    "definition": "PutBookingRequestResponse",
+    "description": "Response Models for Update Booking Request",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "valid",
+      "type": "integer",
+      "default": "0",
+      "description": "Status for Update Booking Request"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Message Eg. request_updated"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "default": "",
+      "description": "Request Hash Id"
+    },
+    {
+      "name": "instant_book",
+      "type": "integer",
+      "default": "0",
+      "description": "Instant Bookable status"
+    },
+    {
+      "name": "payment_url",
+      "type": "string",
+      "default": "",
+      "description": "Payment Url"
+    },
+    {
+      "name": "payment_gateway_method",
+      "type": "string",
+      "default": "",
+      "description": "Payment Gateway Method Eg. web, sdk"
+    }
+  ]
+}

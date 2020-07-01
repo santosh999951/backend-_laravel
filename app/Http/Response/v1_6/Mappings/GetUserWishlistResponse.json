@@ -1,0 +1,350 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetUserWishlistResponse",
+    "definition": "GetUserWishlistResponse",
+    "description": "Response Model For User Wishlist API",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "wishlist",
+      "type": "array",
+      "default": "[]",
+      "description": "User Wishlist Property List",
+      "children": [
+        {
+          "name": "property_id",
+          "type": "integer",
+          "description": "Property Id",
+          "default": "0"
+        },
+        {
+          "name": "property_hash_id",
+          "type": "string",
+          "description": "Property Hash Id",
+          "default": ""
+        },
+        {
+          "name": "property_score",
+          "type": "integer",
+          "description": "Property Score",
+          "default": "0"
+        },
+        {
+          "name": "property_type_name",
+          "type": "string",
+          "description": "Property Type Name",
+          "default": ""
+        },
+        {
+          "name": "room_type_name",
+          "type": "string",
+          "description": "Room Type Name",
+          "default": ""
+        },
+        {
+          "name": "host_name",
+          "type": "string",
+          "description": "Host Name",
+          "default": ""
+        },
+        {
+          "name": "host_image",
+          "type": "string",
+          "description": "Host Image",
+          "default": ""
+        },
+        {
+          "name": "location",
+          "type": "object",
+          "description": "Property Location",
+          "default": "{}",
+          "children": [
+            {
+              "name": "area",
+              "type": "string",
+              "description": "Location Area",
+              "default": ""
+            },
+            {
+              "name": "city",
+              "type": "string",
+              "description": "Location City",
+              "default": ""
+            },
+            {
+              "name": "state",
+              "type": "string",
+              "description": "Location State",
+              "default": ""
+            },
+            {
+              "name": "country",
+              "type": "object",
+              "description": "Location Country",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "name",
+                  "type": "string",
+                  "description": "Country Name",
+                  "default": ""
+                },
+                {
+                  "name": "ccode",
+                  "type": "string",
+                  "description": "Country Ccode",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "location_name",
+              "type": "string",
+              "description": "Location Name",
+              "default": ""
+            },
+            {
+              "name": "latitude",
+              "type": "string",
+              "description": "Latitude",
+              "default": ""
+            },
+            {
+              "name": "longitude",
+              "type": "string",
+              "description": "Longitude",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "accomodation",
+          "type": "integer",
+          "description": "Property Accomodation",
+          "default": "0"
+        },
+        {
+          "name": "min_units_required",
+          "type": "integer",
+          "description": "Property Min Units Required",
+          "default": "0"
+        },
+        {
+          "name": "total_accomodation",
+          "type": "integer",
+          "description": "Property Total Accomodation",
+          "default": "0"
+        },
+        {
+          "name": "is_liked_by_user",
+          "type": "integer",
+          "description": "Property Is Wishlisted By User Status",
+          "default": "0"
+        },
+        {
+          "name": "prices",
+          "type": "object",
+          "description": "Property Prices",
+          "default": "{}",
+          "children": [
+            {
+              "name": "display_discount",
+              "type": "integer",
+              "description": "Display Discount Value",
+              "default": "0"
+            },
+            {
+              "name": "smart_discount",
+              "type": "object",
+              "description": "Smart Discount Data",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "header",
+                  "type": "string",
+                  "description": "Header Text of Smart Discount",
+                  "default": ""
+                },
+                {
+                  "name": "discount",
+                  "type": "integer",
+                  "description": "Discount Value",
+                  "default": "0"
+                },
+                {
+                  "name": "footer",
+                  "type": "string",
+                  "description": "Footer Text of Smart Discount",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "final_currency",
+              "type": "object",
+              "description": "Final Currency",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "webicon",
+                  "type": "string",
+                  "description": "Currency Webicon",
+                  "default": ""
+                },
+                {
+                  "name": "non-webicon",
+                  "type": "string",
+                  "description": "Currency Non-webicon",
+                  "default": ""
+                },
+                {
+                  "name": "iso_code",
+                  "type": "string",
+                  "description": "Currency Iso Code",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "price_after_discount",
+              "type": "string",
+              "description": "Property Price After Discount",
+              "default": ""
+            },
+            {
+              "name": "price_after_discount_unformatted",
+              "type": "integer",
+              "description": "Property Price After Discount Unformatted",
+              "default": "0"
+            },
+            {
+              "name": "price_before_discount",
+              "type": "string",
+              "description": "Property Price Before Discount",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "payment_methods",
+          "type": "object",
+          "description": "Property Payment Methods",
+          "default": "{}",
+          "children": [
+            {
+              "name": "instant_book",
+              "type": "integer",
+              "description": "Instant Bookable status",
+              "default": "0"
+            },
+            {
+              "name": "cash_on_arrival",
+              "type": "integer",
+              "description": "Cash On Arrival status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Property Generated Title",
+          "default": ""
+        },
+        {
+          "name": "property_title",
+          "type": "string",
+          "description": "Property Original Title",
+          "default": ""
+        },
+        {
+          "name": "property_images",
+          "type": "array",
+          "description": "Property Images",
+          "default": "[]",
+          "children": [
+            {
+              "name": "image",
+              "type": "string",
+              "description": "Image Url",
+              "default": ""
+            },
+            {
+              "name": "caption",
+              "type": "string",
+              "description": "Image Caption",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "property_videos_available",
+          "type": "integer",
+          "description": "Property Videos Available",
+          "default": "0"
+        },
+        {
+          "name": "property_tags",
+          "type": "array",
+          "description": "Property Tags",
+          "default": "[]",
+          "children": [
+            {
+              "name": "id",
+              "type": "integer",
+              "description": "Tag Id",
+              "default": "0"
+            },
+            {
+              "name": "class",
+              "type": "string",
+              "description": "Tag Class",
+              "default": ""
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Tag Text",
+              "default": ""
+            },
+            {
+              "name": "colorRgb",
+              "type": "string",
+              "description": "Tag Color Code in Rgb Format Eg. (212, 134, 133)",
+              "default": ""
+            },
+            {
+              "name": "colorHex",
+              "type": "string",
+              "description": "Tag Color Code in Hex Format Eg. #F3F3F3",
+              "default": ""
+            },
+            {
+              "name": "textRgb",
+              "type": "string",
+              "description": "Tag Text Color Code in Rgb Format",
+              "default": ""
+            },
+            {
+              "name": "textHex",
+              "type": "string",
+              "description": "Tag Text Color Code in Hex Format",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Property Url",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

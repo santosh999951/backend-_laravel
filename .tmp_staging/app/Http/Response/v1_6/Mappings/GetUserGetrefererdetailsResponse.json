@@ -1,0 +1,44 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetUserGetrefererdetailsResponse",
+    "definition": "GetUserGetrefererdetailsResponse",
+    "description": "Response for User referer details Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "user_name",
+      "type": "string",
+      "default": "",
+      "description": "User Name"
+    },
+    {
+      "name": "user_image",
+      "type": "string",
+      "default": "",
+      "description": "User Image"
+    },
+    {
+      "name": "referral_code",
+      "type": "string",
+      "default": "",
+      "description": "Referral Code"
+    },
+    {
+      "name": "brief",
+      "type": "string",
+      "default": "",
+      "description": "Brief description"
+    },
+    {
+      "name": "detail",
+      "type": "string",
+      "default": "",
+      "description": "Detail"
+    }
+  ]
+}

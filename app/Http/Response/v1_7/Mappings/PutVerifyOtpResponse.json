@@ -1,0 +1,20 @@
+{
+    "namespace": "App\\Http\\Response\\v1_7\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PutVerifyOtpResponse",
+        "definition": "PutVerifyOtpResponse",
+        "description": "PutVerifyOtpResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        }
+    ]
+}

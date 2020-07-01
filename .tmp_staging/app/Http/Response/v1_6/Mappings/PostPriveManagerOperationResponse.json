@@ -1,0 +1,26 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostPriveManagerOperationResponse",
+        "definition": "PostPriveManagerOperationResponse",
+        "description": "Response Model for save prive booking operation data",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+         {
+            "name": "request_hash_id",
+            "type": "string",
+            "default": "",
+            "description": "Booking Request Hash Id"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "description": "Response Message",
+            "default": ""
+        }
+    ]
+}

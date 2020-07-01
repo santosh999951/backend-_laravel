@@ -1,0 +1,88 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetSearchSpotlightResponse",
+    "definition": "GetSearchSpotlightResponse",
+    "description": "Response Model for Spotlight Api Used in iOS",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "spotlight_list",
+      "type": "array",
+      "default": "[]",
+      "description": "Spotlight List",
+      "children": [
+        {
+          "name": "property_type_name",
+          "type": "string",
+          "description": "Property Type Name",
+          "default": ""
+        },
+        {
+          "name": "property_type",
+          "type": "integer",
+          "description": "Property Type",
+          "default": "0"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "Property State",
+          "default": ""
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "description": "Tag",
+          "default": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Title",
+          "default": ""
+        },
+        {
+          "name": "city",
+          "type": "string",
+          "description": "Property City",
+          "default": ""
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "description": "Property Country",
+          "default": ""
+        },
+        {
+          "name": "country_name",
+          "type": "string",
+          "description": "Property Country Name",
+          "default": ""
+        },
+        {
+          "name": "v_lat",
+          "type": "string",
+          "description": "Property Virtual Latitude",
+          "default": ""
+        },
+        {
+          "name": "v_lng",
+          "type": "string",
+          "description": "Property Virtual Longitude",
+          "default": ""
+        },
+        {
+          "name": "image_url",
+          "type": "string",
+          "description": "Property Image Url",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

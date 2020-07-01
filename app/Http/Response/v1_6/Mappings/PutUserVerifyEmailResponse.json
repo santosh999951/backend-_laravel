@@ -1,0 +1,20 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutUserVerifyEmailResponse",
+    "definition": "PutUserVerifyEmailResponse",
+    "description": "Response Model for verify user email using confirmation token",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Response Message"
+    }
+  ]
+}

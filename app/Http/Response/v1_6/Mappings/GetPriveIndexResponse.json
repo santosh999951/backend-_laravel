@@ -1,0 +1,286 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveIndexResponse",
+        "definition": "GetPriveIndexResponse",
+        "description": "GetPriveIndexResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "total_booked_nights",
+            "type": "string",
+            "description": "Total Booked Nights",
+            "default": ""
+        },
+        {
+            "name": "total_income",
+            "type": "string",
+            "description": "Total Income",
+            "default": ""
+        },
+        {
+            "name": "properties_count",
+            "type": "object",
+            "description": "Properties Count",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "total",
+                    "type": "integer",
+                    "description": "Total",
+                    "default": "0"
+                },
+                {
+                    "name": "active_properties",
+                    "type": "integer",
+                    "description": "Active Properties",
+                    "default": "0"
+                },
+                {
+                    "name": "inactive_properties",
+                    "type": "integer",
+                    "description": "Inactive Properties",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "graph_data",
+            "type": "array",
+            "description": "Graph Data",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "month",
+                    "type": "string",
+                    "description": "Month",
+                    "default": ""
+                },
+                {
+                    "name": "total_income",
+                    "type": "string",
+                    "description": "Total Income",
+                    "default": ""
+                },
+                {
+                    "name": "total_nights_booked",
+                    "type": "integer",
+                    "description": "Total Nights Booked",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "upcoming_bookings",
+            "type": "array",
+            "description": "Upcoming Bookings",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "request_hash_id",
+                    "type": "string",
+                    "description": "Request Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "guest_name",
+                    "type": "string",
+                    "description": "Guest Name",
+                    "default": ""
+                },
+                {
+                    "name": "guests",
+                    "type": "integer",
+                    "description": "Guests",
+                    "default": "0"
+                },
+                {
+                    "name": "amount",
+                    "type": "string",
+                    "description": "Amount",
+                    "default": ""
+                },
+                {
+                    "name": "booking_status",
+                    "type": "object",
+                    "description": "Booking Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "class",
+                            "type": "string",
+                            "description": "Class",
+                            "default": ""
+                        },
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Status",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "checkin",
+                    "type": "string",
+                    "description": "Checkin",
+                    "default": ""
+                },
+                {
+                    "name": "checkout",
+                    "type": "string",
+                    "description": "Checkout",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Title",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "integer",
+                    "description": "Units",
+                    "default": "0"
+                },
+                {
+                    "name": "room",
+                    "type": "integer",
+                    "description": "Room",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "properties",
+            "type": "array",
+            "description": "Properties",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Property Id",
+                    "default": "0"
+                },
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "properties_images",
+                    "type": "array",
+                    "description": "Properties Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Caption",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Url",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "string",
+                    "description": "Units",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "City",
+                    "default": ""
+                },
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "State",
+                    "default": ""
+                },
+                {
+                    "name": "per_night_price",
+                    "type": "string",
+                    "description": "Per Night Price",
+                    "default": ""
+                },
+                {
+                    "name": "status",
+                    "type": "integer",
+                    "description": "Status",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "property_list",
+            "type": "array",
+            "description": "Property List",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Property Id",
+                    "default": "0"
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "status",
+                    "type": "integer",
+                    "description": "Status",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "capital_investment",
+            "type": "string",
+            "default": "",
+            "description": "Property Capital Investment"
+        }
+    ]
+}

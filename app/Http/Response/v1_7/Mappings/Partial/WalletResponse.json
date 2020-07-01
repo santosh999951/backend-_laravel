@@ -1,0 +1,46 @@
+{
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    ],
+    "namespace": "App\\Http\\Response\\v1_7\\Models\\Partial",
+    "class": {
+        "name": "WalletResponse",
+        "definition": "WalletResponse",
+        "description": "WalletResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "balance",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Balance"
+        },
+        {
+            "name": "currency",
+            "type": "object",
+            "default": "{}",
+            "description": "Property Currency",
+            "children": [
+                {
+                    "name": "webicon",
+                    "type": "string",
+                    "description": "Property Webicon",
+                    "default": ""
+                },
+                {
+                    "name": "non-webicon",
+                    "type": "string",
+                    "description": "Property Non-webicon",
+                    "default": ""
+                },
+                {
+                    "name": "iso_code",
+                    "type": "string",
+                    "description": "Property Iso Code",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

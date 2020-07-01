@@ -1,0 +1,138 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetSeamlessPaymentOptionsResponse",
+        "definition": "GetSeamlessPaymentOptionsResponse",
+        "description": "GetSeamlessPaymentOptionsResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "action",
+            "type": "string",
+            "default": "",
+            "description": "Payment Action"
+        },
+        {
+            "name": "reason",
+            "type": "string",
+            "default": "",
+            "description": "Reason"
+        },
+        {
+            "name": "booking_status",
+            "type": "integer",
+            "default": "0",
+            "description": "Booking Status"
+        },
+        {
+            "name": "amount",
+            "type": "float",
+            "default": "0.0",
+            "description": "Payable Amount"
+        },
+        {
+            "name": "currency",
+            "type": "object",
+            "default": "{}",
+            "description": "Payment Currency",
+            "children": [
+                {
+                    "name": "webicon",
+                    "type": "string",
+                    "description": "Webicon",
+                    "default": ""
+                },
+                {
+                    "name": "non-webicon",
+                    "type": "string",
+                    "description": "Non-webicon",
+                    "default": ""
+                },
+                {
+                    "name": "iso_code",
+                    "type": "string",
+                    "description": "Iso Code",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "payment_method",
+            "type": "string",
+            "default": "",
+            "description": "Payment Method"
+        },
+        {
+            "name": "options",
+            "type": "object",
+            "default": "{}",
+            "description": "Payment Options",
+            "children": [
+                {
+                    "name": "debit_card",
+                    "type": "array",
+                    "description": "Debit Card",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Card Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "code",
+                            "type": "string",
+                            "description": "Card Code",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "credit_card",
+                    "type": "array",
+                    "description": "Credit Card",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Card Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "code",
+                            "type": "string",
+                            "description": "Card Code",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "netbanking",
+                    "type": "array",
+                    "description": "Netbanking",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Netbanking Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "code",
+                            "type": "string",
+                            "description": "Netbanking Code",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

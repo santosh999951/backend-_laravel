@@ -1,0 +1,38 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetUserRefertoearnResponse",
+    "definition": "GetUserRefertoearnResponse",
+    "description": "Response Model for User Refer to earn API",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "headline",
+      "type": "string",
+      "default": "",
+      "description": "Headline of Refer to earn"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "default": "",
+      "description": "Refer to earn Description"
+    },
+    {
+      "name": "referral_code",
+      "type": "string",
+      "default": "",
+      "description": "Referral Code"
+    },
+    {
+      "name": "refer_url",
+      "type": "string",
+      "default": "",
+      "description": "Refer Url"
+    }
+  ]
+}

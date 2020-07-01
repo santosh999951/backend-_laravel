@@ -1,0 +1,1 @@
+We have added {{$view_data['amount_currency']}} {{$view_data['amount_added']}} in your wallet for your accommodation review. The balance in your wallet as of {{$view_data['added_on_date']}} is {{$view_data['wallet_currency']}} {{$view_data['wallet_balance']}}

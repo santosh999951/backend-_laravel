@@ -1,0 +1,20 @@
+{
+    "namespace": "App\\Http\\Response\\v1_7\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetUserStatusResponse",
+        "definition": "GetUserStatusResponse",
+        "description": "GetUserStatusResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "status",
+            "type": "string",
+            "default": "",
+            "description": "User Status"
+        }
+    ]
+}

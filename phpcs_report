@@ -1,0 +1,17 @@
+
+PHP CODE SNIFFER REPORT SUMMARY
+----------------------------------------------------------------------
+FILE                                                  ERRORS  WARNINGS
+----------------------------------------------------------------------
+....tmp_staging/app/Console/Commands/CronMethods.php  117     1
+...esponse/v1_6/Models/GetCountryDetailsResponse.php  1       0
+.../guesthouser-api/.tmp_staging/app/Models/User.php  0       1
+.../www/guesthouser-api/.tmp_staging/routes/v1_7.php  1       0
+----------------------------------------------------------------------
+A TOTAL OF 119 ERRORS AND 2 WARNINGS WERE FOUND IN 4 FILES
+----------------------------------------------------------------------
+PHPCBF CAN FIX 104 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+Got errors. Generated at: 2020-01-15 16:08:29

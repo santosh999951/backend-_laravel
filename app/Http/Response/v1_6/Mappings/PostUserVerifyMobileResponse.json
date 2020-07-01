@@ -1,0 +1,38 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PostUserVerifyMobileResponse",
+    "definition": "PostUserVerifyMobileResponse",
+    "description": "Response model for User Mobile Vaerification",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "dial_code",
+      "type": "string",
+      "default": "",
+      "description": "Dial Code"
+    },
+    {
+      "name": "contact",
+      "type": "string",
+      "default": "",
+      "description": "Contact Number"
+    },
+    {
+      "name": "sms_sender_ids",
+      "type": "string",
+      "default": "",
+      "description": "Sms Sender Ids Eg. GHBOOK,GHHELP,GHVRFY,GSTHSR"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Response Message"
+    }
+  ]
+}

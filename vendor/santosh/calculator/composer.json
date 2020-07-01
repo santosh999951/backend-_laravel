@@ -1,0 +1,10 @@
+{
+    "name": "santosh/calculator",
+    "authors": [
+        {
+            "name": "santosh singhal",
+            "email": "singhalsantosh9@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,130 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetOfflineDiscoveryLeadFormListResponse",
+        "definition": "GetOfflineDiscoveryLeadFormListResponse",
+        "description": "GetOfflineDiscoveryLeadFormListResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "property_list",
+            "type": "array",
+            "default": "[]",
+            "description": "Lead Property Form Field List",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Property Type List Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Property Type Name",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Property Type Selected",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "room_type_list",
+            "type": "array",
+            "default": "[]",
+            "description": "Room Type List",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Room Type Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Room Type Name",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Room Type Selected",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "amenities",
+            "type": "array",
+            "default": "[]",
+            "description": "Amenities List",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Amenities Id",
+                    "default": "0"
+                },
+                {
+                    "name": "cat_id",
+                    "type": "integer",
+                    "description": "Category Id",
+                    "default": "0"
+                },
+                {
+                    "name": "category_name",
+                    "type": "string",
+                    "description": "Category Name",
+                    "default": ""
+                },
+                {
+                    "name": "amenity_name",
+                    "type": "string",
+                    "description": "Amenity Name",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "cancellation_policy",
+            "type": "array",
+            "default": "[]",
+            "description": "Cancellation Policy List",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Cancellation Policy Id",
+                    "default": "0"
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Cancellation Policy Title",
+                    "default": ""
+                },
+                {
+                    "name": "selected",
+                    "type": "integer",
+                    "description": "Cancellation Policy Selected",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        }
+    ]
+}

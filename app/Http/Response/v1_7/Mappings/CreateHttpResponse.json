@@ -1,0 +1,34 @@
+{
+  "namespace": "App\\Http\\Response\\v1_7\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "CreateHttpResponse",
+    "definition": "CreateHttpResponse",
+    "description": "CreateHttpResponse",
+    "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "status",
+      "type": "boolean",
+      "default": "false",
+      "description": "Create Status"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "default": "{}",
+      "description": "Create Data",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "array",
+      "default": "[]",
+      "description": "Create Error",
+      "children": []
+    }
+  ]
+}

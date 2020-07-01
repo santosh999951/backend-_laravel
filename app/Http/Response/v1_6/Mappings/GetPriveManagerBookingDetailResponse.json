@@ -1,0 +1,535 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveManagerBookingDetailResponse",
+        "definition": "Get Prive Manager Booking Detail Response",
+        "description": "Get prive manager booking details",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "property_section",
+            "type": "object",
+            "description": "Property Section",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "property_type",
+                    "type": "string",
+                    "description": "Property Type",
+                    "default": ""
+                },
+                {
+                    "name": "room_type",
+                    "type": "string",
+                    "description": "Room Type",
+                    "default": ""
+                },
+                {
+                    "name": "location",
+                    "type": "object",
+                    "description": "Location",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "area",
+                            "type": "string",
+                            "description": "Area",
+                            "default": ""
+                        },
+                        {
+                            "name": "city",
+                            "type": "string",
+                            "description": "City",
+                            "default": ""
+                        },
+                        {
+                            "name": "state",
+                            "type": "string",
+                            "description": "State",
+                            "default": ""
+                        },
+                        {
+                            "name": "country",
+                            "type": "object",
+                            "description": "Country",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "name",
+                                    "type": "string",
+                                    "description": "Name",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "ccode",
+                                    "type": "string",
+                                    "description": "Ccode",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "location_name",
+                            "type": "string",
+                            "description": "Location Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "latitude",
+                            "type": "string",
+                            "description": "Latitude",
+                            "default": ""
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "string",
+                            "description": "Longitude",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "property_images",
+                    "type": "array",
+                    "description": "Property Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image Url",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Image Caption",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Property Url",
+                    "default": ""
+                },
+                {
+                    "name": "amenities",
+                    "type": "array",
+                    "description": "Property Amenities",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "id",
+                            "type": "integer",
+                            "description": "Amenities Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Amenities Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "icon",
+                            "type": "string",
+                            "description": "Amenities Icon",
+                            "default": ""
+                        },
+                        {
+                            "name": "rank",
+                            "type": "integer",
+                            "description": "Amenities Rank",
+                            "default": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "booking_info_section",
+            "type": "object",
+            "description": "Booking Info Section",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "info",
+                    "type": "object",
+                    "description": "Booking Info",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "request_hash_id",
+                            "type": "string",
+                            "description": "Booking Request Hash Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "guests",
+                            "type": "integer",
+                            "description": "Booking Guests",
+                            "default": "0"
+                        },
+                        {
+                            "name": "extra_guest",
+                            "type": "integer",
+                            "description": "Booking Extra Guest",
+                            "default": "0"
+                        },
+                        {
+                            "name": "units",
+                            "type": "integer",
+                            "description": "Booking Units",
+                            "default": "0"
+                        },
+                        {
+                            "name": "bedroom",
+                            "type": "integer",
+                            "description": "Booking Bedroom",
+                            "default": "0"
+                        },
+                        {
+                            "name": "status",
+                            "type": "object",
+                            "description": "Checkedin Status",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "text",
+                                    "type": "string",
+                                    "description": "Text",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "class",
+                                    "type": "string",
+                                    "description": "Class",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "status",
+                                    "type": "integer",
+                                    "description": "Status",
+                                    "default": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "checkin",
+                            "type": "string",
+                            "description": "Checkin",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkout",
+                            "type": "string",
+                            "description": "Checkout",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkin_formatted",
+                            "type": "string",
+                            "description": "Checkin Formatted",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkout_formatted",
+                            "type": "string",
+                            "description": "Checkout Formatted",
+                            "default": ""
+                        },
+                        {
+                            "name": "guest_name",
+                            "type": "string",
+                            "description": "Guest Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "can_checkin",
+                            "type": "integer",
+                            "description": "Can Checkin",
+                            "default": "0"
+                        },
+                        {
+                            "name": "can_checkout",
+                            "type": "integer",
+                            "description": "Can Checkout",
+                            "default": "0"
+                        },
+                        {
+                            "name": "source",
+                            "type": "string",
+                            "description": "Booking Source",
+                            "default": ""
+                        },
+                        {
+                            "name": "checkin_data",
+                            "type": "object",
+                            "description": "Checkin Data",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "actual_checkin",
+                                    "type": "string",
+                                    "description": "Actual Checkin",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "actual_checkout",
+                                    "type": "string",
+                                    "description": "Actual Checkout",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "expected_checkin",
+                                    "type": "string",
+                                    "description": "Expected Checkin",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "expected_checkout",
+                                    "type": "string",
+                                    "description": "Expected Checkout",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "notes",
+                            "type": "object",
+                            "description": "Notes",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "managerial",
+                                    "type": "array",
+                                    "description": "Managerial",
+                                    "default": "[]",
+                                    "children": [
+                                        {
+                                            "name": "id",
+                                            "type": "integer",
+                                            "description": "Property Id",
+                                            "default": "0"
+                                        },
+                                        {
+                                            "name": "remark",
+                                            "type": "string",
+                                            "description": "Property Remark",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "type",
+                                            "type": "integer",
+                                            "description": "Property Type",
+                                            "default": "0"
+                                        },
+                                        {
+                                            "name": "last_updated_by",
+                                            "type": "string",
+                                            "description": "Last Updated By",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "last_updated ",
+                                            "type": "string",
+                                            "description": "Property Last Updated ",
+                                            "default": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "operational",
+                                    "type": "object",
+                                    "description": "Operational",
+                                    "default": "{}",
+                                    "children": [
+                                        {
+                                            "name": "note",
+                                            "type": "string",
+                                            "description": "Note",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "last_updated",
+                                            "type": "string",
+                                            "description": "Last Updated",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "last_updated_by",
+                                            "type": "string",
+                                            "description": "Last Updated By",
+                                            "default": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "traveller_email",
+                            "type": "string",
+                            "description": "Traveller Email",
+                            "default": ""
+                        },
+                        {
+                            "name": "contacts",
+                            "type": "object",
+                            "description": "Contacts",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "manager",
+                                    "type": "object",
+                                    "description": "Manager",
+                                    "default": "{}",
+                                    "children": [
+                                        {
+                                            "name": "primary",
+                                            "type": "string",
+                                            "description": "Primary",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "secondary",
+                                            "type": "string",
+                                            "description": "Secondary",
+                                            "default": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "traveller",
+                                    "type": "object",
+                                    "description": "Traveller",
+                                    "default": "{}",
+                                    "children": [
+                                        {
+                                            "name": "primary",
+                                            "type": "string",
+                                            "description": "Primary",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "secondary",
+                                            "type": "string",
+                                            "description": "Secondary",
+                                            "default": ""
+                                        },
+                                        {
+                                            "name": "contact",
+                                            "type": "string",
+                                            "description": "Property Contact",
+                                            "default": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "booking_amount_info",
+                    "type": "object",
+                    "description": "Booking Amount Info",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "currency",
+                            "type": "object",
+                            "description": "Currency",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "webicon",
+                                    "type": "string",
+                                    "description": "Webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "non-webicon",
+                                    "type": "string",
+                                    "description": "Non-webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "iso_code",
+                                    "type": "string",
+                                    "description": "Iso Code",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "total_amount",
+                            "type": "string",
+                            "description": "Total Amount",
+                            "default": ""
+                        },
+                        {
+                            "name": "total_amount_unformatted",
+                            "type": "integer",
+                            "description": "Total Amount Unformatted",
+                            "default": "0"
+                        },
+                        {
+                            "name": "paid_amount",
+                            "type": "string",
+                            "description": "Paid Amount",
+                            "default": ""
+                        },
+                        {
+                            "name": "paid_amount_unformatted",
+                            "type": "integer",
+                            "description": "Paid Amount Unformatted",
+                            "default": "0"
+                        },
+                        {
+                            "name": "pending_payment",
+                            "type": "integer",
+                            "description": "Pending Payment",
+                            "default": "0"
+                        },
+                        {
+                            "name": "pending_payment_amount",
+                            "type": "string",
+                            "description": "Pending Payment Amount",
+                            "default": ""
+                        },
+                        {
+                            "name": "extra_services",
+                            "type": "array",
+                            "description": "Extra Services",
+                            "default": "[]",
+                            "children": []
+                        },
+                        {
+                            "name": "payment_option",
+                            "type": "string",
+                            "description": "Payment Option",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

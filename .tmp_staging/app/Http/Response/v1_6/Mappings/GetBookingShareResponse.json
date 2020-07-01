@@ -1,0 +1,44 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetBookingShareResponse",
+    "definition": "GetBookingShareResponse",
+    "description": "Response Models for Booking Share Data On Facebook",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "content",
+      "type": "string",
+      "default": "",
+      "description": "Content for Facebook Share"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "default": "",
+      "description": "Property Url"
+    },
+    {
+      "name": "share_image",
+      "type": "string",
+      "default": "",
+      "description": "Property Share Image"
+    },
+    {
+      "name": "property_title",
+      "type": "string",
+      "default": "",
+      "description": "Property Title"
+    },
+    {
+      "name": "property_desc",
+      "type": "string",
+      "default": "",
+      "description": "Property Desc"
+    }
+  ]
+}

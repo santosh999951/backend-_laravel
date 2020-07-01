@@ -1,0 +1,6 @@
+For Version 1.7
+1. Create Request objects(https://8thlight.com/blog/mike-knepper/2016/09/26/laravel-controllers-clean-with-form-requests.html)
+2. Create Response sub classes and standarise each sub part of response.
+3. All Input params across all api should be standarized.
+4. Implement https://github.com/barryvdh/laravel-cors to remove dependency on nginx
+5. Need to handle how we find apple user with encrypted email.

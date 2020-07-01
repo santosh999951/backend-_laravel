@@ -1,0 +1,1 @@
+Hi explorer! Find your way to {{ $view_data['property_title'] }} by following this link {{ $view_data['direction_url'] }} for directions. If you need further assistance, call us at {{ GH_CONTACT_NUMBER }}

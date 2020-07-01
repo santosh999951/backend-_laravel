@@ -1,0 +1,1 @@
+Click on this link {{ $view_data['payment_link'] }} to make the payment for your booking id {{ $view_data['request_hash_id'] }} The link will expire in {{ $view_data['link_expire_time'] }} hours Please contact customer service to generate a new link in case of expiry.

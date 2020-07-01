@@ -1,0 +1,14 @@
+/vendor
+/node_modules
+.env
+.DS_Store
+/.idea
+
+/nbproject/private/
+
+Homestead.json
+Homestead.yaml
+
+/storage/app/gh-lex/
+/storage/logs/sms_log/
+/storage/api-docs/

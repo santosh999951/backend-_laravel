@@ -1,0 +1,196 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetCommonDataResponse",
+        "definition": "GetCommonDataResponse",
+        "description": "GetCommonDataResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "app_version_check",
+            "type": "object",
+            "default": "{}",
+            "description": "Property App Version Check",
+            "children": [
+                {
+                    "name": "required",
+                    "type": "integer",
+                    "description": "Property Required",
+                    "default": "0"
+                },
+                {
+                    "name": "min_version",
+                    "type": "string",
+                    "description": "Property Min Version",
+                    "default": ""
+                },
+                {
+                    "name": "latest_version",
+                    "type": "string",
+                    "description": "Property Latest Version",
+                    "default": ""
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "Property Text",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "new_rating_days",
+            "type": "integer",
+            "default": "0",
+            "description": "Property New Rating Days"
+        },
+        {
+            "name": "old_rating_days",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Old Rating Days"
+        },
+        {
+            "name": "chat_available",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Chat Available"
+        },
+        {
+            "name": "chat_call_text",
+            "type": "string",
+            "default": "",
+            "description": "Property Chat Call Text"
+        },
+        {
+            "name": "chat",
+            "type": "object",
+            "default": "{}",
+            "description": "Property Chat",
+            "children": [
+                {
+                    "name": "from_time",
+                    "type": "string",
+                    "description": "Property From Time",
+                    "default": ""
+                },
+                {
+                    "name": "to_time",
+                    "type": "string",
+                    "description": "Property To Time",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "spotlight_list",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Spotlight List",
+            "children": [
+                {
+                    "name": "property_type_name",
+                    "type": "none",
+                    "description": "Property Property Type Name",
+                    "default": "00"
+                },
+                {
+                    "name": "property_type",
+                    "type": "integer",
+                    "description": "Property Property Type",
+                    "default": "0"
+                },
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "Property State",
+                    "default": ""
+                },
+                {
+                    "name": "tag",
+                    "type": "string",
+                    "description": "Property Tag",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "Property City",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "Property Country",
+                    "default": ""
+                },
+                {
+                    "name": "country_name",
+                    "type": "string",
+                    "description": "Property Country Name",
+                    "default": ""
+                },
+                {
+                    "name": "v_lat",
+                    "type": "string",
+                    "description": "Property V Lat",
+                    "default": ""
+                },
+                {
+                    "name": "v_lng",
+                    "type": "string",
+                    "description": "Property V Lng",
+                    "default": ""
+                },
+                {
+                    "name": "image_url",
+                    "type": "string",
+                    "description": "Property Image Url",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "gh_contact",
+            "type": "string",
+            "description": "Gh Contact",
+            "default": ""
+        },
+        {
+            "name": "property_type",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Property Type",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Property Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Property Name",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "autocomplete_api",
+            "type": "integer",
+            "default": "1",
+            "description": "Property Autocomplete Api"
+        }
+    ]
+}

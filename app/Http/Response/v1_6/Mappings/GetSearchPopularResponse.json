@@ -1,0 +1,78 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetSearchPopularResponse",
+    "definition": "GetSearchPopularResponse",
+    "description": "Response Model for Popular Search Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "list",
+      "type": "array",
+      "default": "[]",
+      "description": "Popular Search Location List",
+      "children": [
+        {
+          "name": "location",
+          "type": "string",
+          "description": "Popular Location",
+          "default": ""
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "Location State",
+          "default": ""
+        },
+        {
+          "name": "city",
+          "type": "string",
+          "description": "Location City",
+          "default": ""
+        },
+        {
+          "name": "area",
+          "type": "string",
+          "description": "Location Area",
+          "default": ""
+        },
+        {
+          "name": "country",
+          "type": "object",
+          "description": "Location Country",
+          "default": "{}",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Country Name",
+              "default": ""
+            },
+            {
+              "name": "ccode",
+              "type": "string",
+              "description": "Country Ccode",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "latitude",
+          "type": "string",
+          "description": "Latitude",
+          "default": ""
+        },
+        {
+          "name": "longitude",
+          "type": "string",
+          "description": "Longitude",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

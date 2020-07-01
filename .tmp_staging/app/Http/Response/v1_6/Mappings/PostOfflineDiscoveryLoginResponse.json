@@ -1,0 +1,290 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostOfflineDiscoveryLoginResponse",
+        "definition": "PostOfflineDiscoveryLoginResponse",
+        "description": "PostOfflineDiscoveryLoginResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "user_profile",
+            "type": "object",
+            "default": "{}",
+            "description": "User Profile Data",
+            "children": [
+                {
+                    "name": "first_name",
+                    "type": "string",
+                    "description": "User First Name",
+                    "default": ""
+                },
+                {
+                    "name": "last_name",
+                    "type": "string",
+                    "description": "User Last Name",
+                    "default": ""
+                },
+                {
+                    "name": "member_since",
+                    "type": "string",
+                    "description": "User Member Since",
+                    "default": ""
+                },
+                {
+                    "name": "dob",
+                    "type": "string",
+                    "description": "User Dob",
+                    "default": ""
+                },
+                {
+                    "name": "marital_status",
+                    "type": "string",
+                    "description": "User Marital Status",
+                    "default": ""
+                },
+                {
+                    "name": "gender",
+                    "type": "string",
+                    "description": "User Gender",
+                    "default": ""
+                },
+                {
+                    "name": "profession",
+                    "type": "string",
+                    "description": "User Profession",
+                    "default": ""
+                },
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "User Email",
+                    "default": ""
+                },
+                {
+                    "name": "is_email_verified",
+                    "type": "integer",
+                    "description": "User Is Email Verified",
+                    "default": "0"
+                },
+                {
+                    "name": "dial_code",
+                    "type": "string",
+                    "description": "User Dial Code",
+                    "default": ""
+                },
+                {
+                    "name": "mobile",
+                    "type": "string",
+                    "description": "User Mobile",
+                    "default": ""
+                },
+                {
+                    "name": "is_mobile_verified",
+                    "type": "integer",
+                    "description": "User Is Mobile Verified",
+                    "default": "0"
+                },
+                {
+                    "name": "is_user_referred",
+                    "type": "integer",
+                    "description": "Is User Referred",
+                    "default": "0"
+                },
+                {
+                    "name": "profile_image",
+                    "type": "string",
+                    "description": "User Profile Image Url",
+                    "default": ""
+                },
+                {
+                    "name": "is_avatar_image",
+                    "type": "integer",
+                    "description": "User Is Avatar Image",
+                    "default": "0"
+                },
+                {
+                    "name": "spoken_languages",
+                    "type": "string",
+                    "description": "User Spoken Languages",
+                    "default": ""
+                },
+                {
+                    "name": "travelled_places",
+                    "type": "string",
+                    "description": "User Travelled Places",
+                    "default": ""
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "description": "User Description",
+                    "default": ""
+                },
+                {
+                    "name": "guests_served_count",
+                    "type": "integer",
+                    "description": "Guests Served Count",
+                    "default": "0"
+                },
+                {
+                    "name": "trips_count",
+                    "type": "integer",
+                    "description": "User Trips Count",
+                    "default": "0"
+                },
+                {
+                    "name": "active_request_count",
+                    "type": "integer",
+                    "description": "Active Request Count",
+                    "default": "0"
+                },
+                {
+                    "name": "user_currency",
+                    "type": "string",
+                    "description": "User Currency",
+                    "default": ""
+                },
+                {
+                    "name": "is_host",
+                    "type": "boolean",
+                    "description": "Is Host",
+                    "default": "false"
+                },
+                {
+                    "name": "user_id",
+                    "type": "integer",
+                    "description": "User Id",
+                    "default": "0"
+                },
+                {
+                    "name": "user_hash_id",
+                    "type": "string",
+                    "description": "User Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "fb_id",
+                    "type": "string",
+                    "description": "Fb Id",
+                    "default": ""
+                },
+                {
+                    "name": "google_id",
+                    "type": "string",
+                    "description": "Google Id",
+                    "default": ""
+                },
+                {
+                    "name": "wallet",
+                    "type": "object",
+                    "description": "Wallet",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "balance",
+                            "type": "integer",
+                            "description": "Balance",
+                            "default": "0"
+                        },
+                        {
+                            "name": "currency",
+                            "type": "object",
+                            "description": "Currency",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "webicon",
+                                    "type": "string",
+                                    "description": "Webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "non-webicon",
+                                    "type": "string",
+                                    "description": "Non-webicon",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "iso_code",
+                                    "type": "string",
+                                    "description": "Iso Code",
+                                    "default": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "add_listing",
+                    "type": "string",
+                    "description": "Add Listing",
+                    "default": ""
+                },
+                {
+                    "name": "event",
+                    "type": "string",
+                    "description": "Event",
+                    "default": ""
+                },
+                {
+                    "name": "is_rm",
+                    "type": "integer",
+                    "description": "Is Rm",
+                    "default": "0"
+                },
+                {
+                    "name": "add_email",
+                    "type": "integer",
+                    "description": "Add Email",
+                    "default": "0"
+                },
+                {
+                    "name": "auth_key",
+                    "type": "string",
+                    "description": "Auth Key",
+                    "default": ""
+                },
+                {
+                    "name": "host_token",
+                    "type": "string",
+                    "description": "Host Token",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "token_type",
+            "type": "string",
+            "default": "",
+            "description": "Token Type"
+        },
+        {
+            "name": "expires_in",
+            "type": "integer",
+            "default": "0",
+            "description": "Expires In"
+        },
+        {
+            "name": "access_token",
+            "type": "string",
+            "default": "",
+            "description": "Access Token"
+        },
+        {
+            "name": "refresh_token",
+            "type": "string",
+            "default": "",
+            "description": "Refresh Token"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutHostPropertiesStatusResponse",
+    "definition": "PutHostPropertiesStatusResponse",
+    "description": "Response Model for Update Property enabled status",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "property_hash_id",
+      "type": "string",
+      "default": "",
+      "description": "Property Hash Id"
+    },
+    {
+      "name": "property_status",
+      "type": "integer",
+      "default": "0",
+      "description": "Property Enabled Status"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Response Message"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetProperlyScheduledTaskResponse",
+        "definition": "GetProperlyScheduledTaskResponse",
+        "description": "GetProperlyScheduledTaskResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "tasks",
+            "type": "array",
+            "description": "Tasks",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "task_hash_id",
+                    "type": "string",
+                    "description": "Task Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "entity_hash_id",
+                    "type": "string",
+                    "description": "Entity Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "task_status",
+                    "type": "object",
+                    "description": "Task Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "color_code",
+                            "type": "string",
+                            "description": "Color Code",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Title",
+                    "default": ""
+                },
+                {
+                    "name": "task_type",
+                    "type": "string",
+                    "description": "Task Type",
+                    "default": ""
+                },
+                {
+                    "name": "task_date",
+                    "type": "string",
+                    "description": "Task Date",
+                    "default": ""
+                },
+                {
+                    "name": "task_date_time_formatted",
+                    "type": "string",
+                    "description": "Task Date Time Formatted",
+                    "default": ""
+                },
+                {
+                    "name": "traveller_name",
+                    "type": "string",
+                    "description": "Traveller Name",
+                    "default": ""
+                },
+                {
+                    "name": "assigned_to",
+                    "type": "string",
+                    "description": "Assigned To",
+                    "default": ""
+                },
+                {
+                    "name": "guests",
+                    "type": "integer",
+                    "description": "Guests",
+                    "default": "0"
+                },
+                {
+                    "name": "reccuring_type",
+                    "type": "string",
+                    "description": "Reccuring Type",
+                    "default": ""
+                },
+                {
+                    "name": "can_update",
+                    "type": "integer",
+                    "description": "Can Update",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "assigned_to",
+            "type": "array",
+            "description": "Assigned To",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "Id",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                },
+                {
+                    "name": "role",
+                    "type": "string",
+                    "description": "Role",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

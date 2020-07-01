@@ -1,0 +1,46 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetCountryDetailsResponse",
+        "definition": "GetCountryDetailsResponse",
+        "description": "GetCountryDetailsResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "country_details",
+            "type": "array",
+            "default": "[]",
+            "description": "Country Details",
+            "children": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Country Name",
+                    "default": ""
+                },
+                {
+                    "name": "ccode",
+                    "type": "string",
+                    "description": "Country code",
+                    "default": ""
+                },
+                {
+                    "name": "dial_code",
+                    "type": "string",
+                    "description": "Country Dial Code",
+                    "default": ""
+                },
+                {
+                    "name": "image",
+                    "type": "string",
+                    "description": "Country flag Image",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

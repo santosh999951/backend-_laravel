@@ -1,0 +1,34 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "SuccessHttpResponse",
+        "definition": "SuccessHttpResponse",
+        "description": "SuccessHttpResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "status",
+            "type": "boolean",
+            "default": "false",
+            "description": "Success Status"
+        },
+        {
+            "name": "data",
+            "type": "object",
+            "default": "{}",
+            "description": "Success Data",
+            "children": []
+        },
+        {
+            "name": "error",
+            "type": "array",
+            "default": "[]",
+            "description": "Success Error",
+            "children": []
+        }
+    ]
+}

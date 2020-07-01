@@ -1,0 +1,20 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PutProperlySuspendMemberResponse",
+        "definition": "PutProperlySuspendMemberResponse",
+        "description": "PutProperlySuspendMemberResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Properly Suspend Team Member Message"
+        }
+    ]
+}

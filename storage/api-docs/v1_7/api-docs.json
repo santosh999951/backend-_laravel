@@ -1,0 +1,1811 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Guesthouser APIs",
+        "description": "Api description...",
+        "termsOfService": "",
+        "contact": {
+            "email": "vikas.b@guesthouser.com"
+        },
+        "license": {
+            "name": "Private License",
+            "url": "guesthouserapi.com"
+        },
+        "version": 1.7
+    },
+    "host": "guesthouserapi.com",
+    "basePath": "/",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/v1.7/device": {
+            "post": {
+                "tags": [
+                    "Device"
+                ],
+                "summary": "Create a new device.",
+                "description": "Registers a new device",
+                "operationId": "device.post.register",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/device_notification_token_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/app_version_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/device_model_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/device_make_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/brand_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/os_version_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/resolution_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/country_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/screen_width_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/screen_height_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/ram_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dpi_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/app_version_code_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/fcm_token_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Device successfully updated",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new device.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new device.",
+                                    "$ref": "#definitions/PostDeviceResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new device.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "Device successfully registered",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user",
+                "description": "Returns oauth tokens when user registers successfully.",
+                "operationId": "user.post.register",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/source_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/source_value_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/base64encode_password_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/user_first_name_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/user_last_name_optional_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User updated successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "User created successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || Invalid source parameter.|| Invalid source type",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "We already have an account associated with this email or contact number.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while signing you up. Please try again after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user#phone": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user",
+                "description": "Returns oauth tokens when user registers successfully.",
+                "operationId": "user.post.register.phone",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/source_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/source_value_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/user_first_name_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/user_last_name_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/email_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/otp_code_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User updated successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "User created successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || Invalid access token. || Invalid source parameter. || inavalid source type",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while signing you up. Please try again after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "502": {
+                        "description": "Error while fetching profile image.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user#google": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user",
+                "description": "Returns oauth tokens when user registers successfully.",
+                "operationId": "user.post.register.google",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/source_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/source_value_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User updated successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "User created successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || Invalid access token. || Invalid source parameter.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while signing you up. Please try again after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "502": {
+                        "description": "Error while fetching profile image.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user#facebook": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user",
+                "description": "Returns oauth tokens when user registers successfully.",
+                "operationId": "user.post.register.facebook",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/source_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/source_value_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User updated successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "User created successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostRegisterResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || Invalid access token. || Invalid source parameter.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while signing you up. Please try again after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "502": {
+                        "description": "Error while fetching profile image.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user#apple": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user",
+                "description": "Returns oauth tokens when user registers successfully.",
+                "operationId": "user.post.register.apple",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/source_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/source_value_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/user_first_name_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User updated successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostUserResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "User created successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Create a new user",
+                                    "$ref": "#definitions/PostUserResponse"
+                                },
+                                "error": {
+                                    "description": "Create a new user",
+                                    "$ref": "#/definitions/CreateHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || Invalid access token or id token. || Invalid source parameter.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while signing you up. Please try again after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user/verify/otp": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Verify otp for mobile verification or login purpose.",
+                "description": "Returns success/error message based on otp verification parameter.",
+                "operationId": "verify.put.otp",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/contact_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/otp_code_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response containing mode of login and other details.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Verify otp for mobile verification or login purpose.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Verify otp for mobile verification or login purpose.",
+                                    "$ref": "#definitions/PutVerifyOtpResponse"
+                                },
+                                "error": {
+                                    "description": "Verify otp for mobile verification or login purpose.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "503": {
+                        "description": "There was some error while sending OTP. Please try after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user/verify/forgotpassword/otp": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Verify forgot password Otp via api for user.",
+                "description": "Returns success/error message based on otp verification parameter.",
+                "operationId": "verify.forgotpassword.put.otp",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/email_or_phone_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/otp_code_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response containing mode of login and other details.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Verify forgot password Otp via api for user.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Verify forgot password Otp via api for user.",
+                                    "$ref": "#definitions/PutVerifyForgotOtpResponse"
+                                },
+                                "error": {
+                                    "description": "Verify forgot password Otp via api for user.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "503": {
+                        "description": "There was some error while sending OTP. Please try after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Verify otp when user login",
+                "description": "verify otp code added by user for its validity and make user contact verified.",
+                "operationId": "user.post.user.login.mobile",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/grant_type_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/email_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/contact_number_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/otp_code_optional_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/base64encode_password_optional_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User Profile with acess token and refresh token.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Verify otp when user login",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Verify otp when user login",
+                                    "$ref": "#definitions/PostLoginResponse"
+                                },
+                                "error": {
+                                    "description": "Verify otp when user login",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "Mobile number is not verified.| Your OTP has been expired. || Invalid OTP entered.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while verifying the OTP. Please try after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user/status": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "User status via api.",
+                "description": "Returns success/error message based on statusvia parameter.",
+                "operationId": "user.get.status",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/login_id_in_query"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_optional_in_query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response containing mode of login and other details.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "User status via api.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "User status via api.",
+                                    "$ref": "#definitions/GetUserStatusResponse"
+                                },
+                                "error": {
+                                    "description": "User status via api.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "503": {
+                        "description": "There was some error while sending OTP. Please try after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user/generate/otp": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Generate phone otp via api for verifying phone of user.",
+                "description": "Returns success/error message based on otp condition parameter.",
+                "operationId": "user.generate.post.otp",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/contact_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/otp_method_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response containing mode of login and other details.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Generate phone otp via api for verifying phone of user.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Generate phone otp via api for verifying phone of user.",
+                                    "$ref": "#definitions/PostGenerateOtpResponse"
+                                },
+                                "error": {
+                                    "description": "Generate phone otp via api for verifying phone of user.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "503": {
+                        "description": "There was some error while sending OTP. Please try after some time.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1.7/user/reset/password": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Put Reset Password Handler, change password for given email or phone.",
+                "description": "Returns success message when password updated successfully.",
+                "operationId": "user.put.password",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/email_or_phone_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/otp_code_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/base64encode_password_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_optional_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Password changed successfully.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Put Reset Password Handler, change password for given email or phone.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Put Reset Password Handler, change password for given email or phone.",
+                                    "$ref": "#definitions/PutUserResetPasswordResponse"
+                                },
+                                "error": {
+                                    "description": "Put Reset Password Handler, change password for given email or phone.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || New password should be of minimum 6 characters. || Invalid verification code.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid contact number.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "There was some error while updating password. Please try again.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Post Reset Password Handler, verify given email or phone and send OTP to reset the password.",
+                "description": "Returns an array containing flags to check if email and sms are sent or not. Also returns error/success message.",
+                "operationId": "user.post.reset.password",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/device_unique_id_in_header"
+                    },
+                    {
+                        "$ref": "#/parameters/email_or_phone_in_form"
+                    },
+                    {
+                        "$ref": "#/parameters/dial_code_optional_in_form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Otp sent to your registered number or email, to reset the password.",
+                        "schema": {
+                            "properties": {
+                                "status": {
+                                    "description": "Post Reset Password Handler, verify given email or phone and send OTP to reset the password.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/status"
+                                },
+                                "data": {
+                                    "description": "Post Reset Password Handler, verify given email or phone and send OTP to reset the password.",
+                                    "$ref": "#definitions/PostUserPasswordResetResponse"
+                                },
+                                "error": {
+                                    "description": "Post Reset Password Handler, verify given email or phone and send OTP to reset the password.",
+                                    "$ref": "#/definitions/SuccessHttpResponse/properties/error"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing or invalid parameters. || Invalid contact number length. || Invalid contact number. || Mobile number not verified. Please login using email! || Invalid email.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "You have reached maximum otp limit. Please reset through link send in email!",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Contact not found. || Email not found.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Error while generating otp.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    },
+                    "502": {
+                        "description": "Error while sending the reset password otp email. || Error while sending the reset password otp sms.",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorHttpResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "CreateHttpResponse": {
+            "description": "CreateHttpResponse",
+            "properties": {
+                "status": {
+                    "description": "Create Status",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "data": {
+                    "description": "Create Data",
+                    "type": "object",
+                    "default": "{}"
+                },
+                "error": {
+                    "description": "Create Error",
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    },
+                    "default": "[]"
+                }
+            }
+        },
+        "ErrorHttpResponse": {
+            "description": "ErrorHttpResponse",
+            "properties": {
+                "status": {
+                    "description": "Error Status",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "data": {
+                    "description": "Error Data",
+                    "type": "object",
+                    "default": "{}"
+                },
+                "error": {
+                    "description": "Error",
+                    "type": "array",
+                    "items": {
+                        "properties": {
+                            "code": {
+                                "description": "Error Code",
+                                "type": "string",
+                                "default": ""
+                            },
+                            "key": {
+                                "description": "Error Key",
+                                "type": "string",
+                                "default": ""
+                            },
+                            "message": {
+                                "description": "Error Message",
+                                "type": "string",
+                                "default": ""
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "default": "[]"
+                }
+            }
+        },
+        "GetUserStatusResponse": {
+            "description": "GetUserStatusResponse",
+            "properties": {
+                "status": {
+                    "description": "User Status",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "UserProfileResponse": {
+            "description": "UserProfileResponse",
+            "properties": {
+                "first_name": {
+                    "description": "Property First Name",
+                    "type": "string",
+                    "default": ""
+                },
+                "last_name": {
+                    "description": "Property Last Name",
+                    "type": "string",
+                    "default": ""
+                },
+                "member_since": {
+                    "description": "Property Member Since",
+                    "type": "string",
+                    "default": ""
+                },
+                "dob": {
+                    "description": "Property Dob",
+                    "type": "string",
+                    "default": ""
+                },
+                "marital_status": {
+                    "description": "Property Marital Status",
+                    "type": "string",
+                    "default": ""
+                },
+                "gender": {
+                    "description": "Property Gender",
+                    "type": "string",
+                    "default": ""
+                },
+                "profession": {
+                    "description": "Property Profession",
+                    "type": "string",
+                    "default": ""
+                },
+                "email": {
+                    "description": "Property Email",
+                    "type": "string",
+                    "default": ""
+                },
+                "is_email_verified": {
+                    "description": "Property Is Email Verified",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "dial_code": {
+                    "description": "Property Dial Code",
+                    "type": "string",
+                    "default": ""
+                },
+                "mobile": {
+                    "description": "Property Mobile",
+                    "type": "string",
+                    "default": ""
+                },
+                "is_mobile_verified": {
+                    "description": "Property Is Mobile Verified",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "is_user_referred": {
+                    "description": "Property Is User Referred",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "profile_image": {
+                    "description": "Property Profile Image",
+                    "type": "string",
+                    "default": ""
+                },
+                "is_avatar_image": {
+                    "description": "Property Is Avatar Image",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "spoken_languages": {
+                    "description": "Property Spoken Languages",
+                    "type": "string",
+                    "default": ""
+                },
+                "travelled_places": {
+                    "description": "Property Travelled Places",
+                    "type": "string",
+                    "default": ""
+                },
+                "description": {
+                    "description": "Property Description",
+                    "type": "string",
+                    "default": ""
+                },
+                "guests_served_count": {
+                    "description": "Property Guests Served Count",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "trips_count": {
+                    "description": "Property Trips Count",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "active_request_count": {
+                    "description": "Property Active Request Count",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "user_currency": {
+                    "description": "Property User Currency",
+                    "type": "string",
+                    "default": ""
+                },
+                "is_host": {
+                    "description": "Property Is Host",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "user_id": {
+                    "description": "Property User Id",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "user_hash_id": {
+                    "description": "Property User Hash Id",
+                    "type": "string",
+                    "default": ""
+                },
+                "fb_id": {
+                    "description": "Property Fb Id",
+                    "type": "string",
+                    "default": ""
+                },
+                "google_id": {
+                    "description": "Property Google Id",
+                    "type": "string",
+                    "default": ""
+                },
+                "apple_id": {
+                    "description": "Property Apple Id",
+                    "type": "null",
+                    "default": ""
+                },
+                "wallet": {
+                    "description": "Property Wallet",
+                    "type": "object",
+                    "default": "{}",
+                    "$ref": "#/definitions/WalletResponse"
+                },
+                "add_listing": {
+                    "description": "Property Add Listing",
+                    "type": "string",
+                    "default": ""
+                },
+                "event": {
+                    "description": "Property Event",
+                    "type": "string",
+                    "default": ""
+                },
+                "is_rm": {
+                    "description": "Property Is Rm",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "add_email": {
+                    "description": "Property Add Email",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "auth_key": {
+                    "description": "Property Auth Key",
+                    "type": "string",
+                    "default": ""
+                },
+                "is_prive_manager": {
+                    "description": "Property Is Prive Manager",
+                    "type": "integer",
+                    "default": "0"
+                }
+            }
+        },
+        "WalletResponse": {
+            "description": "WalletResponse",
+            "properties": {
+                "balance": {
+                    "description": "Property Balance",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "currency": {
+                    "description": "Property Currency",
+                    "properties": {
+                        "webicon": {
+                            "description": "Property Webicon",
+                            "type": "string",
+                            "default": ""
+                        },
+                        "non-webicon": {
+                            "description": "Property Non-webicon",
+                            "type": "string",
+                            "default": ""
+                        },
+                        "iso_code": {
+                            "description": "Property Iso Code",
+                            "type": "string",
+                            "default": ""
+                        }
+                    },
+                    "type": "object",
+                    "default": "{}"
+                }
+            }
+        },
+        "PostDeviceResponse": {
+            "description": "PostDeviceResponse",
+            "properties": {
+                "message": {
+                    "description": "Message",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PostGenerateOtpResponse": {
+            "description": "PostGenerateOtpResponse",
+            "properties": {
+                "dial_code": {
+                    "description": "Property Dial Code",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "contact": {
+                    "description": "Property Contact",
+                    "type": "string",
+                    "default": ""
+                },
+                "sms_sender_ids": {
+                    "description": "Property Sms Sender Ids",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PostLoginResponse": {
+            "description": "PostLoginResponse",
+            "properties": {
+                "user_profile": {
+                    "description": "Property User Profile",
+                    "type": "object",
+                    "default": "{}",
+                    "$ref": "#/definitions/UserProfileResponse"
+                },
+                "token_type": {
+                    "description": "Property Token Type",
+                    "type": "string",
+                    "default": ""
+                },
+                "expires_in": {
+                    "description": "Property Expires In",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "access_token": {
+                    "description": "Property Access Token",
+                    "type": "string",
+                    "default": ""
+                },
+                "refresh_token": {
+                    "description": "Property Refresh Token",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PostRegisterResponse": {
+            "description": "PostRegisterResponse",
+            "properties": {
+                "user_profile": {
+                    "description": "Property User Profile",
+                    "type": "object",
+                    "default": "{}",
+                    "$ref": "#/definitions/UserProfileResponse"
+                },
+                "token_type": {
+                    "description": "Property Token Type",
+                    "type": "string",
+                    "default": ""
+                },
+                "expires_in": {
+                    "description": "Property Expires In",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "access_token": {
+                    "description": "Property Access Token",
+                    "type": "string",
+                    "default": ""
+                },
+                "refresh_token": {
+                    "description": "Property Refresh Token",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PostUserPasswordResetResponse": {
+            "description": "Response Model for user password reset",
+            "properties": {
+                "email_sent": {
+                    "description": "Email Sent Status",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "sms_sent": {
+                    "description": "Sms Sent Status",
+                    "type": "integer",
+                    "default": "0"
+                },
+                "contact": {
+                    "description": "Contact Number",
+                    "type": "string",
+                    "default": ""
+                },
+                "sms_sender_ids": {
+                    "description": "Sms Sender Ids",
+                    "type": "string",
+                    "default": ""
+                },
+                "message": {
+                    "description": "Response Message",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PutUserResetPasswordResponse": {
+            "description": "Response Model for Update user password via OTP",
+            "properties": {
+                "message": {
+                    "description": "Response Message",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PutVerifyForgotOtpResponse": {
+            "description": "PutVerifyForgotOtpResponse",
+            "properties": {
+                "message": {
+                    "description": "Message",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "PutVerifyOtpResponse": {
+            "description": "PutVerifyOtpResponse",
+            "properties": {
+                "message": {
+                    "description": "Message",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "SuccessHttpResponse": {
+            "description": "SuccessHttpResponse",
+            "properties": {
+                "status": {
+                    "description": "Success Status",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "data": {
+                    "description": "Success Data",
+                    "type": "object",
+                    "default": "{}"
+                },
+                "error": {
+                    "description": "Success Error",
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    },
+                    "default": "[]"
+                }
+            }
+        }
+    },
+    "parameters": {
+        "device_unique_id_in_header": {
+            "name": "device-unique-id",
+            "in": "header",
+            "description": "device unique id",
+            "required": true,
+            "type": "string",
+            "default": "8hfjdhf84r84kdhdh"
+        },
+        "base64encode_password_in_form": {
+            "name": "password",
+            "in": "formData",
+            "description": "password as base64 encoded string",
+            "required": true,
+            "type": "string"
+        },
+        "base64encode_password_optional_in_form": {
+            "name": "password",
+            "in": "formData",
+            "description": "password as base64 encoded string",
+            "required": false,
+            "type": "string"
+        },
+        "user_first_name_in_form": {
+            "name": "first_name",
+            "in": "formData",
+            "description": "first name",
+            "required": true,
+            "type": "string"
+        },
+        "user_last_name_in_form": {
+            "name": "last_name",
+            "in": "formData",
+            "description": "last name",
+            "required": true,
+            "type": "string"
+        },
+        "user_last_name_optional_in_form": {
+            "name": "last_name",
+            "in": "formData",
+            "description": "last name",
+            "required": false,
+            "type": "string"
+        },
+        "dial_code_in_form": {
+            "name": "dial_code",
+            "in": "formData",
+            "description": "dial code",
+            "required": true,
+            "type": "string"
+        },
+        "email_optional_in_form": {
+            "name": "email",
+            "in": "formData",
+            "description": "email",
+            "required": false,
+            "type": "string"
+        },
+        "dial_code_optional_in_form": {
+            "name": "dial_code",
+            "in": "formData",
+            "description": "dial code",
+            "required": false,
+            "type": "string"
+        },
+        "contact_number_optional_in_form": {
+            "name": "contact",
+            "in": "formData",
+            "description": "user contact number",
+            "required": false,
+            "type": "string"
+        },
+        "otp_code_optional_in_form": {
+            "name": "otp_code",
+            "in": "formData",
+            "description": "otp code",
+            "required": false,
+            "type": "integer"
+        },
+        "loginsignupvia_in_form": {
+            "name": "loginsignupvia",
+            "in": "formData",
+            "description": "loginsignupvia Either email or phone",
+            "required": true,
+            "type": "string",
+            "default": ""
+        },
+        "source_in_form": {
+            "name": "source",
+            "in": "formData",
+            "description": "source (1 - google, 2 - facebook, 3 - email , 4-phone , 5-Apple)",
+            "required": true,
+            "type": "integer",
+            "default": "1",
+            "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        "source_value_in_form": {
+            "name": "source_value",
+            "in": "formData",
+            "description": "source value can be email of user ,phone number of user or accesstoken received from oauth",
+            "required": true,
+            "type": "string",
+            "default": ""
+        },
+        "grant_type_in_form": {
+            "name": "grant_type",
+            "in": "formData",
+            "description": "grant type : password or otp",
+            "required": true,
+            "type": "string",
+            "default": "otp",
+            "enum": [
+                "password",
+                "otp"
+            ]
+        },
+        "login_id_in_query": {
+            "name": "login_id",
+            "in": "query",
+            "description": "Either email or phone number.",
+            "required": true,
+            "type": "string",
+            "default": ""
+        },
+        "dial_code_optional_in_query": {
+            "name": "dial_code",
+            "in": "query",
+            "description": "dial code",
+            "required": false,
+            "type": "string"
+        },
+        "contact_in_form": {
+            "name": "contact",
+            "in": "formData",
+            "description": "Contact Number.",
+            "required": true,
+            "type": "integer"
+        },
+        "otp_method_in_form": {
+            "name": "otp_method",
+            "in": "formData",
+            "description": "Otp method 1 for sms and 2 for call.",
+            "required": true,
+            "type": "integer"
+        },
+        "otp_type_in_form": {
+            "name": "otp_type",
+            "in": "formData",
+            "description": "Otp type 0 for login and 1 for forget password.",
+            "required": true,
+            "type": "integer"
+        },
+        "reset_password_via_in_form": {
+            "name": "reset_password_via",
+            "in": "formData",
+            "description": "reset password param containing either email or verified mobile",
+            "required": true,
+            "type": "string"
+        },
+        "otp_code_in_form": {
+            "name": "otp_code",
+            "in": "formData",
+            "description": "Otp send to user.",
+            "required": true,
+            "type": "integer"
+        },
+        "device_unique_id_in_form": {
+            "name": "device_unique_id",
+            "in": "formData",
+            "description": "device unique id",
+            "required": true,
+            "type": "string",
+            "default": "8hfjdhf84r84kdhdh"
+        },
+        "device_notification_token_in_form": {
+            "name": "device_notification_token",
+            "in": "formData",
+            "description": "device push notification token - GCM tken, APNs, token, ..",
+            "required": false,
+            "type": "string",
+            "default": "wCcFqBgyz9T9PUUpf8qiMU88GuOMaCo489NrBlhI"
+        },
+        "app_version_in_form": {
+            "name": "app_version",
+            "in": "formData",
+            "description": "app version (different from api version)",
+            "required": false,
+            "type": "string"
+        },
+        "device_model_in_form": {
+            "name": "device_model",
+            "in": "formData",
+            "description": "device modal",
+            "required": false,
+            "type": "string"
+        },
+        "device_make_in_form": {
+            "name": "device_make",
+            "in": "formData",
+            "description": "maker of device. Eg - apple, motorola,...",
+            "required": false,
+            "type": "string"
+        },
+        "brand_in_form": {
+            "name": "brand",
+            "in": "formData",
+            "description": "device brand",
+            "required": false,
+            "type": "string"
+        },
+        "os_version_in_form": {
+            "name": "os_version",
+            "in": "formData",
+            "description": "os version. Eg - 10.0.1, 11.2.1",
+            "required": false,
+            "type": "string"
+        },
+        "resolution_in_form": {
+            "name": "resolution",
+            "in": "formData",
+            "description": "device resolution",
+            "required": false,
+            "type": "string"
+        },
+        "country_in_form": {
+            "name": "country",
+            "in": "formData",
+            "description": "user country",
+            "required": true,
+            "type": "string"
+        },
+        "screen_width_in_form": {
+            "name": "screen_width",
+            "in": "formData",
+            "description": "device screen width",
+            "required": false,
+            "type": "string"
+        },
+        "screen_height_in_form": {
+            "name": "screen_height",
+            "in": "formData",
+            "description": "device screen height",
+            "required": false,
+            "type": "string"
+        },
+        "ram_in_form": {
+            "name": "ram",
+            "in": "formData",
+            "description": "device RAM",
+            "required": false,
+            "type": "string"
+        },
+        "dpi_in_form": {
+            "name": "dpi",
+            "in": "formData",
+            "description": "device DPI",
+            "required": false,
+            "type": "string"
+        },
+        "app_version_code_in_form": {
+            "name": "app_version_code",
+            "in": "formData",
+            "description": "app version code",
+            "required": false,
+            "type": "integer"
+        },
+        "fcm_token_in_form": {
+            "name": "fcm_token",
+            "in": "formData",
+            "description": "fcm token",
+            "required": false,
+            "type": "string"
+        },
+        "email_or_phone_in_form": {
+            "name": "email_or_phone",
+            "in": "formData",
+            "description": "Email id or phone number of user.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "securityDefinitions": {
+        "Authorization": {
+            "type": "oauth2",
+            "description": "oauth2 access token",
+            "name": "Authorization",
+            "in": "header",
+            "flow": "password",
+            "tokenUrl": "/oauth/token",
+            "scopes": {}
+        }
+    },
+    "tags": [
+        {
+            "name": "User"
+        }
+    ],
+    "externalDocs": {
+        "description": "Find out more about my website",
+        "url": "guesthouserapi.com"
+    }
+}

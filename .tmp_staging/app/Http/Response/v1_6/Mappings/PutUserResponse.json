@@ -1,0 +1,576 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutUserResponse",
+    "definition": "PutUserResponse",
+    "description": "Response Model for Update User",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "first_name",
+      "type": "string",
+      "default": "",
+      "description": "User First Name"
+    },
+    {
+      "name": "last_name",
+      "type": "string",
+      "default": "",
+      "description": "User Last Name"
+    },
+    {
+      "name": "member_since",
+      "type": "string",
+      "default": "",
+      "description": "User Membership time in Guesthouser"
+    },
+    {
+      "name": "dob",
+      "type": "string",
+      "default": "",
+      "description": "User Date of Birth"
+    },
+    {
+      "name": "marital_status",
+      "type": "string",
+      "default": "",
+      "description": "User Marital Status"
+    },
+    {
+      "name": "gender",
+      "type": "string",
+      "default": "",
+      "description": "User Gender"
+    },
+    {
+      "name": "profession",
+      "type": "string",
+      "default": "",
+      "description": "User Profession"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "default": "",
+      "description": "User Email"
+    },
+    {
+      "name": "is_email_verified",
+      "type": "integer",
+      "default": "0",
+      "description": "User Email Verified Status"
+    },
+    {
+      "name": "dial_code",
+      "type": "string",
+      "default": "",
+      "description": "Contact Dial Code Eg. 91 for India"
+    },
+    {
+      "name": "mobile",
+      "type": "string",
+      "default": "",
+      "description": "User Contact"
+    },
+    {
+      "name": "is_mobile_verified",
+      "type": "integer",
+      "default": "0",
+      "description": "User Contact Verified Status"
+    },
+    {
+      "name": "is_user_referred",
+      "type": "integer",
+      "default": "0",
+      "description": "User Is Referred By Other User Status"
+    },
+    {
+      "name": "profile_image",
+      "type": "string",
+      "default": "",
+      "description": "User Profile Image URL"
+    },
+    {
+      "name": "is_avatar_image",
+      "type": "integer",
+      "default": "0",
+      "description": "User Profile Image Is Avatar Image When User not save Profile Picture"
+    },
+    {
+      "name": "spoken_languages",
+      "type": "string",
+      "default": "",
+      "description": "User Spoken Languages"
+    },
+    {
+      "name": "travelled_places",
+      "type": "string",
+      "default": "",
+      "description": "Travelled Places"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "default": "",
+      "description": "Description"
+    },
+    {
+      "name": "guests_served_count",
+      "type": "integer",
+      "default": "0",
+      "description": "Guests Served Count"
+    },
+    {
+      "name": "trips_count",
+      "type": "integer",
+      "default": "0",
+      "description": "Trips Count"
+    },
+    {
+      "name": "user_currency",
+      "type": "string",
+      "default": "",
+      "description": "User Currency"
+    },
+    {
+      "name": "is_host",
+      "type": "boolean",
+      "default": "false",
+      "description": "User Is Host Status for Showing Host Section"
+    },
+    {
+      "name": "user_id",
+      "type": "integer",
+      "default": "0",
+      "description": "User Id"
+    },
+    {
+      "name": "user_hash_id",
+      "type": "string",
+      "default": "",
+      "description": "User Hash Id"
+    },
+    {
+      "name": "fb_id",
+      "type": "string",
+      "default": "",
+      "description": "Facebook Id"
+    },
+    {
+      "name": "google_id",
+      "type": "string",
+      "default": "",
+      "description": "Google Id"
+    },
+    {
+      "name": "wallet",
+      "type": "object",
+      "default": "{}",
+      "description": "Wallet Section",
+      "children": [
+        {
+          "name": "balance",
+          "type": "integer",
+          "description": "Wallet Balance",
+          "default": "0"
+        },
+        {
+          "name": "currency",
+          "type": "object",
+          "description": "Wallet Currency",
+          "default": "{}",
+          "children": [
+            {
+              "name": "webicon",
+              "type": "string",
+              "description": "Currency Webicon",
+              "default": ""
+            },
+            {
+              "name": "non-webicon",
+              "type": "string",
+              "description": "Currency Non-webicon",
+              "default": ""
+            },
+            {
+              "name": "iso_code",
+              "type": "string",
+              "description": "Currency Iso Code",
+              "default": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "add_listing",
+      "type": "string",
+      "default": "",
+      "description": "Add Listing Url for Adding Property"
+    },
+    {
+      "name": "event",
+      "type": "string",
+      "default": "",
+      "description": "Event Eg. login"
+    },
+    {
+      "name": "is_rm",
+      "type": "integer",
+      "default": "0",
+      "description": "User Is Relationship manager Status"
+    },
+    {
+      "name": "add_email",
+      "type": "integer",
+      "default": "0",
+      "description": "Add Email Status for adding Email when not exist in Database"
+    },
+    {
+      "name": "property_listings",
+      "type": "array",
+      "default": "[]",
+      "description": "Property Listed by User",
+      "children": [
+        {
+          "name": "property_id",
+          "type": "integer",
+          "description": "Property Id",
+          "default": "0"
+        },
+        {
+          "name": "property_hash_id",
+          "type": "string",
+          "description": "Property Hash Id",
+          "default": ""
+        },
+        {
+          "name": "property_score",
+          "type": "string",
+          "description": "Property Score",
+          "default": ""
+        },
+        {
+          "name": "property_type_name",
+          "type": "string",
+          "description": "Property Type Name",
+          "default": ""
+        },
+        {
+          "name": "room_type_name",
+          "type": "string",
+          "description": "Room Type Name",
+          "default": ""
+        },
+        {
+          "name": "host_name",
+          "type": "string",
+          "description": "Host Name",
+          "default": ""
+        },
+        {
+          "name": "host_image",
+          "type": "string",
+          "description": "Host Image",
+          "default": ""
+        },
+        {
+          "name": "location",
+          "type": "object",
+          "description": "Location",
+          "default": "{}",
+          "children": [
+            {
+              "name": "area",
+              "type": "string",
+              "description": "Location Area",
+              "default": ""
+            },
+            {
+              "name": "city",
+              "type": "string",
+              "description": "Location City",
+              "default": ""
+            },
+            {
+              "name": "state",
+              "type": "string",
+              "description": "Location State",
+              "default": ""
+            },
+            {
+              "name": "country",
+              "type": "object",
+              "description": "Location Country",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "name",
+                  "type": "string",
+                  "description": "Country Name",
+                  "default": ""
+                },
+                {
+                  "name": "ccode",
+                  "type": "string",
+                  "description": "Country Ccode",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "location_name",
+              "type": "string",
+              "description": "Location Name",
+              "default": ""
+            },
+            {
+              "name": "latitude",
+              "type": "string",
+              "description": "Latitude",
+              "default": ""
+            },
+            {
+              "name": "longitude",
+              "type": "string",
+              "description": "Longitude",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "accomodation",
+          "type": "integer",
+          "description": "Accomodation",
+          "default": "0"
+        },
+        {
+          "name": "min_units_required",
+          "type": "integer",
+          "description": "Min Units Required",
+          "default": "0"
+        },
+        {
+          "name": "total_accomodation",
+          "type": "integer",
+          "description": "Total Accomodation",
+          "default": "0"
+        },
+        {
+          "name": "is_liked_by_user",
+          "type": "integer",
+          "description": "Property Is Liked By User Status",
+          "default": "0"
+        },
+        {
+          "name": "prices",
+          "type": "object",
+          "description": "Property Prices",
+          "default": "{}",
+          "children": [
+            {
+              "name": "display_discount",
+              "type": "integer",
+              "description": "Display Discount",
+              "default": "0"
+            },
+            {
+              "name": "smart_discount",
+              "type": "object",
+              "description": "Smart Discount",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "header",
+                  "type": "string",
+                  "description": "Smart Discount Header Text",
+                  "default": ""
+                },
+                {
+                  "name": "discount",
+                  "type": "integer",
+                  "description": "Smart Discount Value",
+                  "default": "0"
+                },
+                {
+                  "name": "footer",
+                  "type": "string",
+                  "description": "Smart Discount Footer Text",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "final_currency",
+              "type": "object",
+              "description": "Final Currency",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "webicon",
+                  "type": "string",
+                  "description": "Currency Webicon",
+                  "default": ""
+                },
+                {
+                  "name": "non-webicon",
+                  "type": "string",
+                  "description": "Currency Non-webicon",
+                  "default": ""
+                },
+                {
+                  "name": "iso_code",
+                  "type": "string",
+                  "description": "Currency Iso Code",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "price_after_discount",
+              "type": "string",
+              "description": "Property Price After Discount",
+              "default": ""
+            },
+            {
+              "name": "price_after_discount_unformatted",
+              "type": "integer",
+              "description": "Property Price After Discount Unformatted",
+              "default": "0"
+            },
+            {
+              "name": "price_before_discount",
+              "type": "string",
+              "description": "Property Price Before Discount",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "payment_methods",
+          "type": "object",
+          "description": "Property Payment Methods",
+          "default": "{}",
+          "children": [
+            {
+              "name": "instant_book",
+              "type": "integer",
+              "description": "Instant Bookable Status",
+              "default": "0"
+            },
+            {
+              "name": "cash_on_arrival",
+              "type": "integer",
+              "description": "Cash On Arrival Status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Property Generated Title",
+          "default": ""
+        },
+        {
+          "name": "property_title",
+          "type": "string",
+          "description": "Property Original Title",
+          "default": ""
+        },
+        {
+          "name": "property_images",
+          "type": "array",
+          "description": "Property Images Section",
+          "default": "[]",
+          "children": [
+            {
+              "name": "image",
+              "type": "string",
+              "description": "Image Url",
+              "default": ""
+            },
+            {
+              "name": "caption",
+              "type": "string",
+              "description": "Image Caption",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "property_videos_available",
+          "type": "integer",
+          "description": "Property Videos Available Status",
+          "default": "0"
+        },
+        {
+          "name": "property_tags",
+          "type": "array",
+          "description": "Property Tags",
+          "default": "[]",
+          "children": [
+            {
+              "name": "id",
+              "type": "integer",
+              "description": "Tag Id",
+              "default": "0"
+            },
+            {
+              "name": "class",
+              "type": "string",
+              "description": "Tag Class",
+              "default": ""
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Tag Text",
+              "default": ""
+            },
+            {
+              "name": "colorRgb",
+              "type": "string",
+              "description": "Tag Color Code in Rgb Format Eg. (210, 133, 134)",
+              "default": ""
+            },
+            {
+              "name": "colorHex",
+              "type": "string",
+              "description": "Tag Color Code in Hex Format Eg. #f3f3f3",
+              "default": ""
+            },
+            {
+              "name": "textRgb",
+              "type": "string",
+              "description": "Tag Text Coloe Code in Rgb Format Eg. (218, 345, 134)",
+              "default": ""
+            },
+            {
+              "name": "textHex",
+              "type": "string",
+              "description": "Tag Text Color Code in Hex Format Eg. #f3f3f3",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Property Url",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Message of Profile Update Status"
+    }
+  ]
+}

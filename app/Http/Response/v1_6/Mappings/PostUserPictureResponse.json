@@ -1,0 +1,26 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PostUserPictureResponse",
+    "definition": "PostUserPictureResponse",
+    "description": "Response for Update user profile api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "picture",
+      "type": "string",
+      "default": "",
+      "description": "Uploaded Image Url"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Upload Message"
+    }
+  ]
+}

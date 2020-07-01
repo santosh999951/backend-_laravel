@@ -1,0 +1,26 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "DeleteProperlyExpenseResponse",
+        "definition": "DeleteProperlyExpenseResponse",
+        "description": "DeleteProperlyExpenseResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "properly_expense_hash_id",
+            "type": "string",
+            "default": "",
+            "description": "Property Properly Expense Hash Id"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Property Message"
+        }
+    ]
+}

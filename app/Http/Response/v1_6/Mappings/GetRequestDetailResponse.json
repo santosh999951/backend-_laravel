@@ -1,0 +1,582 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetRequestDetailResponse",
+    "definition": "GetRequestDetailResponse",
+    "description": "Response Model for Request Detail Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "invoice_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Request Invoice Section",
+      "children": [
+        {
+          "name": "invoice_header",
+          "type": "array",
+          "description": "Request Invoice Header",
+          "default": "[]",
+          "children": [
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Key Eg. Base price, Extra guest cost",
+              "default": ""
+            },
+            {
+              "name": "sub_key",
+              "type": "string",
+              "description": "Sub Key Eg. for 1 night, 1 unit, 1 guest",
+              "default": ""
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Value Eg. ₹4,122",
+              "default": ""
+            },
+            {
+              "name": "show",
+              "type": "integer",
+              "description": "Show Status in 0,1",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "invoice_middle",
+          "type": "array",
+          "description": "Request Invoice Middle",
+          "default": "[]",
+          "children": [
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Key Eg. Total amount, Cleaning fee",
+              "default": ""
+            },
+            {
+              "name": "sub_key",
+              "type": "string",
+              "description": "Sub Key Eg. ₹4,122 x 3 nights",
+              "default": ""
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Value Eg. ₹4,122",
+              "default": ""
+            },
+            {
+              "name": "show",
+              "type": "integer",
+              "description": "Show Status in 0,1",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "invoice_footer",
+          "type": "array",
+          "description": "Request Invoice Footer",
+          "default": "[]",
+          "children": [
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Key Eg. Booking Amount, Payable now",
+              "default": ""
+            },
+            {
+              "name": "sub_key",
+              "type": "string",
+              "description": "Sub Key",
+              "default": ""
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Value Eg. ₹4,122",
+              "default": ""
+            },
+            {
+              "name": "show",
+              "type": "integer",
+              "description": "Show Status in 0,1",
+              "default": "0"
+            },
+            {
+              "name": "bold",
+              "type": "integer",
+              "description": "Bold Status in 0,1",
+              "default": "0"
+            },
+            {
+              "name": "size",
+              "type": "integer",
+              "description": "Size status in 0,1",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "selected_payment_method",
+          "type": "string",
+          "description": "Selected Payment Method Section",
+          "default": ""
+        },
+        {
+          "name": "selected_payment_method_text",
+          "type": "string",
+          "description": "Selected Payment Method Text",
+          "default": ""
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "Currency",
+          "default": ""
+        },
+        {
+          "name": "currency_code",
+          "type": "string",
+          "description": "Currency Code",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "booking_info_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Booking Info Section",
+      "children": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "Booking Info",
+          "default": "{}",
+          "children": [
+            {
+              "name": "checkin_formatted",
+              "type": "string",
+              "description": "Booking Checkin Formatted Eg. 12 Dec 2018",
+              "default": ""
+            },
+            {
+              "name": "checkout_formatted",
+              "type": "string",
+              "description": "Booking Checkout Formatted Eg. 12 Dec 2018",
+              "default": ""
+            },
+            {
+              "name": "checkin",
+              "type": "string",
+              "description": "Booking Checkin Eg. 12-12-2018",
+              "default": ""
+            },
+            {
+              "name": "checkout",
+              "type": "string",
+              "description": "Booking Checkout Eg. 12-12-2018",
+              "default": ""
+            },
+            {
+              "name": "guests",
+              "type": "integer",
+              "description": "Booking Guests",
+              "default": "0"
+            },
+            {
+              "name": "units",
+              "type": "integer",
+              "description": "Booking Units",
+              "default": "0"
+            },
+            {
+              "name": "property_hash_id",
+              "type": "string",
+              "description": "Property Hash Id",
+              "default": ""
+            },
+            {
+              "name": "property_type",
+              "type": "string",
+              "description": "Property Type",
+              "default": ""
+            },
+            {
+              "name": "request_hash_id",
+              "type": "string",
+              "description": "Request Hash Id",
+              "default": ""
+            },
+            {
+              "name": "booking_status",
+              "type": "object",
+              "description": "Booking Status Section",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "text",
+                  "type": "string",
+                  "description": "Booking Status Text",
+                  "default": ""
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "description": "Booking Status Class",
+                  "default": ""
+                },
+                {
+                  "name": "color_code",
+                  "type": "string",
+                  "description": "Booking Status Color Code",
+                  "default": ""
+                },
+                {
+                  "name": "status",
+                  "type": "integer",
+                  "description": "Booking Status Id",
+                  "default": "0"
+                },
+                {
+                  "name": "header_text",
+                  "type": "string",
+                  "description": "Booking Request Header Text",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "resend_request",
+              "type": "integer",
+              "description": "Resend Request Status",
+              "default": "0"
+            },
+            {
+              "name": "check_other_date",
+              "type": "integer",
+              "description": "Request Check Other Date Status",
+              "default": "0"
+            },
+            {
+              "name": "expires_in",
+              "type": "integer",
+              "description": "Request Expires In",
+              "default": "0"
+            },
+            {
+              "name": "payment_url",
+              "type": "string",
+              "description": "Request Payment Url",
+              "default": ""
+            },
+            {
+              "name": "payment_gateway_method",
+              "type": "string",
+              "description": "Payment Gateway Method",
+              "default": ""
+            },
+            {
+              "name": "instant",
+              "type": "integer",
+              "description": "Instant Bookable status",
+              "default": "0"
+            },
+            {
+              "name": "coupon_code_used",
+              "type": "string",
+              "description": "Coupon Code Used Status",
+              "default": ""
+            },
+            {
+              "name": "wallet_money_used",
+              "type": "integer",
+              "description": "Wallet Money Used Status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "booking_amount_info",
+          "type": "object",
+          "description": "Booking Amount Info",
+          "default": "{}",
+          "children": [
+            {
+              "name": "total_amount_unformatted",
+              "type": "float",
+              "description": "Total Amount Unformatted",
+              "default": "0.0"
+            },
+            {
+              "name": "payment_option",
+              "type": "string",
+              "description": "Payment Option",
+              "default": ""
+            },
+            {
+              "name": "currency",
+              "type": "object",
+              "description": "Currency",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "webicon",
+                  "type": "string",
+                  "description": "Currency Webicon",
+                  "default": ""
+                },
+                {
+                  "name": "non-webicon",
+                  "type": "string",
+                  "description": "Currency Non-webicon",
+                  "default": ""
+                },
+                {
+                  "name": "iso_code",
+                  "type": "string",
+                  "description": "Currency Iso Code",
+                  "default": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cancellation_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Cancellation Section",
+      "children": [
+        {
+          "name": "cancellation_policy_info",
+          "type": "object",
+          "description": "Cancellation Policy Info",
+          "default": "{}",
+          "children": [
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Cancellation Policy Title",
+              "default": ""
+            },
+            {
+              "name": "sub",
+              "type": "string",
+              "description": "Cancellation Policy Sub",
+              "default": ""
+            },
+            {
+              "name": "button_text",
+              "type": "string",
+              "description": "Cancellation Button Text",
+              "default": ""
+            },
+            {
+              "name": "final_amount",
+              "type": "float",
+              "description": "Cancellation Final Amount",
+              "default": "0.0"
+            }
+          ]
+        },
+        {
+          "name": "cancellable",
+          "type": "integer",
+          "description": "Cancellable Status",
+          "default": "0"
+        },
+        {
+          "name": "cancellation_reasons",
+          "type": "array",
+          "description": "Cancellation Reasons",
+          "default": "[]",
+          "children": [
+            {
+              "name": "id",
+              "type": "integer",
+              "description": "Cancellation Id",
+              "default": "0"
+            },
+            {
+              "name": "reason_title",
+              "type": "string",
+              "description": "Cancellation Reason Title",
+              "default": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "property_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Section",
+      "children": [
+        {
+          "name": "tile",
+          "type": "object",
+          "description": "Property Tile",
+          "default": "{}",
+          "children": [
+            {
+              "name": "property_id",
+              "type": "integer",
+              "description": "Property Id",
+              "default": "0"
+            },
+            {
+              "name": "property_hash_id",
+              "type": "string",
+              "description": "Property Hash Id",
+              "default": ""
+            },
+            {
+              "name": "property_type",
+              "type": "string",
+              "description": "Property Type",
+              "default": ""
+            },
+            {
+              "name": "room_type",
+              "type": "string",
+              "description": "Property Room Type",
+              "default": ""
+            },
+            {
+              "name": "property_score",
+              "type": "string",
+              "description": "Property Score",
+              "default": ""
+            },
+            {
+              "name": "host_name",
+              "type": "string",
+              "description": "Property Host Name",
+              "default": ""
+            },
+            {
+              "name": "host_image",
+              "type": "string",
+              "description": "Property Host Image",
+              "default": ""
+            },
+            {
+              "name": "location",
+              "type": "object",
+              "description": "Property Location",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "area",
+                  "type": "string",
+                  "description": "Property Area",
+                  "default": ""
+                },
+                {
+                  "name": "city",
+                  "type": "string",
+                  "description": "Property City",
+                  "default": ""
+                },
+                {
+                  "name": "state",
+                  "type": "string",
+                  "description": "Property State",
+                  "default": ""
+                },
+                {
+                  "name": "country",
+                  "type": "object",
+                  "description": "Property Country",
+                  "default": "{}",
+                  "children": [
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "description": "Country Name",
+                      "default": ""
+                    },
+                    {
+                      "name": "ccode",
+                      "type": "string",
+                      "description": "Country Ccode",
+                      "default": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "location_name",
+                  "type": "string",
+                  "description": "Location Name",
+                  "default": ""
+                },
+                {
+                  "name": "latitude",
+                  "type": "string",
+                  "description": "Latitude",
+                  "default": ""
+                },
+                {
+                  "name": "longitude",
+                  "type": "string",
+                  "description": "Longitude",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Property Generated Title",
+              "default": ""
+            },
+            {
+              "name": "property_title",
+              "type": "string",
+              "description": "Property Original Title",
+              "default": ""
+            },
+            {
+              "name": "property_images",
+              "type": "array",
+              "description": "Property Images",
+              "default": "[]",
+              "children": [
+                {
+                  "name": "image",
+                  "type": "string",
+                  "description": "Images Url",
+                  "default": ""
+                },
+                {
+                  "name": "caption",
+                  "type": "string",
+                  "description": "Images Caption",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "url",
+              "type": "string",
+              "description": "Property Url",
+              "default": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

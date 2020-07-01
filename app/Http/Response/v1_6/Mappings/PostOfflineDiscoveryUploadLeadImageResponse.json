@@ -1,0 +1,26 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostOfflineDiscoveryUploadLeadImageResponse",
+        "definition": "PostOfflineDiscoveryUploadLeadImageResponse",
+        "description": "PostOfflineDiscoveryUploadLeadImageResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "picture",
+            "type": "string",
+            "default": "",
+            "description": "Lead Property Picture"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        }
+    ]
+}

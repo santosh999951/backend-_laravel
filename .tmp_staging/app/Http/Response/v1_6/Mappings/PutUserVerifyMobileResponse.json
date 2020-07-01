@@ -1,0 +1,32 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutUserVerifyMobileResponse",
+    "definition": "PutUserVerifyMobileResponse",
+    "description": "Response Model for match OTP for Update Contact Number",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "dial_code",
+      "type": "string",
+      "default": "",
+      "description": "Dial Code"
+    },
+    {
+      "name": "contact_number",
+      "type": "string",
+      "default": "",
+      "description": "Contact Number"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Response Message"
+    }
+  ]
+}

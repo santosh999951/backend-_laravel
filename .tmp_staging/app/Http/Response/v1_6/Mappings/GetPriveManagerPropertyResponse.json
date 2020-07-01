@@ -1,0 +1,148 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveManagerPropertyResponse",
+        "definition": "GetPriveManagerPropertyResponse",
+        "description": "GetPriveManagerPropertyResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "properties",
+            "type": "array",
+            "description": "Properties",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "property_images",
+                    "type": "array",
+                    "description": "Property Property Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Property Image",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Property Caption",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "location",
+                    "type": "object",
+                    "description": "Property Location",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "area",
+                            "type": "string",
+                            "description": "Property Area",
+                            "default": ""
+                        },
+                        {
+                            "name": "city",
+                            "type": "string",
+                            "description": "Property City",
+                            "default": ""
+                        },
+                        {
+                            "name": "state",
+                            "type": "string",
+                            "description": "Property State",
+                            "default": ""
+                        },
+                        {
+                            "name": "country",
+                            "type": "object",
+                            "description": "Property Country",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "name",
+                                    "type": "string",
+                                    "description": "Property Name",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "ccode",
+                                    "type": "string",
+                                    "description": "Property Ccode",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "location_name",
+                            "type": "string",
+                            "description": "Property Location Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "latitude",
+                            "type": "string",
+                            "description": "Property Latitude",
+                            "default": ""
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "string",
+                            "description": "Property Longitude",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Url",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "string",
+                    "description": "Units",
+                    "default": ""
+                },
+                {
+                    "name": "per_night_price",
+                    "type": "string",
+                    "description": "Per Night Price",
+                    "default": ""
+                },
+                {
+                    "name": "occupancy_rate",
+                    "type": "integer",
+                    "description": "Property Occupancy Rate",
+                    "default": "0"
+                }
+            ]
+        },
+        {
+            "name": "total",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Total"
+        }
+    ]
+}

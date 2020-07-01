@@ -1,0 +1,26 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostPriveBookingResponse",
+        "definition": "PostPriveBookingResponse",
+        "description": "PostPriveBookingResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        },
+        {
+            "name": "request_id",
+            "type": "string",
+            "default": "",
+            "description": "Request Id"
+        }
+    ]
+}

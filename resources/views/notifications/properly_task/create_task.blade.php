@@ -1,0 +1,1 @@
+A new {{ $view_data['task_type'] }} task has been created for {{ $view_data['entity_id'] }} .

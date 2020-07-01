@@ -1,0 +1,176 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveBookingDetailResponse",
+        "definition": "GetPriveBookingDetailResponse",
+        "description": "GetPriveBookingDetailResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "booking_info",
+            "type": "object",
+            "description": "Booking Info",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "property_name",
+                    "type": "string",
+                    "description": "Name",
+                    "default": ""
+                },
+                {
+                    "name": "guests",
+                    "type": "integer",
+                    "description": "Guests",
+                    "default": "0"
+                },
+                {
+                    "name": "checkin",
+                    "type": "string",
+                    "description": "Checkin",
+                    "default": ""
+                },
+                {
+                    "name": "checkout",
+                    "type": "string",
+                    "description": "Checkout",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "integer",
+                    "description": "Units",
+                    "default": "0"
+                },
+                {
+                    "name": "room",
+                    "type": "integer",
+                    "description": "Room",
+                    "default": "0"
+                },
+                {
+                    "name": "guest_name",
+                    "type": "string",
+                    "description": "Guest Name",
+                    "default": ""
+                },
+                {
+                    "name": "host_fee",
+                    "type": "string",
+                    "description": "Host Fee",
+                    "default": ""
+                },
+                {
+                    "name": "extra_guest",
+                    "type": "integer",
+                    "description": "Extra Guest",
+                    "default": "0"
+                },
+                {
+                    "name": "properties_images",
+                    "type": "array",
+                    "description": "Images",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Caption",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "invoice",
+            "type": "object",
+            "description": "Invoice",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "invoice_header",
+                    "type": "array",
+                    "description": "Invoice Header",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "description": "Key",
+                            "default": ""
+                        },
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "description": "Value",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "invoice_middle",
+                    "type": "array",
+                    "description": "Invoice Middle",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "description": "Key",
+                            "default": ""
+                        },
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "description": "Value",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "invoice_footer",
+                    "type": "array",
+                    "description": "Invoice Footer",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "description": "Key",
+                            "default": ""
+                        },
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "description": "Value",
+                            "default": ""
+                        },
+                        {
+                            "name": "raw_value",
+                            "type": "integer",
+                            "description": "Raw Value",
+                            "default": "0"
+                        },
+                        {
+                            "name": "color",
+                            "type": "string",
+                            "description": "Color",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

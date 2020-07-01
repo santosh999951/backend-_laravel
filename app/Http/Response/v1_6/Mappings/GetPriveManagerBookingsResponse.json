@@ -1,0 +1,374 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveManagerBookingsResponse",
+        "definition": "GetPriveManagerBookingsResponse",
+        "description": "GetPriveManagerBookingsResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "booking_requests",
+            "type": "array",
+            "description": "Booking Requests data",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "request_hash_id",
+                    "type": "string",
+                    "description": "Request Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "guests",
+                    "type": "integer",
+                    "description": "Guests",
+                    "default": "0"
+                },
+                {
+                    "name": "amount",
+                    "type": "string",
+                    "description": "Amount",
+                    "default": ""
+                },
+                {
+                    "name": "booking_status",
+                    "type": "object",
+                    "description": "Booking Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Booking Status Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "class",
+                            "type": "string",
+                            "description": "Booking Status Class",
+                            "default": ""
+                        },
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Booking Status",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "object",
+                    "description": "Checkedin Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Checkedin Status Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "class",
+                            "type": "string",
+                            "description": "Property Class",
+                            "default": ""
+                        },
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Checkedin Status",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "checkin",
+                    "type": "string",
+                    "description": "Checkin",
+                    "default": ""
+                },
+                {
+                    "name": "checkout",
+                    "type": "string",
+                    "description": "Checkout",
+                    "default": ""
+                },
+                {
+                    "name": "checkin_formatted",
+                    "type": "string",
+                    "description": "Property Checkin Formatted",
+                    "default": ""
+                },
+                {
+                    "name": "checkout_formatted",
+                    "type": "string",
+                    "description": "Property Checkout Formatted",
+                    "default": ""
+                },
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "property_title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "property_type_name",
+                    "type": "string",
+                    "description": "Property Type Name",
+                    "default": ""
+                },
+                {
+                    "name": "room_type_name",
+                    "type": "string",
+                    "description": "Property Room Type Name",
+                    "default": ""
+                },
+                {
+                    "name": "traveller_hash_id",
+                    "type": "string",
+                    "description": "Traveller Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "traveller_name",
+                    "type": "string",
+                    "description": "Traveller Name",
+                    "default": ""
+                },
+                {
+                    "name": "verified",
+                    "type": "integer",
+                    "description": "Traveller Verified",
+                    "default": "0"
+                },
+                {
+                    "name": "location",
+                    "type": "object",
+                    "description": "Location",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "area",
+                            "type": "string",
+                            "description": "Location Area",
+                            "default": ""
+                        },
+                        {
+                            "name": "city",
+                            "type": "string",
+                            "description": "Location City",
+                            "default": ""
+                        },
+                        {
+                            "name": "state",
+                            "type": "string",
+                            "description": "Location State",
+                            "default": ""
+                        },
+                        {
+                            "name": "country",
+                            "type": "object",
+                            "description": "Location Country",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "name",
+                                    "type": "string",
+                                    "description": "Country Name",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "ccode",
+                                    "type": "string",
+                                    "description": "Country Ccode",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "location_name",
+                            "type": "string",
+                            "description": "Location Name",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "traveller_email",
+                    "type": "string",
+                    "description": "Property Traveller Email",
+                    "default": ""
+                },
+                {
+                    "name": "contacts",
+                    "type": "object",
+                    "description": "Property Contacts",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "manager",
+                            "type": "object",
+                            "description": "Property Manager",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "primary",
+                                    "type": "string",
+                                    "description": "Property Primary",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "secondary",
+                                    "type": "string",
+                                    "description": "Property Secondary",
+                                    "default": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "traveller",
+                            "type": "object",
+                            "description": "Property Traveller",
+                            "default": "{}",
+                            "children": [
+                                {
+                                    "name": "primary",
+                                    "type": "string",
+                                    "description": "Property Primary",
+                                    "default": ""
+                                },
+                                {
+                                    "name": "secondary",
+                                    "type": "string",
+                                    "description": "Property Secondary",
+                                    "default": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "filter",
+            "type": "object",
+            "description": "Booking Filter",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "start_date",
+                    "type": "string",
+                    "description": "Booking Start Date",
+                    "default": ""
+                },
+                {
+                    "name": "end_date",
+                    "type": "string",
+                    "description": "Booking End Date",
+                    "default": ""
+                },
+                {
+                    "name": "properties",
+                    "type": "array",
+                    "description": "Properties",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "property_hash_id",
+                            "type": "string",
+                            "description": "Property Hash Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "title",
+                            "type": "string",
+                            "description": "Property Title",
+                            "default": ""
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Property Selected",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "array",
+                    "description": "Status",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "class",
+                            "type": "string",
+                            "description": "Property Class",
+                            "default": ""
+                        },
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Status",
+                            "default": "0"
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Selected",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "type": "string",
+                    "description": "Property Search",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "sort",
+            "type": "object",
+            "description": "Sort",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "sort_by",
+                    "type": "integer",
+                    "description": "Sort By",
+                    "default": "0"
+                },
+                {
+                    "name": "order",
+                    "type": "string",
+                    "description": "Order",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "booking_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Booking Count"
+        }
+    ]
+}

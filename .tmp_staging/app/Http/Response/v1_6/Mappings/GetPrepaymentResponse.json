@@ -1,0 +1,718 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetPrepaymentResponse",
+    "definition": "GetPrepaymentResponse",
+    "description": "Response Model For Prepayment Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "property_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Section",
+      "children": [
+        {
+          "name": "tile",
+          "type": "object",
+          "description": "Property Tile Structure data",
+          "default": "{}",
+          "children": [
+            {
+              "name": "property_id",
+              "type": "integer",
+              "description": "Property Id",
+              "default": "0"
+            },
+            {
+              "name": "property_hash_id",
+              "type": "string",
+              "description": "Property Hash Id",
+              "default": ""
+            },
+            {
+              "name": "property_type",
+              "type": "string",
+              "description": "Property Type",
+              "default": ""
+            },
+            {
+              "name": "room_type",
+              "type": "string",
+              "description": "Property Room Type",
+              "default": ""
+            },
+            {
+              "name": "property_score",
+              "type": "string",
+              "description": "Property Score",
+              "default": ""
+            },
+            {
+              "name": "host_name",
+              "type": "string",
+              "description": "Property Host Name",
+              "default": ""
+            },
+            {
+              "name": "host_image",
+              "type": "string",
+              "description": "Property Host Image",
+              "default": ""
+            },
+            {
+              "name": "location",
+              "type": "object",
+              "description": "Property Location",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "area",
+                  "type": "string",
+                  "description": "Location Area",
+                  "default": ""
+                },
+                {
+                  "name": "city",
+                  "type": "string",
+                  "description": "Location City",
+                  "default": ""
+                },
+                {
+                  "name": "state",
+                  "type": "string",
+                  "description": "Location State",
+                  "default": ""
+                },
+                {
+                  "name": "country",
+                  "type": "object",
+                  "description": "Location Country",
+                  "default": "{}",
+                  "children": [
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "description": "Country Name",
+                      "default": ""
+                    },
+                    {
+                      "name": "ccode",
+                      "type": "string",
+                      "description": "Country Ccode",
+                      "default": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "location_name",
+                  "type": "string",
+                  "description": "Location Name",
+                  "default": ""
+                },
+                {
+                  "name": "latitude",
+                  "type": "string",
+                  "description": "Latitude",
+                  "default": ""
+                },
+                {
+                  "name": "longitude",
+                  "type": "string",
+                  "description": "Longitude",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Property Generated Title",
+              "default": ""
+            },
+            {
+              "name": "property_title",
+              "type": "string",
+              "description": "Property Original Title",
+              "default": ""
+            },
+            {
+              "name": "property_images",
+              "type": "array",
+              "description": "Property Images",
+              "default": "[]",
+              "children": [
+                {
+                  "name": "image",
+                  "type": "string",
+                  "description": "Image Url",
+                  "default": ""
+                },
+                {
+                  "name": "caption",
+                  "type": "string",
+                  "description": "Images Caption",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "url",
+              "type": "string",
+              "description": "Property Url",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "start_date",
+          "type": "string",
+          "description": "Booking Start Date Eg. 12-12-2018",
+          "default": ""
+        },
+        {
+          "name": "end_date",
+          "type": "string",
+          "description": "Booking End Date Eg. 12-12-2018",
+          "default": ""
+        },
+        {
+          "name": "required_units",
+          "type": "integer",
+          "description": "Booking Required Units",
+          "default": "0"
+        },
+        {
+          "name": "guests",
+          "type": "integer",
+          "description": "Booking Guests",
+          "default": "0"
+        },
+        {
+          "name": "selected_units",
+          "type": "string",
+          "description": "Booking Selected Units",
+          "default": ""
+        },
+        {
+          "name": "selected_guests",
+          "type": "integer",
+          "description": "Booking Selected Guests",
+          "default": "0"
+        },
+        {
+          "name": "min_nights",
+          "type": "integer",
+          "description": "Min Nights Stay",
+          "default": "0"
+        },
+        {
+          "name": "max_nights",
+          "type": "integer",
+          "description": "Max Nights Stay",
+          "default": "0"
+        },
+        {
+          "name": "available_units",
+          "type": "integer",
+          "description": "Property Available Units",
+          "default": "0"
+        },
+        {
+          "name": "guests_per_unit",
+          "type": "integer",
+          "description": "Property Guests Per Unit",
+          "default": "0"
+        },
+        {
+          "name": "instant_book",
+          "type": "integer",
+          "description": "Property Instant Book status",
+          "default": "0"
+        },
+        {
+          "name": "bookable_as_unit",
+          "type": "integer",
+          "description": "Property Bookable As Unit",
+          "default": "0"
+        }
+      ]
+    },
+    {
+      "name": "invoice",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Invoice",
+      "children": [
+        {
+          "name": "invoice_header",
+          "type": "array",
+          "description": "Property Invoice Header",
+          "default": "[]",
+          "children": [
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Key Eg. Base price, Extra guest cost",
+              "default": ""
+            },
+            {
+              "name": "sub_key",
+              "type": "string",
+              "description": "Sub Key Eg. (for 1 night, 1 unit, 1 guest)",
+              "default": ""
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Formatted Price Value Eg. ₹6,240",
+              "default": ""
+            },
+            {
+              "name": "show",
+              "type": "integer",
+              "description": "Section Show Status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "invoice_middle",
+          "type": "array",
+          "description": "Property Invoice Middle",
+          "default": "[]",
+          "children": [
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Key Eg. Total amount, Cleaning fee",
+              "default": ""
+            },
+            {
+              "name": "sub_key",
+              "type": "string",
+              "description": "Sub Key Eg. (₹6,240 x 3 nights)",
+              "default": ""
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Formatted Price Value Eg. ₹18,720",
+              "default": ""
+            },
+            {
+              "name": "show",
+              "type": "integer",
+              "description": "Section Show Status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "invoice_footer",
+          "type": "array",
+          "description": "Property Invoice Footer",
+          "default": "[]",
+          "children": [
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Key Eg. Booking Amount, Payable now",
+              "default": ""
+            },
+            {
+              "name": "sub_key",
+              "type": "string",
+              "description": "Sub Key",
+              "default": ""
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Formatted Price Value Eg. ₹25,838",
+              "default": ""
+            },
+            {
+              "name": "show",
+              "type": "integer",
+              "description": "Section Show Status",
+              "default": "0"
+            },
+            {
+              "name": "bold",
+              "type": "integer",
+              "description": "Section Bold Status",
+              "default": "0"
+            },
+            {
+              "name": "size",
+              "type": "integer",
+              "description": "Section Size Status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "selected_payment_method",
+          "type": "string",
+          "description": "Selected Payment Method",
+          "default": ""
+        },
+        {
+          "name": "selected_payment_method_text",
+          "type": "string",
+          "description": "Selected Payment Method Text",
+          "default": ""
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "Property Currency",
+          "default": ""
+        },
+        {
+          "name": "currency_code",
+          "type": "string",
+          "description": "Currency Code",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "payment_methods",
+      "type": "array",
+      "default": "[]",
+      "description": "Property Payment Methods",
+      "children": [
+        {
+          "name": "key",
+          "type": "string",
+          "description": "Key Eg. si_payment, partial_payment, full_payment",
+          "default": ""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "description": "Label of Payment Methods",
+          "default": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Title of Payment Methods",
+          "default": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "Description of Payment Methods",
+          "default": ""
+        },
+        {
+          "name": "sub_description",
+          "type": "string",
+          "description": "Sub Description of Payment Methods",
+          "default": ""
+        },
+        {
+          "name": "popup_text",
+          "type": "string",
+          "description": "Popup Text",
+          "default": ""
+        },
+        {
+          "name": "payable_amount",
+          "type": "float",
+          "description": "Payable Amount",
+          "default": "0.0"
+        },
+        {
+          "name": "payable_now",
+          "type": "integer",
+          "description": "Payable Now Amount",
+          "default": "0"
+        },
+        {
+          "name": "payable_later",
+          "type": "float",
+          "description": "Payable Later Amount",
+          "default": "0.0"
+        },
+        {
+          "name": "payable_later_before",
+          "type": "string",
+          "description": "Payable Later Before Amount",
+          "default": ""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "description": "Icon of Payment Methods",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "discount_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Discount Section",
+      "children": [
+        {
+          "name": "wallet",
+          "type": "object",
+          "description": "Wallet",
+          "default": "{}",
+          "children": [
+            {
+              "name": "wallet_money",
+              "type": "integer",
+              "description": "Wallet Money",
+              "default": "0"
+            },
+            {
+              "name": "applicable",
+              "type": "integer",
+              "description": "Wallet Applicable Status",
+              "default": "0"
+            },
+            {
+              "name": "wallet_currency_symbol",
+              "type": "string",
+              "description": "Wallet Currency Symbol",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "coupon",
+          "type": "object",
+          "description": "Coupon Applicable Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "applicable",
+              "type": "integer",
+              "description": "Coupon Applicable Status",
+              "default": "0"
+            }
+          ]
+        },
+        {
+          "name": "discount",
+          "type": "object",
+          "description": "Property Discount",
+          "default": "{}",
+          "children": [
+            {
+              "name": "discount_type",
+              "type": "string",
+              "description": "Discount Type",
+              "default": ""
+            },
+            {
+              "name": "discount",
+              "type": "integer",
+              "description": "Discount Amount",
+              "default": "0"
+            },
+            {
+              "name": "discount_code",
+              "type": "string",
+              "description": "Discount Code",
+              "default": ""
+            },
+            {
+              "name": "discount_message",
+              "type": "string",
+              "description": "Discount Message",
+              "default": ""
+            },
+            {
+              "name": "discount_valid",
+              "type": "integer",
+              "description": "Discount Valid Status",
+              "default": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "footer_data",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Footer Data",
+      "children": [
+        {
+          "name": "footer",
+          "type": "object",
+          "description": "Property Footer Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Title",
+              "default": ""
+            },
+            {
+              "name": "sub",
+              "type": "string",
+              "description": "Sub Title",
+              "default": ""
+            },
+            {
+              "name": "button_text",
+              "type": "string",
+              "description": "Button Text",
+              "default": ""
+            },
+            {
+              "name": "final_amount",
+              "type": "float",
+              "description": "Final Amount",
+              "default": "0.0"
+            }
+          ]
+        },
+        {
+          "name": "left_div",
+          "type": "object",
+          "description": "Property Left Div Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Title",
+              "default": ""
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Text",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "right_div",
+          "type": "object",
+          "description": "Property Right Div Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Title",
+              "default": ""
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Text",
+              "default": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "user_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Property User Section",
+      "children": [
+        {
+          "name": "is_mobile_verified",
+          "type": "integer",
+          "description": "User Mobile Verified Status",
+          "default": "0"
+        },
+        {
+          "name": "is_user_referred",
+          "type": "integer",
+          "description": "User Referred Status",
+          "default": "0"
+        }
+      ]
+    },
+    {
+      "name": "cancellation_section",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Cancellation Section",
+      "children": [
+        {
+          "name": "cancellation_policy_info",
+          "type": "object",
+          "description": "Property Cancellation Policy Info Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "[Integer]",
+              "type": "object",
+              "description": "Cancellation Id",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "integer",
+                  "description": "Cancellation Id",
+                  "default": "0"
+                },
+                {
+                  "name": "title",
+                  "type": "string",
+                  "description": "Cancellation Title",
+                  "default": ""
+                },
+                {
+                  "name": "policy_days",
+                  "type": "integer",
+                  "description": "Cancellation Policy Days",
+                  "default": "0"
+                },
+                {
+                  "name": "desc",
+                  "type": "string",
+                  "description": "Cancellation Description",
+                  "default": ""
+                },
+                {
+                  "name": "popup_text",
+                  "type": "string",
+                  "description": "Popup Text",
+                  "default": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Property Url",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "misconception",
+      "type": "string",
+      "default": "",
+      "description": "Misconception Error"
+    },
+    {
+      "name": "misconception_code",
+      "type": "string",
+      "default": "",
+      "description": "Misconception Error Code"
+    }
+  ]
+}

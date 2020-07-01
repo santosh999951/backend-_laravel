@@ -1,0 +1,272 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetHostPropertiesReviewResponse",
+    "definition": "GetHostPropertiesReviewResponse",
+    "description": "GetHostPropertiesReviewResponse",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "reviews",
+      "type": "array",
+      "default": "[]",
+      "description": "Reviews List",
+      "children": [
+        {
+          "name": "request_hash_id",
+          "type": "string",
+          "description": "Request Hash Id",
+          "default": ""
+        },
+        {
+          "name": "guests",
+          "type": "integer",
+          "description": "Property Guests",
+          "default": "0"
+        },
+        {
+          "name": "host_name",
+          "type": "string",
+          "description": "Host Name",
+          "default": ""
+        },
+        {
+          "name": "host_image",
+          "type": "string",
+          "description": "Host Image",
+          "default": ""
+        },
+        {
+          "name": "property_rating",
+          "type": "integer",
+          "description": "Property Rating",
+          "default": "0"
+        },
+        {
+          "name": "traveller_id",
+          "type": "string",
+          "description": "Traveller Id",
+          "default": ""
+        },
+        {
+          "name": "traveller_name",
+          "type": "string",
+          "description": "Traveller Name",
+          "default": ""
+        },
+        {
+          "name": "review_date",
+          "type": "string",
+          "description": "Review Date",
+          "default": ""
+        },
+        {
+          "name": "comment",
+          "type": "string",
+          "description": "Comment by Traveller",
+          "default": ""
+        },
+        {
+          "name": "reply",
+          "type": "string",
+          "description": "Reply by Host",
+          "default": ""
+        },
+        {
+          "name": "nights",
+          "type": "integer",
+          "description": "Nights stay",
+          "default": "0"
+        },
+        {
+          "name": "review_images",
+          "type": "array",
+          "description": "Review Images",
+          "default": "[]",
+          "children": [
+            {
+              "name": "value",
+              "type": "string",
+              "description": "Image Url",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "traveller_image",
+          "type": "string",
+          "description": "Traveller Image",
+          "default": ""
+        },
+        {
+          "name": "property_tile",
+          "type": "object",
+          "description": "Property Tile",
+          "default": "{}",
+          "children": [
+            {
+              "name": "property_id",
+              "type": "integer",
+              "description": "Property Id",
+              "default": "0"
+            },
+            {
+              "name": "property_hash_id",
+              "type": "string",
+              "description": "Property Hash Id",
+              "default": ""
+            },
+            {
+              "name": "property_type",
+              "type": "string",
+              "description": "Property Type",
+              "default": ""
+            },
+            {
+              "name": "room_type",
+              "type": "string",
+              "description": "Room Type",
+              "default": ""
+            },
+            {
+              "name": "property_score",
+              "type": "integer",
+              "description": "Property Score",
+              "default": "0"
+            },
+            {
+              "name": "host_name",
+              "type": "string",
+              "description": "Host Name",
+              "default": ""
+            },
+            {
+              "name": "host_image",
+              "type": "string",
+              "description": "Host Image",
+              "default": ""
+            },
+            {
+              "name": "location",
+              "type": "object",
+              "description": "Property Location",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "area",
+                  "type": "string",
+                  "description": "Location Area",
+                  "default": ""
+                },
+                {
+                  "name": "city",
+                  "type": "string",
+                  "description": "Location City",
+                  "default": ""
+                },
+                {
+                  "name": "state",
+                  "type": "string",
+                  "description": "Location State",
+                  "default": ""
+                },
+                {
+                  "name": "country",
+                  "type": "object",
+                  "description": "Location Country",
+                  "default": "{}",
+                  "children": [
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "description": "Country Name",
+                      "default": ""
+                    },
+                    {
+                      "name": "ccode",
+                      "type": "string",
+                      "description": "Country Ccode",
+                      "default": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "location_name",
+                  "type": "string",
+                  "description": "Location Name",
+                  "default": ""
+                },
+                {
+                  "name": "latitude",
+                  "type": "string",
+                  "description": "Latitude",
+                  "default": ""
+                },
+                {
+                  "name": "longitude",
+                  "type": "string",
+                  "description": "Longitude",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Property Generated Title",
+              "default": ""
+            },
+            {
+              "name": "property_title",
+              "type": "string",
+              "description": "Property Original Title",
+              "default": ""
+            },
+            {
+              "name": "property_images",
+              "type": "array",
+              "description": "Property Images Data",
+              "default": "[]",
+              "children": [
+                {
+                  "name": "image",
+                  "type": "string",
+                  "description": "Image Url",
+                  "default": ""
+                },
+                {
+                  "name": "caption",
+                  "type": "string",
+                  "description": "Image Caption",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "url",
+              "type": "string",
+              "description": "Property Url",
+              "default": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updated_offset",
+      "type": "integer",
+      "default": "0",
+      "description": "Updated Offset"
+    },
+    {
+      "name": "limit",
+      "type": "string",
+      "default": "",
+      "description": "Limit"
+    }
+  ]
+}

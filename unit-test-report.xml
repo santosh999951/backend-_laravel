@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="558" assertions="29110" failures="0" skipped="0" errors="0" time="941.095757">
+    <testsuite name="GetCommonDataTest" tests="2" assertions="14" failures="0" errors="0" time="0.26566" file="/home/santosh/var/www/guesthouser-api/tests/GetCommonDataTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetCommonDataTest" file="/home/santosh/var/www/guesthouser-api/tests/GetCommonDataTest.php" line="24" assertions="1" time="0.123171"/>
+      <testcase name="testResponseWithAuthorization" class="GetCommonDataTest" file="/home/santosh/var/www/guesthouser-api/tests/GetCommonDataTest.php" line="40" assertions="13" time="0.142489"/>
+    </testsuite>
+    <testsuite name="GetCountryCodesTest" tests="2" assertions="968" failures="0" errors="0" time="0.581085" file="/home/santosh/var/www/guesthouser-api/tests/GetCountryCodesTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetCountryCodesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetCountryCodesTest.php" line="24" assertions="484" time="0.111116"/>
+      <testcase name="testResponseWithAuthorization" class="GetCountryCodesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetCountryCodesTest.php" line="43" assertions="484" time="0.469969"/>
+    </testsuite>
+    <testsuite name="GetCurrencyCodesTest" tests="2" assertions="18" failures="0" errors="0" time="0.49343" file="/home/santosh/var/www/guesthouser-api/tests/GetCurrencyCodesTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetCurrencyCodesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetCurrencyCodesTest.php" line="24" assertions="9" time="0.100582"/>
+      <testcase name="testResponseWithAuthorization" class="GetCurrencyCodesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetCurrencyCodesTest.php" line="43" assertions="9" time="0.392848"/>
+    </testsuite>
+    <testsuite name="GetDialCodesTest" tests="2" assertions="1398" failures="0" errors="0" time="0.782629" file="/home/santosh/var/www/guesthouser-api/tests/GetDialCodesTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetDialCodesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetDialCodesTest.php" line="24" assertions="699" time="0.121773"/>
+      <testcase name="testResponseWithAuthorization" class="GetDialCodesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetDialCodesTest.php" line="43" assertions="699" time="0.660856"/>
+    </testsuite>
+    <testsuite name="GetBookingRequestTest" tests="2" assertions="48" failures="0" errors="0" time="2.623561" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestTest.php" line="24" assertions="1" time="0.139887"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestTest.php" line="39" assertions="47" time="2.483674"/>
+    </testsuite>
+    <testsuite name="GetBookingShareTest" tests="2" assertions="10" failures="0" errors="0" time="3.322393" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingShareTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetBookingShareTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingShareTest.php" line="24" assertions="1" time="0.149818"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetBookingShareTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingShareTest.php" line="39" assertions="9" time="3.172575"/>
+    </testsuite>
+    <testsuite name="GetBookingTripTest" tests="2" assertions="49" failures="0" errors="0" time="3.355809" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetBookingTripTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripTest.php" line="24" assertions="1" time="0.135569"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetBookingTripTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripTest.php" line="39" assertions="48" time="3.220240"/>
+    </testsuite>
+    <testsuite name="DeleteWishlistPropertyTest" tests="5" assertions="5" failures="0" errors="0" time="5.761615" file="/home/santosh/var/www/guesthouser-api/tests/DeleteWishlistPropertyTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="DeleteWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteWishlistPropertyTest.php" line="25" assertions="1" time="1.443414"/>
+      <testcase name="testResponseWithAuthorization" class="DeleteWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteWishlistPropertyTest.php" line="47" assertions="1" time="2.109896"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="DeleteWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteWishlistPropertyTest.php" line="74" assertions="1" time="0.454682"/>
+      <testcase name="testResponseNotFoundWithAuthorization" class="DeleteWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteWishlistPropertyTest.php" line="94" assertions="1" time="0.494455"/>
+      <testcase name="testResponseNotPresentInWishlist" class="DeleteWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteWishlistPropertyTest.php" line="114" assertions="1" time="1.259168"/>
+    </testsuite>
+    <testsuite name="GetHomeCollectionsTest" tests="2" assertions="586" failures="0" errors="0" time="4.613488" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetHomeCollectionsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsTest.php" line="24" assertions="293" time="2.046683"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHomeCollectionsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsTest.php" line="47" assertions="293" time="2.566805"/>
+    </testsuite>
+    <testsuite name="GetBookingRequestDetailsTest" tests="4" assertions="150" failures="0" errors="0" time="7.453711" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestDetailsTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetBookingRequestDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestDetailsTest.php" line="24" assertions="1" time="2.228575"/>
+      <testcase name="testResponseWithoutAuthorization" class="GetBookingRequestDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestDetailsTest.php" line="45" assertions="1" time="2.389070"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="GetBookingRequestDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestDetailsTest.php" line="68" assertions="1" time="0.409971"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetBookingRequestDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingRequestDetailsTest.php" line="91" assertions="147" time="2.426095"/>
+    </testsuite>
+    <testsuite name="GetHomeCollectionsDetailTest" tests="3" assertions="125" failures="0" errors="0" time="4.982318" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsDetailTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetHomeCollectionsDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsDetailTest.php" line="24" assertions="62" time="2.044468"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="GetHomeCollectionsDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsDetailTest.php" line="49" assertions="1" time="0.829106"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHomeCollectionsDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeCollectionsDetailTest.php" line="74" assertions="62" time="2.108744"/>
+    </testsuite>
+    <testsuite name="GetBookingTripDetailsTest" tests="4" assertions="178" failures="0" errors="0" time="9.037053" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripDetailsTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetBookingTripDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripDetailsTest.php" line="24" assertions="1" time="3.213101"/>
+      <testcase name="testResponseWithoutAuthorization" class="GetBookingTripDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripDetailsTest.php" line="45" assertions="1" time="2.711971"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetBookingTripDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripDetailsTest.php" line="68" assertions="1" time="0.534678"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetBookingTripDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetBookingTripDetailsTest.php" line="91" assertions="175" time="2.577303"/>
+    </testsuite>
+    <testsuite name="GetHomeTest" tests="2" assertions="7278" failures="0" errors="0" time="6.527151" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeTest.php" line="24" assertions="3595" time="3.078132"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeTest.php" line="52" assertions="3683" time="3.449019"/>
+    </testsuite>
+    <testsuite name="DeleteProperlyExpenseTest" tests="6" assertions="11" failures="0" errors="0" time="10.655278" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php">
+      <testcase name="testUnauthorizedRequestActionResponse" class="DeleteProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php" line="22" assertions="1" time="1.923381"/>
+      <testcase name="testForbiddenRequestActionResponse" class="DeleteProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php" line="46" assertions="1" time="2.638155"/>
+      <testcase name="testInvalidExpenseHashIdRequestActionResponse" class="DeleteProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php" line="73" assertions="1" time="0.322491"/>
+      <testcase name="testInvalidExpenseIdRequestActionResponse" class="DeleteProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php" line="94" assertions="1" time="0.654918"/>
+      <testcase name="testInvalidPropertyIdRequestActionResponse" class="DeleteProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php" line="120" assertions="1" time="1.900598"/>
+      <testcase name="testValidRequestActionResponse" class="DeleteProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/DeleteProperlyExpenseTest.php" line="152" assertions="6" time="3.215735"/>
+    </testsuite>
+    <testsuite name="GetHostPaymentPreferencesTest" tests="3" assertions="12" failures="0" errors="0" time="2.336833" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPaymentPreferencesTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPaymentPreferencesTest.php" line="24" assertions="1" time="0.089789"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPaymentPreferencesTest.php" line="41" assertions="1" time="0.520499"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPaymentPreferencesTest.php" line="61" assertions="10" time="1.726545"/>
+    </testsuite>
+    <testsuite name="GetHostHomeTest" tests="3" assertions="20" failures="0" errors="0" time="3.727449" file="/home/santosh/var/www/guesthouser-api/tests/GetHostHomeTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostHomeTest.php" line="24" assertions="1" time="0.099560"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostHomeTest.php" line="41" assertions="1" time="0.554463"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostHomeTest.php" line="61" assertions="18" time="3.073426"/>
+    </testsuite>
+    <testsuite name="GetHostBookingTest" tests="4" assertions="47" failures="0" errors="0" time="6.977944" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTest.php" line="25" assertions="1" time="0.098980"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTest.php" line="42" assertions="1" time="0.452118"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="GetHostBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTest.php" line="62" assertions="1" time="3.167033"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTest.php" line="93" assertions="44" time="3.259813"/>
+    </testsuite>
+    <testsuite name="GetHomeGraphTest" tests="5" assertions="33" failures="0" errors="0" time="11.882064" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeGraphTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetHomeGraphTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeGraphTest.php" line="25" assertions="1" time="0.091971"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHomeGraphTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeGraphTest.php" line="42" assertions="1" time="0.463732"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="GetHomeGraphTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeGraphTest.php" line="62" assertions="1" time="0.370990"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHomeGraphTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeGraphTest.php" line="89" assertions="10" time="5.000325"/>
+      <testcase name="testValidResponseWithValuesAuthentication" class="GetHomeGraphTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHomeGraphTest.php" line="110" assertions="20" time="5.955046"/>
+    </testsuite>
+    <testsuite name="GetHostBookingRequestDetailTest" tests="4" assertions="109" failures="0" errors="0" time="10.189348" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingRequestDetailTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostBookingRequestDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingRequestDetailTest.php" line="24" assertions="1" time="1.821435"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostBookingRequestDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingRequestDetailTest.php" line="47" assertions="1" time="2.976388"/>
+      <testcase name="testInvalidRequestIdWithAuthentication" class="GetHostBookingRequestDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingRequestDetailTest.php" line="73" assertions="1" time="2.548170"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostBookingRequestDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingRequestDetailTest.php" line="97" assertions="106" time="2.843355"/>
+    </testsuite>
+    <testsuite name="GetOfflineDiscoveryLeadFormListTest" tests="2" assertions="272" failures="0" errors="0" time="0.709144" file="/home/santosh/var/www/guesthouser-api/tests/GetOfflineDiscoveryLeadFormListTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetOfflineDiscoveryLeadFormListTest" file="/home/santosh/var/www/guesthouser-api/tests/GetOfflineDiscoveryLeadFormListTest.php" line="24" assertions="1" time="0.091748"/>
+      <testcase name="testResponseWithAuthorization" class="GetOfflineDiscoveryLeadFormListTest" file="/home/santosh/var/www/guesthouser-api/tests/GetOfflineDiscoveryLeadFormListTest.php" line="40" assertions="271" time="0.617396"/>
+    </testsuite>
+    <testsuite name="GetPopularSearchTest" tests="2" assertions="102" failures="0" errors="0" time="0.486942" file="/home/santosh/var/www/guesthouser-api/tests/GetPopularSearchTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetPopularSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPopularSearchTest.php" line="25" assertions="51" time="0.117088"/>
+      <testcase name="testResponseWithAuthorization" class="GetPopularSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPopularSearchTest.php" line="44" assertions="51" time="0.369854"/>
+    </testsuite>
+    <testsuite name="GetHostPropertyCalendarTest" tests="5" assertions="43" failures="0" errors="0" time="5.886801" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyCalendarTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyCalendarTest.php" line="24" assertions="1" time="0.092620"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyCalendarTest.php" line="41" assertions="1" time="0.534783"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyCalendarTest.php" line="61" assertions="39" time="1.914332"/>
+      <testcase name="testInvalidResponseWithAuthenticationWithoutPropertyId" class="GetHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyCalendarTest.php" line="91" assertions="1" time="1.852471"/>
+      <testcase name="testValidResponseWithAuthenticationWrongPropertyId" class="GetHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyCalendarTest.php" line="113" assertions="1" time="1.492595"/>
+    </testsuite>
+    <testsuite name="GetHostPropertyTest" tests="3" assertions="45" failures="0" errors="0" time="2.23234" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyTest.php" line="24" assertions="1" time="0.093916"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyTest.php" line="41" assertions="1" time="0.587913"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyTest.php" line="61" assertions="43" time="1.550511"/>
+    </testsuite>
+    <testsuite name="GetHostPayoutsTest" tests="4" assertions="22" failures="0" errors="0" time="6.85514" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPayoutsTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostPayoutsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPayoutsTest.php" line="24" assertions="1" time="0.085238"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostPayoutsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPayoutsTest.php" line="41" assertions="1" time="0.404014"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostPayoutsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPayoutsTest.php" line="61" assertions="19" time="3.081418"/>
+      <testcase name="testValidResponseWithAuthenticationWithInvalidParameter" class="GetHostPayoutsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPayoutsTest.php" line="84" assertions="1" time="3.284470"/>
+    </testsuite>
+    <testsuite name="GetOfflineDiscoverySearchTest" tests="2" assertions="67" failures="0" errors="0" time="0.647523" file="/home/santosh/var/www/guesthouser-api/tests/GetOfflineDiscoverySearchTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetOfflineDiscoverySearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetOfflineDiscoverySearchTest.php" line="25" assertions="1" time="0.094834"/>
+      <testcase name="testResponseWithAuthorization" class="GetOfflineDiscoverySearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetOfflineDiscoverySearchTest.php" line="41" assertions="66" time="0.552689"/>
+    </testsuite>
+    <testsuite name="GetHostPropertyReviewTest" tests="3" assertions="48" failures="0" errors="0" time="5.597382" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyReviewTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyReviewTest.php" line="21" assertions="1" time="0.083374"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyReviewTest.php" line="38" assertions="1" time="0.463762"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyReviewTest.php" line="58" assertions="46" time="5.050246"/>
+    </testsuite>
+    <testsuite name="GetHostPropertyDetailTest" tests="4" assertions="48" failures="0" errors="0" time="6.553031" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyDetailTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostPropertyDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyDetailTest.php" line="24" assertions="1" time="1.502858"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostPropertyDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyDetailTest.php" line="47" assertions="1" time="1.979739"/>
+      <testcase name="testInvalidHashIdResponseWithAuthentication" class="GetHostPropertyDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyDetailTest.php" line="73" assertions="1" time="1.438244"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostPropertyDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostPropertyDetailTest.php" line="97" assertions="45" time="1.632190"/>
+    </testsuite>
+    <testsuite name="GetHostBookingTripDetailTest" tests="4" assertions="112" failures="0" errors="0" time="12.073678" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTripDetailTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetHostBookingTripDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTripDetailTest.php" line="24" assertions="1" time="2.907360"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetHostBookingTripDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTripDetailTest.php" line="47" assertions="1" time="3.403216"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="GetHostBookingTripDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTripDetailTest.php" line="73" assertions="1" time="3.102804"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetHostBookingTripDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetHostBookingTripDetailTest.php" line="97" assertions="109" time="2.660298"/>
+    </testsuite>
+    <testsuite name="GetPrePaymentTest" tests="4" assertions="318" failures="0" errors="0" time="5.208472" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPrePaymentTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentTest.php" line="53" assertions="158" time="1.345391"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="GetPrePaymentTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentTest.php" line="82" assertions="1" time="1.410436"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetPrePaymentTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentTest.php" line="113" assertions="1" time="0.497905"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPrePaymentTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentTest.php" line="141" assertions="158" time="1.954740"/>
+    </testsuite>
+    <testsuite name="GetPriveManagerBookingDetailTest" tests="3" assertions="81" failures="0" errors="0" time="5.341667" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingDetailTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetPriveManagerBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingDetailTest.php" line="24" assertions="1" time="0.107610"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPriveManagerBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingDetailTest.php" line="44" assertions="1" time="0.461051"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveManagerBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingDetailTest.php" line="67" assertions="79" time="4.773006"/>
+    </testsuite>
+    <testsuite name="GetPrePaymentRequestTest" tests="4" assertions="158" failures="0" errors="0" time="7.933227" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentRequestTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPrePaymentRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentRequestTest.php" line="39" assertions="1" time="2.134561"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPrePaymentRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentRequestTest.php" line="67" assertions="155" time="2.449333"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="GetPrePaymentRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentRequestTest.php" line="97" assertions="1" time="2.763913"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetPrePaymentRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrePaymentRequestTest.php" line="127" assertions="1" time="0.585420"/>
+    </testsuite>
+    <testsuite name="GetPriveProfileTest" tests="3" assertions="32" failures="0" errors="0" time="1.087005" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveProfileTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPriveProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveProfileTest.php" line="24" assertions="1" time="0.102376"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveProfileTest.php" line="41" assertions="15" time="0.410845"/>
+      <testcase name="testResponseWithValuesAuthorization" class="GetPriveProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveProfileTest.php" line="62" assertions="16" time="0.573784"/>
+    </testsuite>
+    <testsuite name="GetPriveManagerPropertiesTest" tests="3" assertions="179" failures="0" errors="0" time="2.979852" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerPropertiesTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetPriveManagerPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerPropertiesTest.php" line="24" assertions="1" time="0.124043"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPriveManagerPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerPropertiesTest.php" line="41" assertions="1" time="0.492453"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveManagerPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerPropertiesTest.php" line="61" assertions="177" time="2.363356"/>
+    </testsuite>
+    <testsuite name="GetPriveManagerBookingListTest" tests="3" assertions="7152" failures="0" errors="0" time="7.393279" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingListTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetPriveManagerBookingListTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingListTest.php" line="24" assertions="1" time="0.093720"/>
+      <testcase name="testInvalidResponseForNonManagerWithAuthentication" class="GetPriveManagerBookingListTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingListTest.php" line="41" assertions="1" time="0.473321"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveManagerBookingListTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveManagerBookingListTest.php" line="61" assertions="7150" time="6.826238"/>
+    </testsuite>
+    <testsuite name="GetPriveHomeTest" tests="4" assertions="156" failures="0" errors="0" time="10.072307" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveHomeTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPriveHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveHomeTest.php" line="25" assertions="1" time="0.085854"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPriveHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveHomeTest.php" line="42" assertions="1" time="0.297578"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveHomeTest.php" line="61" assertions="77" time="4.640460"/>
+      <testcase name="testValidResponseWithValuesAuthentication" class="GetPriveHomeTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveHomeTest.php" line="82" assertions="77" time="5.048415"/>
+    </testsuite>
+    <testsuite name="GetProperlyExpenseTest" tests="3" assertions="8" failures="0" errors="0" time="3.970639" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="GetProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseTest.php" line="23" assertions="1" time="0.090474"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseTest.php" line="40" assertions="1" time="0.722923"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseTest.php" line="61" assertions="6" time="3.157242"/>
+    </testsuite>
+    <testsuite name="GetPriveInvoiceTest" tests="5" assertions="47" failures="0" errors="0" time="12.619176" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveInvoiceTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPriveInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveInvoiceTest.php" line="26" assertions="1" time="0.086672"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPriveInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveInvoiceTest.php" line="43" assertions="1" time="0.602540"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="GetPriveInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveInvoiceTest.php" line="63" assertions="1" time="0.335984"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveInvoiceTest.php" line="88" assertions="11" time="5.605694"/>
+      <testcase name="testValidResponseValuesWithAuthentication" class="GetPriveInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveInvoiceTest.php" line="109" assertions="33" time="5.988286"/>
+    </testsuite>
+    <testsuite name="GetProperlyExpenseIndexTest" tests="3" assertions="142" failures="0" errors="0" time="5.350285" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseIndexTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="GetProperlyExpenseIndexTest" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseIndexTest.php" line="24" assertions="1" time="0.087709"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetProperlyExpenseIndexTest" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseIndexTest.php" line="41" assertions="1" time="0.349523"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetProperlyExpenseIndexTest" file="/home/santosh/var/www/guesthouser-api/tests/GetProperlyExpenseIndexTest.php" line="62" assertions="140" time="4.913053"/>
+    </testsuite>
+    <testsuite name="GetReferDetailsTest" tests="3" assertions="11" failures="0" errors="0" time="0.885946" file="/home/santosh/var/www/guesthouser-api/tests/GetReferDetailsTest.php">
+      <testcase name="testBadRequest" class="GetReferDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetReferDetailsTest.php" line="25" assertions="1" time="0.097160"/>
+      <testcase name="testResponseWrongReferalCode" class="GetReferDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetReferDetailsTest.php" line="41" assertions="1" time="0.095997"/>
+      <testcase name="testResponseWithReferalCode" class="GetReferDetailsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetReferDetailsTest.php" line="60" assertions="9" time="0.692789"/>
+    </testsuite>
+    <testsuite name="GetPrivePropertyTest" tests="4" assertions="53" failures="0" errors="0" time="6.905867" file="/home/santosh/var/www/guesthouser-api/tests/GetPrivePropertyTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetPrivePropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrivePropertyTest.php" line="24" assertions="1" time="0.088871"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPrivePropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrivePropertyTest.php" line="43" assertions="1" time="0.329915"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPrivePropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrivePropertyTest.php" line="63" assertions="19" time="2.709581"/>
+      <testcase name="testValidResponseWithValuesAuthentication" class="GetPrivePropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPrivePropertyTest.php" line="95" assertions="32" time="3.777500"/>
+    </testsuite>
+    <testsuite name="GetPriveBookingDetailTest" tests="5" assertions="68" failures="0" errors="0" time="15.369306" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingDetailTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPriveBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingDetailTest.php" line="25" assertions="1" time="3.323994"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPriveBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingDetailTest.php" line="48" assertions="1" time="3.769414"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="GetPriveBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingDetailTest.php" line="71" assertions="1" time="0.352390"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingDetailTest.php" line="93" assertions="32" time="3.770582"/>
+      <testcase name="testValidResponseWithValuesAuthentication" class="GetPriveBookingDetailTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingDetailTest.php" line="117" assertions="33" time="4.152926"/>
+    </testsuite>
+    <testsuite name="GetPropertyPriceCalendarTest" tests="4" assertions="3340" failures="0" errors="0" time="7.464363" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyPriceCalendarTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPropertyPriceCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyPriceCalendarTest.php" line="24" assertions="1113" time="1.947784"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPropertyPriceCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyPriceCalendarTest.php" line="53" assertions="1113" time="2.261561"/>
+      <testcase name="testDisabledResponseWithAuthentication" class="GetPropertyPriceCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyPriceCalendarTest.php" line="84" assertions="1113" time="2.729586"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetPropertyPriceCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyPriceCalendarTest.php" line="112" assertions="1" time="0.525432"/>
+    </testsuite>
+    <testsuite name="GetPriveBookingTest" tests="5" assertions="80" failures="0" errors="0" time="17.938344" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetPriveBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingTest.php" line="25" assertions="1" time="0.124469"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetPriveBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingTest.php" line="42" assertions="1" time="0.408097"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="GetPriveBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingTest.php" line="62" assertions="1" time="5.582691"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPriveBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingTest.php" line="92" assertions="25" time="5.521879"/>
+      <testcase name="testValidResponseWithValuesAuthentication" class="GetPriveBookingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPriveBookingTest.php" line="124" assertions="52" time="6.301208"/>
+    </testsuite>
+    <testsuite name="GetRmHostListingTest" tests="3" assertions="12" failures="0" errors="0" time="4.620689" file="/home/santosh/var/www/guesthouser-api/tests/GetRmHostListingTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetRmHostListingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmHostListingTest.php" line="25" assertions="1" time="0.083898"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetRmHostListingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmHostListingTest.php" line="42" assertions="1" time="0.470833"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetRmHostListingTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmHostListingTest.php" line="62" assertions="10" time="4.065958"/>
+    </testsuite>
+    <testsuite name="GetSearchSpotlightTest" tests="2" assertions="410" failures="0" errors="0" time="0.814273" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchSpotlightTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetSearchSpotlightTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchSpotlightTest.php" line="24" assertions="205" time="0.142918"/>
+      <testcase name="testResponseWithAuthorization" class="GetSearchSpotlightTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchSpotlightTest.php" line="42" assertions="205" time="0.671355"/>
+    </testsuite>
+    <testsuite name="GetSearchRecentTest" tests="2" assertions="54" failures="0" errors="0" time="2.751396" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchRecentTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetSearchRecentTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchRecentTest.php" line="24" assertions="1" time="0.084590"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetSearchRecentTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchRecentTest.php" line="39" assertions="53" time="2.666806"/>
+    </testsuite>
+    <testsuite name="GetRmAsHostLoginTest" tests="4" assertions="49" failures="0" errors="0" time="8.554971" file="/home/santosh/var/www/guesthouser-api/tests/GetRmAsHostLoginTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetRmAsHostLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmAsHostLoginTest.php" line="25" assertions="1" time="1.590651"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="GetRmAsHostLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmAsHostLoginTest.php" line="46" assertions="1" time="2.332703"/>
+      <testcase name="testInvalidResponseForInavalidHostWithAuthentication" class="GetRmAsHostLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmAsHostLoginTest.php" line="68" assertions="1" time="0.679915"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetRmAsHostLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/GetRmAsHostLoginTest.php" line="87" assertions="46" time="3.951702"/>
+    </testsuite>
+    <testsuite name="GetTravellerPrivePropertiesTest" tests="2" assertions="140" failures="0" errors="0" time="6.596347" file="/home/santosh/var/www/guesthouser-api/tests/GetTravellerPrivePropertiesTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetTravellerPrivePropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetTravellerPrivePropertiesTest.php" line="24" assertions="1" time="0.078405"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetTravellerPrivePropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetTravellerPrivePropertiesTest.php" line="44" assertions="139" time="6.517942"/>
+    </testsuite>
+    <testsuite name="GetPropertyTest" tests="4" assertions="400" failures="0" errors="0" time="14.688837" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyTest.php" line="41" assertions="133" time="2.855892"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyTest.php" line="71" assertions="133" time="4.552292"/>
+      <testcase name="testDisabledPropertyResponseWithAuthentication" class="GetPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyTest.php" line="103" assertions="133" time="6.825742"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyTest.php" line="135" assertions="1" time="0.454911"/>
+    </testsuite>
+    <testsuite name="GetUserPasswordResetTokenValidTest" tests="2" assertions="12" failures="0" errors="0" time="1.292514" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPasswordResetTokenValidTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetUserPasswordResetTokenValidTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPasswordResetTokenValidTest.php" line="21" assertions="6" time="1.184488"/>
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetUserPasswordResetTokenValidTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPasswordResetTokenValidTest.php" line="50" assertions="6" time="0.108026"/>
+    </testsuite>
+    <testsuite name="GetPropertyReviewsTest" tests="4" assertions="36" failures="0" errors="0" time="19.1135" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyReviewsTest.php">
+      <testcase name="testNotFoundResponseWithAuthentication" class="GetPropertyReviewsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyReviewsTest.php" line="24" assertions="1" time="1.841349"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetPropertyReviewsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyReviewsTest.php" line="51" assertions="1" time="0.365944"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetPropertyReviewsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyReviewsTest.php" line="75" assertions="17" time="6.712144"/>
+      <testcase name="testValidResponseWithoutAuthentication" class="GetPropertyReviewsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetPropertyReviewsTest.php" line="107" assertions="17" time="10.194063"/>
+    </testsuite>
+    <testsuite name="GetUserReferToEarnTest" tests="2" assertions="9" failures="0" errors="0" time="0.555075" file="/home/santosh/var/www/guesthouser-api/tests/GetUserReferToEarnTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetUserReferToEarnTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserReferToEarnTest.php" line="25" assertions="1" time="0.093672"/>
+      <testcase name="testResponseWithAuthorization" class="GetUserReferToEarnTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserReferToEarnTest.php" line="41" assertions="8" time="0.461403"/>
+    </testsuite>
+    <testsuite name="GetSimilarPropertiesTest" tests="4" assertions="934" failures="0" errors="0" time="10.972644" file="/home/santosh/var/www/guesthouser-api/tests/GetSimilarPropertiesTest.php">
+      <testcase name="testResponseWithAuthorization" class="GetSimilarPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSimilarPropertiesTest.php" line="40" assertions="466" time="2.134166"/>
+      <testcase name="testResponseWithoutAuthorization" class="GetSimilarPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSimilarPropertiesTest.php" line="73" assertions="466" time="5.571115"/>
+      <testcase name="testResponseDisableProperty" class="GetSimilarPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSimilarPropertiesTest.php" line="103" assertions="1" time="3.156905"/>
+      <testcase name="testResponseBadRequest" class="GetSimilarPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSimilarPropertiesTest.php" line="129" assertions="1" time="0.110458"/>
+    </testsuite>
+    <testsuite name="GetUserWalletTest" tests="2" assertions="26" failures="0" errors="0" time="0.55127" file="/home/santosh/var/www/guesthouser-api/tests/GetUserWalletTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetUserWalletTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserWalletTest.php" line="25" assertions="1" time="0.094488"/>
+      <testcase name="testResponseWithAuthorization" class="GetUserWalletTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserWalletTest.php" line="41" assertions="25" time="0.456782"/>
+    </testsuite>
+    <testsuite name="GetSeamlessPaymentOptionsTest" tests="4" assertions="19" failures="0" errors="0" time="15.866786" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentOptionsTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetSeamlessPaymentOptionsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentOptionsTest.php" line="23" assertions="1" time="3.951595"/>
+      <testcase name="testValidResponseWithAuthenticationInvalidRequestId" class="GetSeamlessPaymentOptionsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentOptionsTest.php" line="44" assertions="2" time="3.107880"/>
+      <testcase name="testValidResponseWithAuthenticationRequestNotApproved" class="GetSeamlessPaymentOptionsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentOptionsTest.php" line="72" assertions="2" time="6.406353"/>
+      <testcase name="testValidResponseWithAuthenticationRequestApproved" class="GetSeamlessPaymentOptionsTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentOptionsTest.php" line="101" assertions="14" time="2.400958"/>
+    </testsuite>
+    <testsuite name="PostAppFeedbackTest" tests="2" assertions="2" failures="0" errors="0" time="0.204317" file="/home/santosh/var/www/guesthouser-api/tests/PostAppFeedbackTest.php">
+      <testcase name="testMissingParameterWithAuthentication" class="PostAppFeedbackTest" file="/home/santosh/var/www/guesthouser-api/tests/PostAppFeedbackTest.php" line="23" assertions="1" time="0.095569"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostAppFeedbackTest" file="/home/santosh/var/www/guesthouser-api/tests/PostAppFeedbackTest.php" line="42" assertions="1" time="0.108748"/>
+    </testsuite>
+    <testsuite name="GetUserPropertiesTest" tests="3" assertions="54" failures="0" errors="0" time="2.324192" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPropertiesTest.php">
+      <testcase name="testBadRequest" class="GetUserPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPropertiesTest.php" line="25" assertions="1" time="0.128646"/>
+      <testcase name="testResponseWithAuthorization" class="GetUserPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPropertiesTest.php" line="41" assertions="52" time="1.586283"/>
+      <testcase name="testResponseBadHostId" class="GetUserPropertiesTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserPropertiesTest.php" line="67" assertions="1" time="0.609263"/>
+    </testsuite>
+    <testsuite name="GetUserWishlistTest" tests="2" assertions="6" failures="0" errors="0" time="2.113125" file="/home/santosh/var/www/guesthouser-api/tests/GetUserWishlistTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="GetUserWishlistTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserWishlistTest.php" line="25" assertions="1" time="0.090255"/>
+      <testcase name="testResponseWithAuthorization" class="GetUserWishlistTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserWishlistTest.php" line="41" assertions="5" time="2.022870"/>
+    </testsuite>
+    <testsuite name="GetSeamlessPaymentPayloadTest" tests="4" assertions="30" failures="0" errors="0" time="17.511611" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentPayloadTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetSeamlessPaymentPayloadTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentPayloadTest.php" line="23" assertions="1" time="4.199341"/>
+      <testcase name="testValidResponseWithAuthenticationInvalidRequestId" class="GetSeamlessPaymentPayloadTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentPayloadTest.php" line="50" assertions="2" time="3.376175"/>
+      <testcase name="testValidResponseWithAuthenticationRequestNotApproved" class="GetSeamlessPaymentPayloadTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentPayloadTest.php" line="78" assertions="2" time="6.253738"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetSeamlessPaymentPayloadTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSeamlessPaymentPayloadTest.php" line="107" assertions="25" time="3.682357"/>
+    </testsuite>
+    <testsuite name="PostDeviceTest" tests="3" assertions="3" failures="0" errors="0" time="1.361463" file="/home/santosh/var/www/guesthouser-api/tests/PostDeviceTest.php">
+      <testcase name="testVlidationFailStatus" class="PostDeviceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostDeviceTest.php" line="21" assertions="1" time="0.082449"/>
+      <testcase name="testCreateStatus" class="PostDeviceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostDeviceTest.php" line="36" assertions="1" time="0.482460"/>
+      <testcase name="testRegisterStatus" class="PostDeviceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostDeviceTest.php" line="54" assertions="1" time="0.796554"/>
+    </testsuite>
+    <testsuite name="GetUserProfileTest" tests="6" assertions="127" failures="0" errors="0" time="6.232232" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php">
+      <testcase name="testBadRequest" class="GetUserProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php" line="25" assertions="1" time="0.097399"/>
+      <testcase name="testBadUserIdResponse" class="GetUserProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php" line="39" assertions="1" time="0.098985"/>
+      <testcase name="testValidResponseWithoutLogin" class="GetUserProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php" line="59" assertions="41" time="2.499056"/>
+      <testcase name="testResponseWithAuthorization" class="GetUserProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php" line="83" assertions="42" time="2.034068"/>
+      <testcase name="testResponseWithAuthorizationWithoutUserId" class="GetUserProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php" line="119" assertions="41" time="0.844992"/>
+      <testcase name="testResponseWithAuthorizationWrongUserId" class="GetUserProfileTest" file="/home/santosh/var/www/guesthouser-api/tests/GetUserProfileTest.php" line="140" assertions="1" time="0.657732"/>
+    </testsuite>
+    <testsuite name="PostHostLeadTest" tests="3" assertions="6" failures="0" errors="0" time="1.434138" file="/home/santosh/var/www/guesthouser-api/tests/PostHostLeadTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostHostLeadTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostLeadTest.php" line="23" assertions="1" time="0.099316"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostHostLeadTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostLeadTest.php" line="49" assertions="1" time="0.615669"/>
+      <testcase name="testValidAuthentication" class="PostHostLeadTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostLeadTest.php" line="68" assertions="4" time="0.719153"/>
+    </testsuite>
+    <testsuite name="PostMobileLoginTest" tests="2" assertions="2" failures="0" errors="0" time="0.819743" file="/home/santosh/var/www/guesthouser-api/tests/PostMobileLoginTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostMobileLoginTest.php" line="47" assertions="1" time="0.115195"/>
+      <testcase name="testValidResponseResetWithNumberWithAuthentication" class="PostMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostMobileLoginTest.php" line="65" assertions="1" time="0.704548"/>
+    </testsuite>
+    <testsuite name="PostLoginOldAppUserTest" tests="2" assertions="2" failures="0" errors="0" time="4.476976" file="/home/santosh/var/www/guesthouser-api/tests/PostLoginOldAppUserTest.php">
+      <testcase name="testBadRequestResponseWithoutAuthentication" class="PostLoginOldAppUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostLoginOldAppUserTest.php" line="33" assertions="1" time="0.105569"/>
+      <testcase name="testValidResponseWithCurrentEmailWithoutAuthentication" class="PostLoginOldAppUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostLoginOldAppUserTest.php" line="51" assertions="1" time="4.371407"/>
+    </testsuite>
+    <testsuite name="PostHostPaymentPreferencesTest" tests="4" assertions="18" failures="0" errors="0" time="4.651669" file="/home/santosh/var/www/guesthouser-api/tests/PostHostPaymentPreferencesTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostPaymentPreferencesTest.php" line="24" assertions="1" time="0.095433"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="PostHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostPaymentPreferencesTest.php" line="41" assertions="1" time="0.397134"/>
+      <testcase name="testInvalidOrMissingParametersResponseWithAuthentication" class="PostHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostPaymentPreferencesTest.php" line="61" assertions="5" time="1.386035"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PostHostPaymentPreferencesTest.php" line="103" assertions="11" time="2.773067"/>
+    </testsuite>
+    <testsuite name="PostOauthTokenRefreshTest" tests="3" assertions="3" failures="0" errors="0" time="3.43767" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenRefreshTest.php">
+      <testcase name="testResponseWithValidParam" class="PostOauthTokenRefreshTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenRefreshTest.php" line="49" assertions="1" time="3.244084"/>
+      <testcase name="testResponseWithMissingParameter" class="PostOauthTokenRefreshTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenRefreshTest.php" line="95" assertions="1" time="0.097129"/>
+      <testcase name="testResponseWithWrongParameter" class="PostOauthTokenRefreshTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenRefreshTest.php" line="113" assertions="1" time="0.096457"/>
+    </testsuite>
+    <testsuite name="PostBookingRequestEmailInvoiceTest" tests="4" assertions="5" failures="0" errors="0" time="8.075417" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestEmailInvoiceTest.php">
+      <testcase name="testUnauthroizedResponseWithoutAuthentication" class="PostBookingRequestEmailInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestEmailInvoiceTest.php" line="50" assertions="1" time="0.097642"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostBookingRequestEmailInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestEmailInvoiceTest.php" line="67" assertions="1" time="0.564416"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostBookingRequestEmailInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestEmailInvoiceTest.php" line="86" assertions="2" time="3.493770"/>
+      <testcase name="testInvalidResponseWithAuthentication" class="PostBookingRequestEmailInvoiceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestEmailInvoiceTest.php" line="117" assertions="1" time="3.919589"/>
+    </testsuite>
+    <testsuite name="PostOauthTokenTest" tests="3" assertions="3" failures="0" errors="0" time="1.458955" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenTest.php">
+      <testcase name="testResponseWithValidParam" class="PostOauthTokenTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenTest.php" line="49" assertions="1" time="1.277261"/>
+      <testcase name="testResponseWithMissingParameter" class="PostOauthTokenTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenTest.php" line="76" assertions="1" time="0.082874"/>
+      <testcase name="testResponseWithWrongParameter" class="PostOauthTokenTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOauthTokenTest.php" line="92" assertions="1" time="0.098820"/>
+    </testsuite>
+    <testsuite name="PostOfflineDiscoveryCreateLeadTest" tests="3" assertions="3" failures="0" errors="0" time="1.219569" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryCreateLeadTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostOfflineDiscoveryCreateLeadTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryCreateLeadTest.php" line="35" assertions="1" time="0.089763"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostOfflineDiscoveryCreateLeadTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryCreateLeadTest.php" line="82" assertions="1" time="0.443856"/>
+      <testcase name="testValidAuthentication" class="PostOfflineDiscoveryCreateLeadTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryCreateLeadTest.php" line="101" assertions="1" time="0.685950"/>
+    </testsuite>
+    <testsuite name="GetTripReviewTest" tests="4" assertions="96" failures="0" errors="0" time="17.930602" file="/home/santosh/var/www/guesthouser-api/tests/GetTripReviewTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="GetTripReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetTripReviewTest.php" line="25" assertions="1" time="7.549461"/>
+      <testcase name="testInvalidResponseWithoutAuthentication" class="GetTripReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetTripReviewTest.php" line="54" assertions="1" time="3.420277"/>
+      <testcase name="testValidResponseWithoutRequestIdWithAuthentication" class="GetTripReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetTripReviewTest.php" line="79" assertions="47" time="3.197953"/>
+      <testcase name="testValidResponseWithRequestIdWithAuthentication" class="GetTripReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/GetTripReviewTest.php" line="107" assertions="47" time="3.762911"/>
+    </testsuite>
+    <testsuite name="PostPriveContactUsTest" tests="3" assertions="8" failures="0" errors="0" time="1.225134" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveContactUsTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPriveContactUsTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveContactUsTest.php" line="24" assertions="1" time="0.091132"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostPriveContactUsTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveContactUsTest.php" line="46" assertions="1" time="0.523268"/>
+      <testcase name="testValidAuthentication" class="PostPriveContactUsTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveContactUsTest.php" line="65" assertions="6" time="0.610734"/>
+    </testsuite>
+    <testsuite name="PostCreateUserTest" tests="5" assertions="8" failures="0" errors="0" time="10.371753" file="/home/santosh/var/www/guesthouser-api/tests/PostCreateUserTest.php">
+      <testcase name="testResponseSourceWebsite" class="PostCreateUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostCreateUserTest.php" line="56" assertions="2" time="3.444923"/>
+      <testcase name="testResponseSourceGoogle" class="PostCreateUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostCreateUserTest.php" line="116" assertions="2" time="3.687558"/>
+      <testcase name="testResponseSourceFacebook" class="PostCreateUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostCreateUserTest.php" line="182" assertions="2" time="2.502741"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PostCreateUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostCreateUserTest.php" line="251" assertions="1" time="0.113545"/>
+      <testcase name="testResponseDuplicateUser" class="PostCreateUserTest" file="/home/santosh/var/www/guesthouser-api/tests/PostCreateUserTest.php" line="276" assertions="1" time="0.622986"/>
+    </testsuite>
+    <testsuite name="PostOfflineDiscoveryLoginTest" tests="2" assertions="2" failures="0" errors="0" time="2.681956" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryLoginTest.php">
+      <testcase name="testResponseGoogle" class="PostOfflineDiscoveryLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryLoginTest.php" line="52" assertions="1" time="2.580492"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PostOfflineDiscoveryLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryLoginTest.php" line="101" assertions="1" time="0.101464"/>
+    </testsuite>
+    <testsuite name="PostOfflineDiscoveryUploadLeadImageTest" tests="3" assertions="3" failures="0" errors="0" time="3.057151" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryUploadLeadImageTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostOfflineDiscoveryUploadLeadImageTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryUploadLeadImageTest.php" line="24" assertions="1" time="0.305496"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PostOfflineDiscoveryUploadLeadImageTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryUploadLeadImageTest.php" line="48" assertions="1" time="0.471146"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostOfflineDiscoveryUploadLeadImageTest" file="/home/santosh/var/www/guesthouser-api/tests/PostOfflineDiscoveryUploadLeadImageTest.php" line="69" assertions="1" time="2.280509"/>
+    </testsuite>
+    <testsuite name="PostPriveLoginTest" tests="4" assertions="17" failures="0" errors="0" time="2.583024" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginTest.php">
+      <testcase name="testBadRequestResponseWithoutAuthentication" class="PostPriveLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginTest.php" line="35" assertions="1" time="0.128938"/>
+      <testcase name="testInvalidPriveOwnerResponse" class="PostPriveLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginTest.php" line="53" assertions="1" time="0.517096"/>
+      <testcase name="testInvalidAuthentication" class="PostPriveLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginTest.php" line="82" assertions="1" time="0.616426"/>
+      <testcase name="testValidAuthentication" class="PostPriveLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginTest.php" line="112" assertions="14" time="1.320564"/>
+    </testsuite>
+    <testsuite name="GetSearchTest" tests="6" assertions="2299" failures="0" errors="0" time="25.285915" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php">
+      <testcase name="testValidResponseWithoutAuthentication" class="GetSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php" line="24" assertions="725" time="9.722282"/>
+      <testcase name="testValidResponseWithAuthentication" class="GetSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php" line="47" assertions="725" time="5.420736"/>
+      <testcase name="testNotFoundStayPageWithAuthentication" class="GetSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php" line="73" assertions="1" time="1.684714"/>
+      <testcase name="testValidResponseStayPageWithAuthentication" class="GetSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php" line="95" assertions="700" time="3.613941"/>
+      <testcase name="testNotFoundResponseWithOtherStayPageWithAuthentication" class="GetSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php" line="118" assertions="1" time="1.694528"/>
+      <testcase name="testValidResponseWithOtherStayPageWithAuthentication" class="GetSearchTest" file="/home/santosh/var/www/guesthouser-api/tests/GetSearchTest.php" line="140" assertions="147" time="3.149714"/>
+    </testsuite>
+    <testsuite name="PostPriveLoginViaTest" tests="6" assertions="6" failures="0" errors="0" time="3.163236" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostPriveLoginViaTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php" line="47" assertions="1" time="0.107222"/>
+      <testcase name="testInvalidParamResponse" class="PostPriveLoginViaTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php" line="65" assertions="1" time="0.417217"/>
+      <testcase name="testValidResponseWithLoginViaContactForOwnerAuthentication" class="PostPriveLoginViaTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php" line="92" assertions="1" time="0.690552"/>
+      <testcase name="testValidResponseWithLoginViaContactForManagerAuthentication" class="PostPriveLoginViaTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php" line="115" assertions="1" time="0.833674"/>
+      <testcase name="testValidResponseWithLoginViaEmailForOwnerAuthentication" class="PostPriveLoginViaTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php" line="138" assertions="1" time="0.352515"/>
+      <testcase name="testValidResponseWithLoginViaEmailForManagerAuthentication" class="PostPriveLoginViaTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveLoginViaTest.php" line="159" assertions="1" time="0.762056"/>
+    </testsuite>
+    <testsuite name="PostPriveResetPasswordTest" tests="2" assertions="9" failures="0" errors="0" time="1.143356" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveResetPasswordTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostPriveResetPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveResetPasswordTest.php" line="50" assertions="1" time="0.573102"/>
+      <testcase name="testValidResponseResetWithNumberWithAuthentication" class="PostPriveResetPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveResetPasswordTest.php" line="69" assertions="8" time="0.570254"/>
+    </testsuite>
+    <testsuite name="PostBookingRequestTest" tests="9" assertions="21" failures="0" errors="0" time="17.309222" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="25" assertions="1" time="2.176936"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="52" assertions="13" time="3.002421"/>
+      <testcase name="testInvalidHashId" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="96" assertions="1" time="2.448667"/>
+      <testcase name="testNonVerifiedMobile" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="125" assertions="1" time="1.430049"/>
+      <testcase name="testPropertyNotFound" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="154" assertions="1" time="1.934593"/>
+      <testcase name="testInvalidPayableAmount" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="183" assertions="1" time="1.716591"/>
+      <testcase name="testPaymentMehodNotAvailable" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="211" assertions="1" time="2.333310"/>
+      <testcase name="testMissingParameter" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="239" assertions="1" time="0.325754"/>
+      <testcase name="testOldRequest" class="PostBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostBookingRequestTest.php" line="255" assertions="1" time="1.940901"/>
+    </testsuite>
+    <testsuite name="PostPriveRegisterTest" tests="4" assertions="6" failures="0" errors="0" time="4.733088" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveRegisterTest.php">
+      <testcase name="testResponseSourceWebsite" class="PostPriveRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveRegisterTest.php" line="56" assertions="2" time="2.405505"/>
+      <testcase name="testResponseSourceGoogle" class="PostPriveRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveRegisterTest.php" line="108" assertions="2" time="1.679950"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PostPriveRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveRegisterTest.php" line="172" assertions="1" time="0.107099"/>
+      <testcase name="testResponseDuplicateUser" class="PostPriveRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveRegisterTest.php" line="198" assertions="1" time="0.540534"/>
+    </testsuite>
+    <testsuite name="PostPriveBookingRequestTest" tests="4" assertions="9" failures="0" errors="0" time="11.600098" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveBookingRequestTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPriveBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveBookingRequestTest.php" line="24" assertions="1" time="2.258698"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostPriveBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveBookingRequestTest.php" line="60" assertions="6" time="5.955609"/>
+      <testcase name="testInvalidHashId" class="PostPriveBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveBookingRequestTest.php" line="101" assertions="1" time="1.595226"/>
+      <testcase name="testMissingParameter" class="PostPriveBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveBookingRequestTest.php" line="137" assertions="1" time="1.790565"/>
+    </testsuite>
+    <testsuite name="PostProperlyExpenseTest" tests="5" assertions="13" failures="0" errors="0" time="6.894674" file="/home/santosh/var/www/guesthouser-api/tests/PostProperlyExpenseTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="PostProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PostProperlyExpenseTest.php" line="23" assertions="1" time="0.085735"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PostProperlyExpenseTest.php" line="40" assertions="1" time="0.451905"/>
+      <testcase name="testInvalidResponseWithVariableExpenseTypeAuthentication" class="PostProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PostProperlyExpenseTest.php" line="59" assertions="1" time="1.647361"/>
+      <testcase name="testValidResponseWithVariableExpenseTypeAuthentication" class="PostProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PostProperlyExpenseTest.php" line="93" assertions="5" time="2.490236"/>
+      <testcase name="testValidResponseWithFixedExpenseTypeAuthentication" class="PostProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PostProperlyExpenseTest.php" line="133" assertions="5" time="2.219437"/>
+    </testsuite>
+    <testsuite name="PostPropertyReviewImageTest" tests="3" assertions="5" failures="0" errors="0" time="7.36957" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewImageTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPropertyReviewImageTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewImageTest.php" line="25" assertions="1" time="2.654877"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PostPropertyReviewImageTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewImageTest.php" line="57" assertions="1" time="2.441592"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostPropertyReviewImageTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewImageTest.php" line="86" assertions="3" time="2.273101"/>
+    </testsuite>
+    <testsuite name="PostPriveManagerCashCollectionTest" tests="7" assertions="16" failures="0" errors="0" time="21.448033" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="25" assertions="1" time="0.085678"/>
+      <testcase name="testInvalidResponseForNonManagerWithAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="42" assertions="1" time="0.418545"/>
+      <testcase name="testInvalidOrMissingParametersResponseWithAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="62" assertions="3" time="4.506154"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="107" assertions="8" time="4.798093"/>
+      <testcase name="testInalidResponseDueToNoBalanceFeeWithAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="147" assertions="1" time="3.336580"/>
+      <testcase name="testInalidResponseForNonBookedWithAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="186" assertions="1" time="3.881044"/>
+      <testcase name="testInalidResponseForRequestIdNotExistWithAuthentication" class="PostPriveManagerCashCollectionTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerCashCollectionTest.php" line="225" assertions="1" time="4.421939"/>
+    </testsuite>
+    <testsuite name="PostPriveManagerBookingOperationTest" tests="7" assertions="29" failures="0" errors="0" time="21.939997" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="25" assertions="1" time="0.084445"/>
+      <testcase name="testInvalidResponseForNonManagerWithAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="42" assertions="1" time="0.453338"/>
+      <testcase name="testInvalidOrMissingParametersResponseWithAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="62" assertions="3" time="4.498167"/>
+      <testcase name="testValidResponseForOperationalNotesWithAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="110" assertions="6" time="4.263115"/>
+      <testcase name="testValidResponseForManagerialNotesWithAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="153" assertions="6" time="3.908322"/>
+      <testcase name="testInvalidResponseForExpectedCheckinWithAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="196" assertions="6" time="4.454472"/>
+      <testcase name="testValidResponseForExpectedCheckoutWithAuthentication" class="PostPriveManagerBookingOperationTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingOperationTest.php" line="239" assertions="6" time="4.278138"/>
+    </testsuite>
+    <testsuite name="PostUserLogoutTest" tests="2" assertions="6" failures="0" errors="0" time="0.467158" file="/home/santosh/var/www/guesthouser-api/tests/PostUserLogoutTest.php">
+      <testcase name="testUnauthroizedResponse" class="PostUserLogoutTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserLogoutTest.php" line="21" assertions="1" time="0.096268"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostUserLogoutTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserLogoutTest.php" line="38" assertions="5" time="0.370890"/>
+    </testsuite>
+    <testsuite name="PostPriveManagerBookingCheckedInStatusTest" tests="7" assertions="24" failures="0" errors="0" time="23.242817" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="25" assertions="1" time="0.085919"/>
+      <testcase name="testInvalidResponseForNonManagerWithAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="42" assertions="1" time="0.650611"/>
+      <testcase name="testInvalidOrMissingParametersResponseWithAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="62" assertions="3" time="4.508673"/>
+      <testcase name="testValidResponseForCheckinBookingWithAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="110" assertions="6" time="5.105378"/>
+      <testcase name="testValidResponseForCheckoutBookingWithAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="156" assertions="6" time="3.781041"/>
+      <testcase name="testInvalidResponseForMarkNoShowWithoutReasonBookingWithAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="199" assertions="1" time="4.322332"/>
+      <testcase name="testValidResponseForMarkNoShowWithReasonBookingWithAuthentication" class="PostPriveManagerBookingCheckedInStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerBookingCheckedInStatusTest.php" line="241" assertions="6" time="4.788863"/>
+    </testsuite>
+    <testsuite name="PostTrafficSourceTest" tests="4" assertions="4" failures="0" errors="0" time="1.669231" file="/home/santosh/var/www/guesthouser-api/tests/PostTrafficSourceTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="PostTrafficSourceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostTrafficSourceTest.php" line="21" assertions="1" time="0.278655"/>
+      <testcase name="testResponseWithAuthorization" class="PostTrafficSourceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostTrafficSourceTest.php" line="42" assertions="1" time="0.568892"/>
+      <testcase name="testResponseWithMissingParameter" class="PostTrafficSourceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostTrafficSourceTest.php" line="64" assertions="1" time="0.492914"/>
+      <testcase name="testResponseWithBadRequest" class="PostTrafficSourceTest" file="/home/santosh/var/www/guesthouser-api/tests/PostTrafficSourceTest.php" line="81" assertions="1" time="0.328770"/>
+    </testsuite>
+    <testsuite name="PostUserVerifyEmailTest" tests="2" assertions="2" failures="0" errors="0" time="0.467777" file="/home/santosh/var/www/guesthouser-api/tests/PostUserVerifyEmailTest.php">
+      <testcase name="testUnauthroizedResponseWithoutAuthentication" class="PostUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserVerifyEmailTest.php" line="48" assertions="1" time="0.094811"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserVerifyEmailTest.php" line="65" assertions="1" time="0.372966"/>
+    </testsuite>
+    <testsuite name="PostUserPasswordResetTest" tests="3" assertions="5" failures="0" errors="0" time="2.154893" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPasswordResetTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostUserPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPasswordResetTest.php" line="48" assertions="1" time="0.359889"/>
+      <testcase name="testValidResponseResetWithNumberWithAuthentication" class="PostUserPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPasswordResetTest.php" line="67" assertions="2" time="0.980221"/>
+      <testcase name="testValidResponseResetWithEmailWithAuthentication" class="PostUserPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPasswordResetTest.php" line="92" assertions="2" time="0.814783"/>
+    </testsuite>
+    <testsuite name="PostPriveManagerSendPaymentLinkTest" tests="8" assertions="22" failures="0" errors="0" time="23.944987" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="26" assertions="1" time="0.086056"/>
+      <testcase name="testInvalidResponseForNonManagerWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="43" assertions="1" time="0.613976"/>
+      <testcase name="testInvalidOrMissingParametersResponseWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="63" assertions="3" time="4.123594"/>
+      <testcase name="testValidResponseForNoContactDetailsWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="108" assertions="7" time="3.940918"/>
+      <testcase name="testValidResponseWithContactDetailsWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="164" assertions="7" time="3.657205"/>
+      <testcase name="testInalidResponseDueToNoBalanceFeeWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="225" assertions="1" time="4.310844"/>
+      <testcase name="testInalidResponseForNonBookedWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="269" assertions="1" time="3.256773"/>
+      <testcase name="testInalidResponseForRequestIdNotExistWithAuthentication" class="PostPriveManagerSendPaymentLinkTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPriveManagerSendPaymentLinkTest.php" line="313" assertions="1" time="3.955621"/>
+    </testsuite>
+    <testsuite name="PostUserVerifyMobileBySendOtpTest" tests="1" assertions="1" failures="0" errors="0" time="0.600505" file="/home/santosh/var/www/guesthouser-api/tests/PostUserVerifyMobileBySendOtpTest.php">
+      <testcase name="testValidesponseWithAuthentication" class="PostUserVerifyMobileBySendOtpTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserVerifyMobileBySendOtpTest.php" line="47" assertions="1" time="0.600505"/>
+    </testsuite>
+    <testsuite name="PostPropertyRatingTest" tests="6" assertions="6" failures="0" errors="0" time="18.932827" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPropertyRatingTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php" line="25" assertions="1" time="2.696699"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="PostPropertyRatingTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php" line="61" assertions="1" time="2.701299"/>
+      <testcase name="testInvalidRequestIdResponseWithAuthentication" class="PostPropertyRatingTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php" line="100" assertions="1" time="2.248372"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PostPropertyRatingTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php" line="136" assertions="1" time="3.129576"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostPropertyRatingTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php" line="169" assertions="1" time="4.399978"/>
+      <testcase name="testForbiddenErrorResponseWithAuthentication" class="PostPropertyRatingTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyRatingTest.php" line="205" assertions="1" time="3.756903"/>
+    </testsuite>
+    <testsuite name="PostUserPictureTest" tests="3" assertions="3" failures="0" errors="0" time="2.635991" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPictureTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostUserPictureTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPictureTest.php" line="24" assertions="1" time="0.101070"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PostUserPictureTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPictureTest.php" line="45" assertions="1" time="0.319403"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostUserPictureTest" file="/home/santosh/var/www/guesthouser-api/tests/PostUserPictureTest.php" line="66" assertions="1" time="2.215518"/>
+    </testsuite>
+    <testsuite name="PostResendBookingRequestTest" tests="5" assertions="16" failures="0" errors="0" time="11.923547" file="/home/santosh/var/www/guesthouser-api/tests/PostResendBookingRequestTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostResendBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostResendBookingRequestTest.php" line="23" assertions="1" time="2.811167"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostResendBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostResendBookingRequestTest.php" line="45" assertions="12" time="3.130742"/>
+      <testcase name="testInvalidHashId" class="PostResendBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostResendBookingRequestTest.php" line="72" assertions="1" time="2.069216"/>
+      <testcase name="testInvalidParameters" class="PostResendBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostResendBookingRequestTest.php" line="94" assertions="1" time="1.966293"/>
+      <testcase name="testExpiredBooking" class="PostResendBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PostResendBookingRequestTest.php" line="112" assertions="1" time="1.946129"/>
+    </testsuite>
+    <testsuite name="PostRequestCancelTest" tests="7" assertions="21" failures="0" errors="0" time="16.523413" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="62" assertions="1" time="1.852287"/>
+      <testcase name="testValidResponseWithAuthentication" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="89" assertions="8" time="2.566097"/>
+      <testcase name="testValidResponseForTrip" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="133" assertions="8" time="4.028963"/>
+      <testcase name="testInvalidHashId" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="177" assertions="1" time="2.244508"/>
+      <testcase name="testInvalidParameters" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="204" assertions="1" time="2.078234"/>
+      <testcase name="testExpiredBooking" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="222" assertions="1" time="1.842965"/>
+      <testcase name="testRequestNotCancellable" class="PostRequestCancelTest" file="/home/santosh/var/www/guesthouser-api/tests/PostRequestCancelTest.php" line="251" assertions="1" time="1.910359"/>
+    </testsuite>
+    <testsuite name="PostWishlistPropertyTest" tests="4" assertions="4" failures="0" errors="0" time="3.292092" file="/home/santosh/var/www/guesthouser-api/tests/PostWishlistPropertyTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="PostWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/PostWishlistPropertyTest.php" line="25" assertions="1" time="1.223321"/>
+      <testcase name="testResponseWithAuthorization" class="PostWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/PostWishlistPropertyTest.php" line="47" assertions="1" time="1.399509"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PostWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/PostWishlistPropertyTest.php" line="69" assertions="1" time="0.342110"/>
+      <testcase name="testResponseNotFoundWithAuthorization" class="PostWishlistPropertyTest" file="/home/santosh/var/www/guesthouser-api/tests/PostWishlistPropertyTest.php" line="92" assertions="1" time="0.327152"/>
+    </testsuite>
+    <testsuite name="PutHostPaymentPreferencesTest" tests="5" assertions="9" failures="0" errors="0" time="5.280034" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPaymentPreferencesTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPaymentPreferencesTest.php" line="24" assertions="1" time="0.084499"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="PutHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPaymentPreferencesTest.php" line="41" assertions="1" time="0.350610"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPaymentPreferencesTest.php" line="61" assertions="5" time="1.652773"/>
+      <testcase name="testValidResponseWithAuthenticationWithInvalidParameter" class="PutHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPaymentPreferencesTest.php" line="99" assertions="1" time="1.345533"/>
+      <testcase name="testValidResponseWithAuthenticationWithInvalidUser" class="PutHostPaymentPreferencesTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPaymentPreferencesTest.php" line="133" assertions="1" time="1.846619"/>
+    </testsuite>
+    <testsuite name="PutMobileLoginTest" tests="3" assertions="52" failures="0" errors="0" time="3.077853" file="/home/santosh/var/www/guesthouser-api/tests/PutMobileLoginTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PutMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutMobileLoginTest.php" line="23" assertions="1" time="0.095073"/>
+      <testcase name="testValidResponseResetWithNumberNotVerifiedWithAuthentication" class="PutMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutMobileLoginTest.php" line="41" assertions="1" time="0.613942"/>
+      <testcase name="testValidResponseResetWithNumberVerifiedWithAuthentication" class="PutMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutMobileLoginTest.php" line="72" assertions="50" time="2.368838"/>
+    </testsuite>
+    <testsuite name="PostPropertyReviewTest" tests="7" assertions="7" failures="0" errors="0" time="22.103188" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="50" assertions="1" time="2.445433"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="84" assertions="1" time="2.587026"/>
+      <testcase name="testInvalidRequestIdResponseWithAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="121" assertions="1" time="3.358398"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="158" assertions="1" time="2.709125"/>
+      <testcase name="testValidResponseWithoutImageWithAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="188" assertions="1" time="3.226143"/>
+      <testcase name="testValidResponseWithImageAndAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="230" assertions="1" time="3.326954"/>
+      <testcase name="testForbiddenErrorResponseWithAuthentication" class="PostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PostPropertyReviewTest.php" line="276" assertions="1" time="4.450109"/>
+    </testsuite>
+    <testsuite name="PutPasswordResetTest" tests="6" assertions="10" failures="0" errors="0" time="3.56321" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php">
+      <testcase name="testResponseWithoutDeviceId" class="PutPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php" line="21" assertions="1" time="0.668163"/>
+      <testcase name="testResponseWithAuthorization" class="PutPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php" line="51" assertions="5" time="1.091751"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PutPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php" line="83" assertions="1" time="0.099673"/>
+      <testcase name="testResponseInvalidPasswod" class="PutPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php" line="99" assertions="1" time="0.587470"/>
+      <testcase name="testResponseWrongToken" class="PutPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php" line="128" assertions="1" time="0.722784"/>
+      <testcase name="testResponseWrongEmail" class="PutPasswordResetTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPasswordResetTest.php" line="157" assertions="1" time="0.393369"/>
+    </testsuite>
+    <testsuite name="PutHostPropertyStatusTest" tests="5" assertions="11" failures="0" errors="0" time="6.820882" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyStatusTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutHostPropertyStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyStatusTest.php" line="23" assertions="1" time="1.112317"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="PutHostPropertyStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyStatusTest.php" line="53" assertions="1" time="1.842971"/>
+      <testcase name="testNotFoundResponseWithAuthentication" class="PutHostPropertyStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyStatusTest.php" line="87" assertions="1" time="1.272472"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="PutHostPropertyStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyStatusTest.php" line="119" assertions="1" time="1.172332"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutHostPropertyStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyStatusTest.php" line="151" assertions="7" time="1.420790"/>
+    </testsuite>
+    <testsuite name="PutHostPropertyCalendarTest" tests="5" assertions="10" failures="0" errors="0" time="9.560076" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyCalendarTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyCalendarTest.php" line="24" assertions="1" time="1.370723"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="PutHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyCalendarTest.php" line="57" assertions="1" time="1.306338"/>
+      <testcase name="testInvalidHashIdResponseWithAuthentication" class="PutHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyCalendarTest.php" line="94" assertions="1" time="1.130570"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="PutHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyCalendarTest.php" line="128" assertions="1" time="1.658446"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutHostPropertyCalendarTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyCalendarTest.php" line="163" assertions="6" time="4.093999"/>
+    </testsuite>
+    <testsuite name="PutPriveUpdateTest" tests="3" assertions="7" failures="0" errors="0" time="1.168266" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveUpdateTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="PutPriveUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveUpdateTest.php" line="21" assertions="1" time="0.085549"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PutPriveUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveUpdateTest.php" line="38" assertions="1" time="0.413361"/>
+      <testcase name="testValidResponseWithProfileUpdationWithAuthentication" class="PutPriveUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveUpdateTest.php" line="56" assertions="5" time="0.669356"/>
+    </testsuite>
+    <testsuite name="PutUserCurrencyTest" tests="3" assertions="3" failures="0" errors="0" time="1.311573" file="/home/santosh/var/www/guesthouser-api/tests/PutUserCurrencyTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutUserCurrencyTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserCurrencyTest.php" line="24" assertions="1" time="0.377009"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PutUserCurrencyTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserCurrencyTest.php" line="46" assertions="1" time="0.581605"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutUserCurrencyTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserCurrencyTest.php" line="68" assertions="1" time="0.352959"/>
+    </testsuite>
+    <testsuite name="PutUserLastactiveUpdateTest" tests="2" assertions="2" failures="0" errors="0" time="0.719524" file="/home/santosh/var/www/guesthouser-api/tests/PutUserLastactiveUpdateTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="PutUserLastactiveUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserLastactiveUpdateTest.php" line="23" assertions="1" time="0.085757"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutUserLastactiveUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserLastactiveUpdateTest.php" line="40" assertions="1" time="0.633767"/>
+    </testsuite>
+    <testsuite name="PutPriveMobileLoginTest" tests="4" assertions="30" failures="0" errors="0" time="5.595092" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveMobileLoginTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PutPriveMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveMobileLoginTest.php" line="23" assertions="1" time="0.099884"/>
+      <testcase name="testValidResponseResetWithNumberNotVerifiedWithAuthentication" class="PutPriveMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveMobileLoginTest.php" line="41" assertions="1" time="1.927174"/>
+      <testcase name="testValidResponsePriveOwnerWithNumberVerifiedWithAuthentication" class="PutPriveMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveMobileLoginTest.php" line="73" assertions="14" time="1.598043"/>
+      <testcase name="testValidResponsePriveManagerWithNumberVerifiedWithAuthentication" class="PutPriveMobileLoginTest" file="/home/santosh/var/www/guesthouser-api/tests/PutPriveMobileLoginTest.php" line="116" assertions="14" time="1.969991"/>
+    </testsuite>
+    <testsuite name="PutUserPasswordUpdateTest" tests="3" assertions="7" failures="0" errors="0" time="1.068432" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordUpdateTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="PutUserPasswordUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordUpdateTest.php" line="21" assertions="1" time="0.090287"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PutUserPasswordUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordUpdateTest.php" line="38" assertions="1" time="0.300456"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutUserPasswordUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordUpdateTest.php" line="56" assertions="5" time="0.677689"/>
+    </testsuite>
+    <testsuite name="PutHostBookingStatusTest" tests="6" assertions="28" failures="0" errors="0" time="12.884555" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutHostBookingStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php" line="50" assertions="1" time="1.948678"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="PutHostBookingStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php" line="79" assertions="1" time="1.792498"/>
+      <testcase name="testInvalidRequestHashIdWithAuthentication" class="PutHostBookingStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php" line="109" assertions="1" time="2.294124"/>
+      <testcase name="testInvalidResponseWithInvalidParametersWithAuthentication" class="PutHostBookingStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php" line="140" assertions="1" time="1.959764"/>
+      <testcase name="testAcceptRequestResponseWithAuthentication" class="PutHostBookingStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php" line="171" assertions="12" time="2.413513"/>
+      <testcase name="testRejectRequestResponseWithAuthentication" class="PutHostBookingStatusTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostBookingStatusTest.php" line="213" assertions="12" time="2.475978"/>
+    </testsuite>
+    <testsuite name="PutBookingRequestTest" tests="7" assertions="7" failures="0" errors="0" time="13.255453" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="25" assertions="1" time="1.980402"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="48" assertions="1" time="2.299839"/>
+      <testcase name="testInvalidHashId" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="74" assertions="1" time="0.377552"/>
+      <testcase name="testNewBookingRequest" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="97" assertions="1" time="2.497473"/>
+      <testcase name="testInvalidPayableAmount" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="125" assertions="1" time="1.984344"/>
+      <testcase name="testPaymentMehodNotAvailable" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="151" assertions="1" time="2.210487"/>
+      <testcase name="testMissingParameter" class="PutBookingRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/PutBookingRequestTest.php" line="177" assertions="1" time="1.905356"/>
+    </testsuite>
+    <testsuite name="PutUserUpdateTest" tests="4" assertions="5" failures="0" errors="0" time="1.444798" file="/home/santosh/var/www/guesthouser-api/tests/PutUserUpdateTest.php">
+      <testcase name="testUnauthorizedActionResponse" class="PutUserUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserUpdateTest.php" line="21" assertions="1" time="0.083998"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PutUserUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserUpdateTest.php" line="38" assertions="1" time="0.336056"/>
+      <testcase name="testValidResponseWithNoprofileUpdationWithAuthentication" class="PutUserUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserUpdateTest.php" line="56" assertions="1" time="0.361062"/>
+      <testcase name="testValidResponseWithProfileUpdationWithAuthentication" class="PutUserUpdateTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserUpdateTest.php" line="76" assertions="2" time="0.663682"/>
+    </testsuite>
+    <testsuite name="PostRegisterRequestTest" tests="8" assertions="23" failures="0" errors="0" time="0.635382" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php">
+      <testcase name="test_sanitized_data" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="21" assertions="10" time="0.067727"/>
+      <testcase name="test_invalid_source_validation_failed" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="60" assertions="2" time="0.077637"/>
+      <testcase name="test_website_signup_with_only_required_parameters_validation_passses" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="83" assertions="1" time="0.091356"/>
+      <testcase name="test_website_signup_without_required_parameters_validation_fails" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="108" assertions="4" time="0.075130"/>
+      <testcase name="test_google_signup_with_only_required_parameters_validation_passses" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="135" assertions="1" time="0.082610"/>
+      <testcase name="test_google_signup_without_required_parameters_validation_fails" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="158" assertions="2" time="0.093011"/>
+      <testcase name="test_facebook_signup_with_only_required_parameters_validation_passses" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="181" assertions="1" time="0.073297"/>
+      <testcase name="test_facebook_signup_without_required_parameters_validation_fails" class="PostRegisterRequestTest" file="/home/santosh/var/www/guesthouser-api/tests/requests/PostRegisterRequestTest.php" line="204" assertions="2" time="0.074614"/>
+    </testsuite>
+    <testsuite name="PutUserPasswordTest" tests="6" assertions="14" failures="0" errors="0" time="3.636371" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php">
+      <testcase name="testResponseWithoutDeviceId" class="PutUserPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php" line="21" assertions="1" time="0.634990"/>
+      <testcase name="testResponseWithAuthorizationByMobile" class="PutUserPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php" line="45" assertions="5" time="0.855941"/>
+      <testcase name="testResponseWithAuthorizationByEmail" class="PutUserPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php" line="71" assertions="5" time="0.809882"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PutUserPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php" line="99" assertions="1" time="0.110860"/>
+      <testcase name="testResponseInvalidOtp" class="PutUserPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php" line="115" assertions="1" time="0.662813"/>
+      <testcase name="testResponseWrongContact" class="PutUserPasswordTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserPasswordTest.php" line="139" assertions="1" time="0.561885"/>
+    </testsuite>
+    <testsuite name="PutUserVerifyEmailTest" tests="5" assertions="13" failures="0" errors="0" time="2.404329" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyEmailTest.php">
+      <testcase name="testResponseWithoutDeviceId" class="PutUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyEmailTest.php" line="21" assertions="1" time="0.547488"/>
+      <testcase name="testResponseWithAuthorizationExistingUser" class="PutUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyEmailTest.php" line="43" assertions="5" time="1.062417"/>
+      <testcase name="testResponseWithAuthorizationNewUser" class="PutUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyEmailTest.php" line="68" assertions="5" time="0.581877"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PutUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyEmailTest.php" line="93" assertions="1" time="0.099186"/>
+      <testcase name="testResponseWrongToken" class="PutUserVerifyEmailTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyEmailTest.php" line="109" assertions="1" time="0.113361"/>
+    </testsuite>
+    <testsuite name="PropertyServiceTest" tests="1" assertions="16" failures="0" errors="0" time="0.12957" file="/home/santosh/var/www/guesthouser-api/tests/services/PropertyServiceTest.php">
+      <testcase name="test_get_prive_manager_properties_method" class="PropertyServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PropertyServiceTest.php" line="56" assertions="16" time="0.129570"/>
+    </testsuite>
+    <testsuite name="PutUserVerifyMobileTest" tests="5" assertions="9" failures="0" errors="0" time="3.178687" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyMobileTest.php">
+      <testcase name="testResponseWithoutAuthorization" class="PutUserVerifyMobileTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyMobileTest.php" line="21" assertions="1" time="0.636104"/>
+      <testcase name="testResponseWithAuthorization" class="PutUserVerifyMobileTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyMobileTest.php" line="45" assertions="5" time="0.806383"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PutUserVerifyMobileTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyMobileTest.php" line="73" assertions="1" time="0.600101"/>
+      <testcase name="testResponseForbiddenWithAuthorization" class="PutUserVerifyMobileTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyMobileTest.php" line="92" assertions="1" time="0.575204"/>
+      <testcase name="testResponseWrongOtp" class="PutUserVerifyMobileTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserVerifyMobileTest.php" line="117" assertions="1" time="0.560895"/>
+    </testsuite>
+    <testsuite name="PutUserDeleteTest" tests="4" assertions="4" failures="0" errors="0" time="7.029865" file="/home/santosh/var/www/guesthouser-api/tests/PutUserDeleteTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutUserDeleteTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserDeleteTest.php" line="24" assertions="1" time="0.517085"/>
+      <testcase name="testMissingParameterWithAuthentication" class="PutUserDeleteTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserDeleteTest.php" line="48" assertions="1" time="0.367457"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutUserDeleteTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserDeleteTest.php" line="70" assertions="1" time="5.761340"/>
+      <testcase name="testForbiddenErrorResponseWithAuthentication" class="PutUserDeleteTest" file="/home/santosh/var/www/guesthouser-api/tests/PutUserDeleteTest.php" line="94" assertions="1" time="0.383983"/>
+    </testsuite>
+    <testsuite name="PutHostPropertyReviewTest" tests="4" assertions="8" failures="0" errors="0" time="16.693583" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyReviewTest.php">
+      <testcase name="testInvalidResponseWithoutAuthentication" class="PutHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyReviewTest.php" line="24" assertions="1" time="4.221454"/>
+      <testcase name="testInvalidResponseForTravellerWithAuthentication" class="PutHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyReviewTest.php" line="60" assertions="1" time="4.127782"/>
+      <testcase name="testInvalidHashIdResponseWithAuthentication" class="PutHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyReviewTest.php" line="96" assertions="1" time="4.133679"/>
+      <testcase name="testValidResponseWithAuthentication" class="PutHostPropertyReviewTest" file="/home/santosh/var/www/guesthouser-api/tests/PutHostPropertyReviewTest.php" line="129" assertions="5" time="4.210668"/>
+    </testsuite>
+    <testsuite name="PostLoginSignupViaTest" tests="6" assertions="6" failures="0" errors="0" time="1.392963" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostLoginSignupViaTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php" line="45" assertions="1" time="0.109989"/>
+      <testcase name="testInvalidParamResponse" class="PostLoginSignupViaTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php" line="63" assertions="1" time="0.102056"/>
+      <testcase name="testValidResponseWithLoginViaContact" class="PostLoginSignupViaTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php" line="87" assertions="1" time="0.635525"/>
+      <testcase name="testValidResponseWithLoginViaEmail" class="PostLoginSignupViaTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php" line="110" assertions="1" time="0.339619"/>
+      <testcase name="testValidResponseWithSignupViaEmail" class="PostLoginSignupViaTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php" line="131" assertions="1" time="0.106374"/>
+      <testcase name="testValidResponseWithSignupViaPhone" class="PostLoginSignupViaTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostLoginSignupViaTest.php" line="149" assertions="1" time="0.099400"/>
+    </testsuite>
+    <testsuite name="PostMobileLoginlatestTest" tests="3" assertions="23" failures="0" errors="0" time="4.414068" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostMobileLoginlatestTest.php">
+      <testcase name="testBadRequestResponseWithAuthentication" class="PostMobileLoginlatestTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostMobileLoginlatestTest.php" line="22" assertions="1" time="0.104357"/>
+      <testcase name="testValidResponseResetWithNumberNotVerifiedWithAuthentication" class="PostMobileLoginlatestTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostMobileLoginlatestTest.php" line="40" assertions="11" time="2.065958"/>
+      <testcase name="testValidResponseResetWithNumberVerifiedWithAuthentication" class="PostMobileLoginlatestTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostMobileLoginlatestTest.php" line="74" assertions="11" time="2.243753"/>
+    </testsuite>
+    <testsuite name="PutProperlyExpenseTest" tests="8" assertions="13" failures="0" errors="0" time="14.131218" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php">
+      <testcase name="testUnauthorizedRequestActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="21" assertions="1" time="1.855803"/>
+      <testcase name="testForbiddenRequestActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="45" assertions="1" time="1.837807"/>
+      <testcase name="testBadRequestResponseWithAuthentication" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="72" assertions="1" time="1.823120"/>
+      <testcase name="testInvalidExpenseHashIdRequestActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="99" assertions="1" time="0.333949"/>
+      <testcase name="testInvalidExpenseIdRequestActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="122" assertions="1" time="0.311215"/>
+      <testcase name="testInvalidPropertyIdRequestActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="150" assertions="1" time="1.907067"/>
+      <testcase name="testBadRequestWithExpenseTypeVariableActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="184" assertions="1" time="2.655361"/>
+      <testcase name="testValidRequestActionResponse" class="PutProperlyExpenseTest" file="/home/santosh/var/www/guesthouser-api/tests/PutProperlyExpenseTest.php" line="218" assertions="6" time="3.406896"/>
+    </testsuite>
+    <testsuite name="PostRegisterTest" tests="7" assertions="11" failures="0" errors="0" time="9.835953" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php">
+      <testcase name="testResponseSourceEmail" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="54" assertions="2" time="2.163878"/>
+      <testcase name="testResponseSourcePhone" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="114" assertions="2" time="1.803869"/>
+      <testcase name="testResponseSourcePhoneWithoutEmail" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="179" assertions="1" time="1.618976"/>
+      <testcase name="testResponseSourceGoogle" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="230" assertions="2" time="1.889149"/>
+      <testcase name="testResponseSourceFacebook" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="296" assertions="2" time="1.880530"/>
+      <testcase name="testResponseBadRequestWithAuthorization" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="365" assertions="1" time="0.104948"/>
+      <testcase name="testResponseDuplicateUser" class="PostRegisterTest" file="/home/santosh/var/www/guesthouser-api/tests/v1_7/PostRegisterTest.php" line="390" assertions="1" time="0.374603"/>
+    </testsuite>
+    <testsuite name="PushNotificationServiceTest" tests="7" assertions="7" failures="0" errors="0" time="15.891455" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php">
+      <testcase name="test_function_send_cancel_booking_push_notifications_to_host" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="42" assertions="1" time="2.121389"/>
+      <testcase name="test_function_send_cancel_request_push_notifications_to_host" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="75" assertions="1" time="2.114501"/>
+      <testcase name="test_function_send_new_request_push_notification_to_host" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="108" assertions="1" time="2.823813"/>
+      <testcase name="test_function_send_approved_request_push_notification_to_guest" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="140" assertions="1" time="2.464908"/>
+      <testcase name="test_function_send_reject_request_push_notification_to_guest" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="173" assertions="1" time="2.176850"/>
+      <testcase name="test_function_send_booking_push_notification_to_guest" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="206" assertions="1" time="2.161008"/>
+      <testcase name="test_function_send_booking_push_notification_to_host" class="PushNotificationServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/PushNotificationServiceTest.php" line="239" assertions="1" time="2.028986"/>
+    </testsuite>
+    <testsuite name="UserServiceTest" tests="17" assertions="30" failures="0" errors="0" time="18.218408" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php">
+      <testcase name="test_send_website_registration_emails" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="54" assertions="2" time="0.456229"/>
+      <testcase name="test_send_google_registration_emails" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="75" assertions="1" time="0.318241"/>
+      <testcase name="test_send_facebook_registration_emails" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="93" assertions="2" time="0.317036"/>
+      <testcase name="test_facebook_registration_empty_email" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="114" assertions="4" time="0.335016"/>
+      <testcase name="test_invalid_source_registration_emails" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="136" assertions="5" time="0.325224"/>
+      <testcase name="test_wallet_updated_sms_for_trip_review" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="157" assertions="1" time="0.569013"/>
+      <testcase name="test_send_verification_emails" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="191" assertions="1" time="0.342749"/>
+      <testcase name="test_wallet_updated_email_for_trip_review" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="208" assertions="1" time="3.634839"/>
+      <testcase name="test_wallet_updated_email_for_referal_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="252" assertions="1" time="0.663445"/>
+      <testcase name="test_wallet_updated_sms_for_referal_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="289" assertions="1" time="0.670221"/>
+      <testcase name="test_wallet_updated_email_for_friend_referal_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="321" assertions="1" time="0.612280"/>
+      <testcase name="test_wallet_updated_sms_for_friend_referal_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="360" assertions="1" time="0.624478"/>
+      <testcase name="test_wallet_updated_sms_for_referal_first_booking_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="393" assertions="1" time="2.642428"/>
+      <testcase name="test_wallet_updated_email_for_referal_first_booking_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="427" assertions="1" time="2.718801"/>
+      <testcase name="test_wallet_updated_email_for_apply_wallet_bonus" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="466" assertions="1" time="2.547601"/>
+      <testcase name="test_save_user_bank_details" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="507" assertions="5" time="1.358984"/>
+      <testcase name="test_properly_support_email" class="UserServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/UserServiceTest.php" line="549" assertions="1" time="0.081823"/>
+    </testsuite>
+    <testsuite name="SmsServiceTest" tests="16" assertions="16" failures="0" errors="0" time="21.491294" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php">
+      <testcase name="test_function_send_added_wallet_money_for_trip_review_sms_should_call_sendsms" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="42" assertions="1" time="0.359241"/>
+      <testcase name="test_function_send_added_wallet_money_for_referal_sms_should_call_sendsms" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="70" assertions="1" time="0.319299"/>
+      <testcase name="test_function_send_added_wallet_money_for_friend_referal_sms_should_call_sendsms" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="97" assertions="1" time="0.379041"/>
+      <testcase name="test_function_send_added_wallet_money_for_first_booking_bonus_sms_should_call_sendsms" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="125" assertions="1" time="0.349974"/>
+      <testcase name="test_function_send_update_wallet_money_for_apply_wallet_sms_should_call_sendsms" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="153" assertions="1" time="2.324569"/>
+      <testcase name="test_send_sms_it_should_queue_msg" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="187" assertions="1" time="0.371770"/>
+      <testcase name="test_function_send_create_new_request_sms_to_host" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="226" assertions="1" time="2.564180"/>
+      <testcase name="test_function_send_cancel_booking_sms_to_host" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="256" assertions="1" time="1.892458"/>
+      <testcase name="test_function_send_cancel_booking_sms_to_guest" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="280" assertions="1" time="2.058088"/>
+      <testcase name="test_function_send_booking_request_approved_sms_to_guest" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="304" assertions="1" time="1.874901"/>
+      <testcase name="test_function_send_booking_request_rejected_sms_to_guest" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="330" assertions="1" time="1.985916"/>
+      <testcase name="test_function_send_partial_booking_sms_to_guest" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="354" assertions="1" time="2.289270"/>
+      <testcase name="test_function_send_booking_sms_to_guest" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="378" assertions="1" time="2.364012"/>
+      <testcase name="test_function_send_property_direction_sms_to_guest" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="421" assertions="1" time="0.077067"/>
+      <testcase name="test_function_send_booking_sms_to_host" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="443" assertions="1" time="2.202151"/>
+      <testcase name="test_function_send_user_reset_password_otp" class="SmsServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/SmsServiceTest.php" line="478" assertions="1" time="0.079357"/>
+    </testsuite>
+    <testsuite name="EmailServiceTest" tests="24" assertions="24" failures="0" errors="0" time="29.748823" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php">
+      <testcase name="test_send_function" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="44" assertions="1" time="0.370748"/>
+      <testcase name="test_send_welcome_email" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="77" assertions="1" time="0.337805"/>
+      <testcase name="test_send_verification_email" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="105" assertions="1" time="0.318974"/>
+      <testcase name="test_send_welcome_email_google" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="137" assertions="1" time="0.308279"/>
+      <testcase name="test_send_welcome_email_facebook" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="167" assertions="1" time="0.321238"/>
+      <testcase name="test_send_new_request_email_to_host" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="197" assertions="1" time="1.902818"/>
+      <testcase name="test_send_cancel_booking_request_email_to_host" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="268" assertions="1" time="2.648340"/>
+      <testcase name="test_send_cancel_booking_request_email_to_guest" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="327" assertions="1" time="2.920586"/>
+      <testcase name="test_send_cancel_booking_request_email_to_customer_support" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="383" assertions="1" time="2.613041"/>
+      <testcase name="test_send_booking_request_approved_email_to_guest" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="411" assertions="1" time="1.858267"/>
+      <testcase name="test_send_booking_request_rejected_email_to_guest" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="480" assertions="1" time="1.974648"/>
+      <testcase name="test_send_partial_booking_email_to_traveller" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="526" assertions="1" time="2.292135"/>
+      <testcase name="test_send_fully_booking_email_to_traveller" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="590" assertions="1" time="2.307481"/>
+      <testcase name="test_send_partial_booking_email_to_host" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="655" assertions="1" time="2.237854"/>
+      <testcase name="test_send_fully_booking_email_to_host" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="721" assertions="1" time="2.257571"/>
+      <testcase name="test_send_booked_payout_detail_to_host" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="788" assertions="1" time="0.076836"/>
+      <testcase name="test_send_booking_email_to_admin" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="827" assertions="1" time="0.080446"/>
+      <testcase name="test_function_send_added_wallet_money_for_trip_review_email_should_call_sendemail" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="877" assertions="1" time="1.416556"/>
+      <testcase name="test_function_send_added_wallet_money_for_referal_email_should_call_sendemail" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="929" assertions="1" time="0.369852"/>
+      <testcase name="test_function_send_added_wallet_money_for_friend_referal_email_should_call_sendemail" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="975" assertions="1" time="0.346039"/>
+      <testcase name="test_function_send_added_wallet_money_for_first_booking_email_should_call_sendemail" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="1022" assertions="1" time="0.400116"/>
+      <testcase name="test_function_send_update_wallet_money_for_apply_wallet_email_should_call_sendemail" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="1069" assertions="1" time="1.981436"/>
+      <testcase name="test_function_send_reset_password_link_email" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="1118" assertions="1" time="0.329423"/>
+      <testcase name="test_function_properly_support_email" class="EmailServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/EmailServiceTest.php" line="1147" assertions="1" time="0.078334"/>
+    </testsuite>
+    <testsuite name="BookingRequestServiceTest" tests="25" assertions="36" failures="0" errors="0" time="50.988891" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php">
+      <testcase name="test_send_request_create_email_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="59" assertions="1" time="1.843115"/>
+      <testcase name="test_send_cancel_booking_request_emails" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="126" assertions="3" time="2.505397"/>
+      <testcase name="test_new_request_sms_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="194" assertions="1" time="2.287346"/>
+      <testcase name="test_cancel_booking_request_sms" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="234" assertions="2" time="2.642317"/>
+      <testcase name="test_send_booking_request_approved_email_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="258" assertions="1" time="2.012732"/>
+      <testcase name="test_send_booking_request_approved_sms_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="320" assertions="6" time="1.993014"/>
+      <testcase name="test_send_booking_request_rejected_email_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="360" assertions="1" time="2.235839"/>
+      <testcase name="test_send_booking_request_rejected_sms_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="423" assertions="1" time="1.829727"/>
+      <testcase name="test_send_partial_booking_email_to_traveller" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="449" assertions="1" time="5.242972"/>
+      <testcase name="test_send_fully_booking_email_to_traveller" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="504" assertions="1" time="4.654181"/>
+      <testcase name="test_send_partial_booking_email_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="558" assertions="1" time="4.213795"/>
+      <testcase name="test_send_fully_booking_email_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="616" assertions="1" time="3.469137"/>
+      <testcase name="test_send_add_payout_detail_email_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="673" assertions="1" time="0.154477"/>
+      <testcase name="test_send_booking_email_to_admin" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="703" assertions="1" time="1.777309"/>
+      <testcase name="test_send_partial_booking_sms_to_traveller" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="745" assertions="1" time="1.554032"/>
+      <testcase name="test_send_booking_sms_to_traveller" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="775" assertions="1" time="1.564035"/>
+      <testcase name="test_send_booking_sms_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="816" assertions="1" time="1.955595"/>
+      <testcase name="test_send_property_direction_sms_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="847" assertions="4" time="0.124794"/>
+      <testcase name="test_new_request_notification_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="879" assertions="1" time="1.485813"/>
+      <testcase name="test_approved_request_notification_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="900" assertions="1" time="1.558671"/>
+      <testcase name="test_reject_request_notification_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="921" assertions="1" time="1.775386"/>
+      <testcase name="test_booking_notification_to_guest" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="942" assertions="1" time="1.481611"/>
+      <testcase name="test_booking_notification_to_host" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="963" assertions="1" time="1.442802"/>
+      <testcase name="test_get_graph_data" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="984" assertions="1" time="0.369082"/>
+      <testcase name="test_get_prive_bookings" class="BookingRequestServiceTest" file="/home/santosh/var/www/guesthouser-api/tests/services/BookingRequestServiceTest.php" line="1000" assertions="1" time="0.815712"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

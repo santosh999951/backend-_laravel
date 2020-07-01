@@ -1,0 +1,32 @@
+{
+    "namespace": "App\\Http\\Response\\v1_7\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostGenerateOtpResponse",
+        "definition": "PostGenerateOtpResponse",
+        "description": "PostGenerateOtpResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "dial_code",
+            "type": "integer",
+            "description": "Property Dial Code",
+            "default": "0"
+        },
+        {
+            "name": "contact",
+            "type": "string",
+            "description": "Property Contact",
+            "default": ""
+        },
+        {
+            "name": "sms_sender_ids",
+            "type": "string",
+            "description": "Property Sms Sender Ids",
+            "default": ""
+        }
+    ]
+}

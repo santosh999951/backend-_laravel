@@ -1,0 +1,26 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "PostHostBookingConfirmationResponse",
+        "definition": "PostHostBookingConfirmationResponse",
+        "description": "Response Model for save host booking Availability",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "message",
+            "type": "string",
+            "description": "Response Message",
+            "default": ""
+        },
+        {
+            "name": "confirm_text",
+            "type": "string",
+            "default": "",
+            "description": "Confirm Text"
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetHostBookingResponse",
+        "definition": "GetHostBookingResponse",
+        "description": "Booking and Request List Response Model",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "booking_requests",
+            "type": "array",
+            "description": "Booking Requests data",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "request_hash_id",
+                    "type": "string",
+                    "description": "Request Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "no_of_nights",
+                    "type": "integer",
+                    "description": "No Of Nights",
+                    "default": "0"
+                },
+                {
+                    "name": "guests",
+                    "type": "integer",
+                    "description": "Guests",
+                    "default": "0"
+                },
+                {
+                    "name": "units",
+                    "type": "integer",
+                    "description": "Units",
+                    "default": "0"
+                },
+                {
+                    "name": "checkin_checkout",
+                    "type": "string",
+                    "description": "Checkin Checkout",
+                    "default": ""
+                },
+                {
+                    "name": "timeline_status",
+                    "type": "string",
+                    "description": "Timeline Status",
+                    "default": ""
+                },
+                {
+                    "name": "amount",
+                    "type": "string",
+                    "description": "Booking Amount",
+                    "default": ""
+                },
+                {
+                    "name": "booking_status",
+                    "type": "object",
+                    "description": "Booking Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Booking Status Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "class",
+                            "type": "string",
+                            "description": "Booking Status Class",
+                            "default": ""
+                        },
+                        {
+                            "name": "color_code",
+                            "type": "string",
+                            "description": "Booking Status Color Code",
+                            "default": ""
+                        },
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Booking Status Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "header_text",
+                            "type": "string",
+                            "description": "Booking Request Header Text",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "checkin",
+                    "type": "string",
+                    "description": "Checkin",
+                    "default": ""
+                },
+                {
+                    "name": "checkout",
+                    "type": "string",
+                    "description": "Checkout",
+                    "default": ""
+                },
+                {
+                    "name": "property_hash_id",
+                    "type": "string",
+                    "description": "Property Hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "location_name",
+                    "type": "string",
+                    "description": "Property Location Name",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "property_image",
+                    "type": "array",
+                    "description": "Property Image",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "description": "Image Url",
+                            "default": ""
+                        },
+                        {
+                            "name": "caption",
+                            "type": "string",
+                            "description": "Image Caption",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "filter",
+            "type": "object",
+            "description": "Booking List Filters",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "properties",
+                    "type": "object",
+                    "description": "All Properties listed by host",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "description": "Property Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "title",
+                            "type": "string",
+                            "description": "Property Title",
+                            "default": ""
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Property Selected status",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "object",
+                    "description": "Booking Status Filter",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Status id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Status Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Selected status",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "order_by",
+                    "type": "integer",
+                    "description": "Sort Order By",
+                    "default": "0"
+                },
+                {
+                    "name": "start_date",
+                    "type": "string",
+                    "description": "Selected Start Date",
+                    "default": ""
+                },
+                {
+                    "name": "end_date",
+                    "type": "string",
+                    "description": "Selected End Date",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "updated_offset",
+            "type": "integer",
+            "description": "Updated Offset",
+            "default": "0"
+        },
+        {
+            "name": "total",
+            "type": "integer",
+            "description": "Count of data to fetch",
+            "default": "0"
+        }
+    ]
+}

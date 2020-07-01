@@ -1,0 +1,1 @@
+Click on this link {{ $login_url }} and enter OTP {{ $verification_code }} to login to your properly dashboard.

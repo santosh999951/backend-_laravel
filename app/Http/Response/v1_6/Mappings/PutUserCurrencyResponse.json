@@ -1,0 +1,26 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PutUserCurrencyResponse",
+    "definition": "PutUserCurrencyResponse",
+    "description": "Response Model for Update User Currency",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "currency",
+      "type": "string",
+      "default": "",
+      "description": "Currency"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Update Message"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetUserWalletResponse",
+    "definition": "GetUserWalletResponse",
+    "description": "GetUserWalletResponse",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "wallet",
+      "type": "object",
+      "default": "{}",
+      "description": "Property Wallet",
+      "children": [
+        {
+          "name": "balance",
+          "type": "string",
+          "description": "Property Balance",
+          "default": ""
+        },
+        {
+          "name": "currency",
+          "type": "object",
+          "description": "Property Currency",
+          "default": "{}",
+          "children": [
+            {
+              "name": "webicon",
+              "type": "string",
+              "description": "Property Webicon",
+              "default": ""
+            },
+            {
+              "name": "non-webicon",
+              "type": "string",
+              "description": "Property Non-webicon",
+              "default": ""
+            },
+            {
+              "name": "iso_code",
+              "type": "string",
+              "description": "Property Iso Code",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Property Headline",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "earn_more",
+      "type": "array",
+      "default": "[]",
+      "description": "Property Earn More",
+      "children": [
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Property Image",
+          "default": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Property Title",
+          "default": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "Property Description",
+          "default": ""
+        },
+        {
+          "name": "button",
+          "type": "string",
+          "description": "Property Button",
+          "default": ""
+        },
+        {
+          "name": "event",
+          "type": "integer",
+          "description": "Property Event",
+          "default": "0"
+        }
+      ]
+    },
+    {
+      "name": "can_invite",
+      "type": "boolean",
+      "default": "false",
+      "description": "Property Can Invite"
+    },
+    {
+      "name": "transactions",
+      "type": "array",
+      "default": "[]",
+      "description": "Property Transactions",
+      "children": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Property Type",
+          "default": ""
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "Property Currency",
+          "default": ""
+        },
+        {
+          "name": "amount",
+          "type": "string",
+          "description": "Property Amount",
+          "default": ""
+        },
+        {
+          "name": "review_details",
+          "type": "string",
+          "description": "Property Review Details",
+          "default": ""
+        },
+        {
+          "name": "expire_on",
+          "type": "string",
+          "description": "Property Expire On",
+          "default": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "Property Description",
+          "default": ""
+        },
+        {
+          "name": "booking_id",
+          "type": "string",
+          "description": "Property Booking Id",
+          "default": ""
+        },
+        {
+          "name": "created_on",
+          "type": "string",
+          "description": "Property Created On",
+          "default": ""
+        },
+        {
+          "name": "currency_symbol",
+          "type": "string",
+          "description": "Property Currency Symbol",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

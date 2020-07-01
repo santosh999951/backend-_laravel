@@ -1,0 +1,116 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetProperlyFilterMemberResponse",
+        "definition": "GetProperlyFilterMemberResponse",
+        "description": "GetProperlyFilterMemberResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "team_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Team Count"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "default": "",
+            "description": "Message"
+        },
+        {
+            "name": "members",
+            "type": "array",
+            "default": "[]",
+            "description": "Team Members",
+            "children": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "User hash Id",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "User Name",
+                    "default": ""
+                },
+                {
+                    "name": "last_name",
+                    "type": "string",
+                    "description": "User Last Name",
+                    "default": ""
+                },
+                {
+                    "name": "contact",
+                    "type": "string",
+                    "description": "User Contact",
+                    "default": ""
+                },
+                {
+                    "name": "role_name",
+                    "type": "string",
+                    "description": "Role Name",
+                    "default": ""
+                },
+                {
+                    "name": "deactivated_at",
+                    "type": "none",
+                    "description": "Deactivated At",
+                    "default": "00"
+                },
+                {
+                    "name": "status",
+                    "type": "string",
+                    "description": "Status",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "name": "filter",
+            "type": "object",
+            "default": "{}",
+            "description": "Property Filter",
+            "children": [
+                {
+                    "name": "team",
+                    "type": "array",
+                    "description": "Team",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "id",
+                            "type": "integer",
+                            "description": "Team Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "description": "Team Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Team Selected",
+                            "default": "0"
+                        }
+                    ]
+                },
+                {
+                    "name": "team_filter_count",
+                    "type": "integer",
+                    "description": "Team Filter Count",
+                    "default": "0"
+                }
+            ]
+        }
+    ]
+}

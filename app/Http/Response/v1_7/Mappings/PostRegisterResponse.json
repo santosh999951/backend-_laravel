@@ -1,0 +1,45 @@
+{
+    "namespace": "App\\Http\\Response\\v1_7\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_7\\Models\\ApiResponse",
+        "App\\Http\\Response\\v1_7\\Models\\Partial\\UserProfileResponse"
+    ],
+    "class": {
+        "name": "PostRegisterResponse",
+        "definition": "PostRegisterResponse",
+        "description": "PostRegisterResponse",
+        "extend": "App\\Http\\Response\\v1_7\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "user_profile",
+            "type": "object",
+            "description": "Property User Profile",
+            "default": "{}"
+        },
+        {
+            "name": "token_type",
+            "type": "string",
+            "description": "Property Token Type",
+            "default": ""
+        },
+        {
+            "name": "expires_in",
+            "type": "integer",
+            "description": "Property Expires In",
+            "default": "0"
+        },
+        {
+            "name": "access_token",
+            "type": "string",
+            "description": "Property Access Token",
+            "default": ""
+        },
+        {
+            "name": "refresh_token",
+            "type": "string",
+            "description": "Property Refresh Token",
+            "default": ""
+        }
+    ]
+}

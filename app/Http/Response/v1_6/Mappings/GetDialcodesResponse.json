@@ -1,0 +1,40 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetDialcodesResponse",
+    "definition": "GetDialcodesResponse",
+    "description": "Response Model for Dial code Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "dial_codes",
+      "type": "array",
+      "default": "[]",
+      "description": "Dial Codes data",
+      "children": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path Country Icon Url",
+          "default": ""
+        },
+        {
+          "name": "dial_code",
+          "type": "string",
+          "description": "Dial Code Eg. 91 for India, 93 for Afghanistan",
+          "default": ""
+        },
+        {
+          "name": "country_name",
+          "type": "string",
+          "description": "Country Name",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

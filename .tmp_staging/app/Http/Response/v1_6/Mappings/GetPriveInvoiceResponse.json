@@ -1,0 +1,144 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetPriveInvoiceResponse",
+        "definition": "GetPriveInvoiceResponse",
+        "description": "GetPriveInvoiceResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "invoice",
+            "type": "object",
+            "description": "Invoice",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "total_amount",
+                    "type": "string",
+                    "description": "Property Total Amount",
+                    "default": ""
+                },
+                {
+                    "name": "invoice",
+                    "type": "array",
+                    "description": "Property Invoice",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "request_id",
+                            "type": "string",
+                            "description": "Property Request Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "guest_name",
+                            "type": "string",
+                            "description": "Property Guest Name",
+                            "default": ""
+                        },
+                        {
+                            "name": "guests",
+                            "type": "integer",
+                            "description": "Property Guests",
+                            "default": "0"
+                        },
+                        {
+                            "name": "invoice_date",
+                            "type": "string",
+                            "description": "Property Invoice Date",
+                            "default": ""
+                        },
+                        {
+                            "name": "currency",
+                            "type": "string",
+                            "description": "Property Currency",
+                            "default": ""
+                        },
+                        {
+                            "name": "host_amount",
+                            "type": "string",
+                            "description": "Property Host Amount",
+                            "default": ""
+                        },
+                        {
+                            "name": "title",
+                            "type": "string",
+                            "description": "Property Title",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "filter",
+            "type": "object",
+            "description": "Filter",
+            "default": "{}",
+            "children": [
+                {
+                    "name": "month_year",
+                    "type": "string",
+                    "description": "Month Year",
+                    "default": ""
+                },
+                {
+                    "name": "properties",
+                    "type": "array",
+                    "description": "Property Properties",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "property_hash_id",
+                            "type": "string",
+                            "description": "Property Property Hash Id",
+                            "default": ""
+                        },
+                        {
+                            "name": "title",
+                            "type": "string",
+                            "description": "Property Title",
+                            "default": ""
+                        },
+                        {
+                            "name": "selected",
+                            "type": "integer",
+                            "description": "Property Selected",
+                            "default": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "total",
+            "type": "integer",
+            "description": "Total",
+            "default": "0"
+        },
+        {
+            "name": "month_year_list",
+            "type": "object",
+            "default": "{}",
+            "description": "Month Year List",
+            "children": [
+                {
+                    "name": "start_month_year",
+                    "type": "string",
+                    "description": "Start Month Year",
+                    "default": ""
+                },
+                {
+                    "name": "end_month_year",
+                    "type": "string",
+                    "description": "End Month Year",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

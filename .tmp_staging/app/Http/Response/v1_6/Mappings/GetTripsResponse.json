@@ -1,0 +1,278 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetTripsResponse",
+    "definition": "GetTripsResponse",
+    "description": "Response Models for Trips List api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "trips",
+      "type": "array",
+      "default": "[]",
+      "description": "Trip List Section",
+      "children": [
+        {
+          "name": "request_id",
+          "type": "integer",
+          "description": "Request Id",
+          "default": "0"
+        },
+        {
+          "name": "request_hash_id",
+          "type": "string",
+          "description": "Request Hash Id",
+          "default": ""
+        },
+        {
+          "name": "property_tile",
+          "type": "object",
+          "description": "Property Tile Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "property_id",
+              "type": "integer",
+              "description": "Property Id",
+              "default": "0"
+            },
+            {
+              "name": "property_hash_id",
+              "type": "string",
+              "description": "Property Hash Id",
+              "default": ""
+            },
+            {
+              "name": "property_type",
+              "type": "string",
+              "description": "Property Type",
+              "default": ""
+            },
+            {
+              "name": "room_type",
+              "type": "string",
+              "description": "Property Room Type",
+              "default": ""
+            },
+            {
+              "name": "property_score",
+              "type": "string",
+              "description": "Property Score",
+              "default": ""
+            },
+            {
+              "name": "host_name",
+              "type": "string",
+              "description": "Host Name",
+              "default": ""
+            },
+            {
+              "name": "host_image",
+              "type": "string",
+              "description": "Host Image",
+              "default": ""
+            },
+            {
+              "name": "location",
+              "type": "object",
+              "description": "Property Location",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "area",
+                  "type": "string",
+                  "description": "Location Area",
+                  "default": ""
+                },
+                {
+                  "name": "city",
+                  "type": "string",
+                  "description": "Location City",
+                  "default": ""
+                },
+                {
+                  "name": "state",
+                  "type": "string",
+                  "description": "Location State",
+                  "default": ""
+                },
+                {
+                  "name": "country",
+                  "type": "object",
+                  "description": "Location Country",
+                  "default": "{}",
+                  "children": [
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "description": "Country Name",
+                      "default": ""
+                    },
+                    {
+                      "name": "ccode",
+                      "type": "string",
+                      "description": "Country Ccode",
+                      "default": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "location_name",
+                  "type": "string",
+                  "description": "Location Name",
+                  "default": ""
+                },
+                {
+                  "name": "latitude",
+                  "type": "string",
+                  "description": "Latitude",
+                  "default": ""
+                },
+                {
+                  "name": "longitude",
+                  "type": "string",
+                  "description": "Longitude",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Property Generated Title",
+              "default": ""
+            },
+            {
+              "name": "property_title",
+              "type": "string",
+              "description": "Property Original Title",
+              "default": ""
+            },
+            {
+              "name": "property_images",
+              "type": "array",
+              "description": "Property Images",
+              "default": "[]",
+              "children": [
+                {
+                  "name": "image",
+                  "type": "string",
+                  "description": "Image Url",
+                  "default": ""
+                },
+                {
+                  "name": "caption",
+                  "type": "string",
+                  "description": "Image Caption",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "url",
+              "type": "string",
+              "description": "Property Url",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "timeline_status",
+          "type": "string",
+          "description": "Timeline Status Eg. Ongoing, 2 months to go",
+          "default": ""
+        },
+        {
+          "name": "booking_status",
+          "type": "object",
+          "description": "Booking Status",
+          "default": "{}",
+          "children": [
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Booking Status Text",
+              "default": ""
+            },
+            {
+              "name": "class",
+              "type": "string",
+              "description": "Booking Status Class",
+              "default": ""
+            },
+            {
+              "name": "color_code",
+              "type": "string",
+              "description": "Color code of status in HEX format Eg. #f2a419",
+              "default": "0"
+            },
+            {
+              "name": "status",
+              "type": "integer",
+              "description": "Booking Status Id",
+              "default": "0"
+            },
+            {
+              "name": "header_text",
+              "type": "string",
+              "description": "Booking Status Header Text",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "trip_status",
+          "type": "integer",
+          "description": "Trip Status",
+          "default": "0"
+        },
+        {
+          "name": "checkin_checkout",
+          "type": "string",
+          "description": "Checkin Checkout Date Eg. 18 Nov - 22 Nov 2018",
+          "default": ""
+        },
+        {
+          "name": "checkin",
+          "type": "string",
+          "description": "Checkin Date Eg. 2018-11-18",
+          "default": ""
+        },
+        {
+          "name": "guests",
+          "type": "integer",
+          "description": "Guests Count",
+          "default": "0"
+        }
+      ]
+    },
+    {
+      "name": "past_trip_count",
+      "type": "integer",
+      "default": "0",
+      "description": "Past Trip Count"
+    },
+    {
+      "name": "total_trip_count",
+      "type": "integer",
+      "default": "0",
+      "description": "Total Trip Count"
+    },
+    {
+      "name": "updated_offset",
+      "type": "integer",
+      "default": "0",
+      "description": "Updated Offset on pagination"
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "default": "0",
+      "description": "Total number of data required"
+    }
+  ]
+}

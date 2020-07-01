@@ -1,0 +1,1 @@
+Sorry! Your booking request ({{ $view_data['request_hash_id'] }}) for property {{ $view_data['property_title'] }} could not be approved by the Host.Explore GuestHouser.com for more options!

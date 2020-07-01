@@ -1,0 +1,82 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetOfflineDiscoverySearchResponse",
+        "definition": "GetOfflineDiscoverySearchResponse",
+        "description": "GetOfflineDiscoverySearchResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "property_list",
+            "type": "array",
+            "default": "[]",
+            "description": "Property Property List",
+            "children": [
+                {
+                    "name": "status",
+                    "type": "string",
+                    "description": "Property Status",
+                    "default": ""
+                },
+                {
+                    "name": "image",
+                    "type": "none",
+                    "description": "Property Image",
+                    "default": "00"
+                },
+                {
+                    "name": "contact",
+                    "type": "string",
+                    "description": "Property Owner Contact",
+                    "default": ""
+                },
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "Property Id",
+                    "default": "0"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "Property Owner Name",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Property Title",
+                    "default": ""
+                },
+                {
+                    "name": "area",
+                    "type": "string",
+                    "description": "Property Area",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "Property City",
+                    "default": ""
+                },
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "Property State",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "Property Country",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

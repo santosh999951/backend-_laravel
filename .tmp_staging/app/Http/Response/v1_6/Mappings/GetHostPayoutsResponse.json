@@ -1,0 +1,140 @@
+{
+    "namespace": "App\\Http\\Response\\v1_6\\Models",
+    "import": [
+        "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    ],
+    "class": {
+        "name": "GetHostPayoutsResponse",
+        "definition": "GetHostPayoutsResponse",
+        "description": "GetHostPayoutsResponse",
+        "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+    },
+    "variable": [
+        {
+            "name": "payout_history",
+            "type": "array",
+            "description": "Host Payout History",
+            "default": "[]",
+            "children": [
+                {
+                    "name": "booking_requests_id",
+                    "type": "string",
+                    "description": "Booking Requests Id",
+                    "default": ""
+                },
+                {
+                    "name": "booking_amount",
+                    "type": "string",
+                    "description": "Booking Amount",
+                    "default": ""
+                },
+                {
+                    "name": "settled_amount",
+                    "type": "string",
+                    "description": "Settled Amount",
+                    "default": ""
+                },
+                {
+                    "name": "pending_amount",
+                    "type": "string",
+                    "description": "Pending Amount",
+                    "default": ""
+                },
+                {
+                    "name": "settlement_history",
+                    "type": "array",
+                    "description": "Property Settlement History",
+                    "default": "[]",
+                    "children": [
+                        {
+                            "name": "date",
+                            "type": "string",
+                            "description": "Property Date",
+                            "default": ""
+                        },
+                        {
+                            "name": "utr",
+                            "type": "string",
+                            "description": "Property Utr",
+                            "default": ""
+                        },
+                        {
+                            "name": "amount",
+                            "type": "string",
+                            "description": "Property Amount",
+                            "default": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "booking_date",
+                    "type": "string",
+                    "description": "Property Booking Date",
+                    "default": ""
+                },
+                {
+                    "name": "checkin_date",
+                    "type": "string",
+                    "description": "Checkin Date",
+                    "default": ""
+                },
+                {
+                    "name": "checkin_formatted",
+                    "type": "string",
+                    "description": "Checkin Formatted",
+                    "default": ""
+                },
+                {
+                    "name": "booking_status",
+                    "type": "object",
+                    "description": "Booking Status",
+                    "default": "{}",
+                    "children": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "description": "Booking Status Text",
+                            "default": ""
+                        },
+                        {
+                            "name": "class",
+                            "type": "string",
+                            "description": "Booking Status Class",
+                            "default": ""
+                        },
+                        {
+                            "name": "color_code",
+                            "type": "string",
+                            "description": "Booking Status Color Code",
+                            "default": ""
+                        },
+                        {
+                            "name": "status",
+                            "type": "integer",
+                            "description": "Booking Status Id",
+                            "default": "0"
+                        },
+                        {
+                            "name": "header_text",
+                            "type": "string",
+                            "description": "Booking Request Header Text",
+                            "default": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "due_amount",
+            "type": "string",
+            "description": "Total Due Amount",
+            "default": ""
+        },
+        {
+            "name": "total_count",
+            "type": "integer",
+            "default": "0",
+            "description": "Property Total Count"
+        }
+    ]
+}

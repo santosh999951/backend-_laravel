@@ -1,0 +1,74 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "PostBookingRequestResponse",
+    "definition": "PostBookingRequestResponse",
+    "description": "Response Model for create Booking Request",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "valid",
+      "type": "integer",
+      "default": "0",
+      "description": "Status for creating Booking Request"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": "",
+      "description": "Message Eg. Request Created"
+    },
+    {
+      "name": "msg_code",
+      "type": "string",
+      "default": "",
+      "description": "Message Code Eg. request_created, trip_exists, request_exists, min_max_night_invalid, inventory_not_available"
+    },
+    {
+      "name": "booking_status",
+      "type": "integer",
+      "default": "0",
+      "description": "Booking Request Status Id"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "default": "",
+      "description": "Booking Request Hash Id"
+    },
+    {
+      "name": "instant_book",
+      "type": "integer",
+      "default": "0",
+      "description": "Instant Bookable status"
+    },
+    {
+      "name": "user_id",
+      "type": "integer",
+      "default": "0",
+      "description": "User Id"
+    },
+    {
+      "name": "payment_url",
+      "type": "string",
+      "default": "",
+      "description": "Payment Url"
+    },
+    {
+      "name": "payment_gateway_method",
+      "type": "string",
+      "default": "",
+      "description": "Payment Gateway Method Eg. web, sdk"
+    },
+    {
+      "name": "header",
+      "type": "string",
+      "default": "",
+      "description": "Header Text for popup Eg. Duplicate request, Duplicate booking"
+    }
+  ]
+}

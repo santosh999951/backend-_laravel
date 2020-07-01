@@ -1,0 +1,230 @@
+{
+  "namespace": "App\\Http\\Response\\v1_6\\Models",
+  "import": [
+    "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  ],
+  "class": {
+    "name": "GetTripReviewResponse",
+    "definition": "GetTripReviewResponse",
+    "description": "Response Model for Completed Trip Pending Review Api",
+    "extend": "App\\Http\\Response\\v1_6\\Models\\ApiResponse"
+  },
+  "variable": [
+    {
+      "name": "review_text",
+      "type": "string",
+      "default": "",
+      "description": "Review Text"
+    },
+    {
+      "name": "rating_params",
+      "type": "array",
+      "default": "[]",
+      "description": "Rating Params",
+      "children": [
+        {
+          "name": "id",
+          "type": "integer",
+          "description": "Rating Id Eg. 1, 2",
+          "default": "0"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Rating Title Eg. Location accuracy, Comfort & cleanliness",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "bookings",
+      "type": "array",
+      "default": "[]",
+      "description": "Pending Reviews Bookings List",
+      "children": [
+        {
+          "name": "booking_request_id",
+          "type": "string",
+          "description": "Booking Request Id",
+          "default": ""
+        },
+        {
+          "name": "property_section",
+          "type": "object",
+          "description": "Property Section",
+          "default": "{}",
+          "children": [
+            {
+              "name": "property_id",
+              "type": "integer",
+              "description": "Property Id",
+              "default": "0"
+            },
+            {
+              "name": "property_hash_id",
+              "type": "string",
+              "description": "Property Hash Id",
+              "default": ""
+            },
+            {
+              "name": "property_type",
+              "type": "string",
+              "description": "Property Type",
+              "default": ""
+            },
+            {
+              "name": "room_type",
+              "type": "string",
+              "description": "Room Type",
+              "default": ""
+            },
+            {
+              "name": "property_score",
+              "type": "integer",
+              "description": "Property Score",
+              "default": "0"
+            },
+            {
+              "name": "host_name",
+              "type": "string",
+              "description": "Host Name",
+              "default": ""
+            },
+            {
+              "name": "host_image",
+              "type": "string",
+              "description": "Host Image",
+              "default": ""
+            },
+            {
+              "name": "location",
+              "type": "object",
+              "description": "Property Location",
+              "default": "{}",
+              "children": [
+                {
+                  "name": "area",
+                  "type": "string",
+                  "description": "Location Area",
+                  "default": ""
+                },
+                {
+                  "name": "city",
+                  "type": "string",
+                  "description": "Location City",
+                  "default": ""
+                },
+                {
+                  "name": "state",
+                  "type": "string",
+                  "description": "Location State",
+                  "default": ""
+                },
+                {
+                  "name": "country",
+                  "type": "object",
+                  "description": "Location Country",
+                  "default": "{}",
+                  "children": [
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "description": "Country Name",
+                      "default": ""
+                    },
+                    {
+                      "name": "ccode",
+                      "type": "string",
+                      "description": "Country Ccode",
+                      "default": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "location_name",
+                  "type": "string",
+                  "description": "Location Name",
+                  "default": ""
+                },
+                {
+                  "name": "latitude",
+                  "type": "string",
+                  "description": "Latitude",
+                  "default": ""
+                },
+                {
+                  "name": "longitude",
+                  "type": "string",
+                  "description": "Longitude",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "description": "Property Generated Title",
+              "default": ""
+            },
+            {
+              "name": "property_title",
+              "type": "string",
+              "description": "Property Original Title",
+              "default": ""
+            },
+            {
+              "name": "property_images",
+              "type": "array",
+              "description": "Property Images",
+              "default": "[]",
+              "children": [
+                {
+                  "name": "image",
+                  "type": "string",
+                  "description": "Image Url",
+                  "default": ""
+                },
+                {
+                  "name": "caption",
+                  "type": "string",
+                  "description": "Image Caption",
+                  "default": ""
+                }
+              ]
+            },
+            {
+              "name": "url",
+              "type": "string",
+              "description": "Property Url",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "review_pending",
+          "type": "integer",
+          "description": "Review Pending Status",
+          "default": "0"
+        },
+        {
+          "name": "rating_pending",
+          "type": "integer",
+          "description": "Rating Pending Status",
+          "default": "0"
+        }
+      ]
+    },
+    {
+      "name": "updated_offset",
+      "type": "integer",
+      "default": "0",
+      "description": "Updated Offset For Pagination"
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "default": "0",
+      "description": "Number of data fetch in api"
+    }
+  ]
+}
